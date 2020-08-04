@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n0B-g2-CV1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lesson-->
+        <scene sceneID="xbH-QG-72R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson" id="0Ci-2v-XqG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pelajaran" image="circle.grid.2x2" catalog="system" id="7w4-8p-qF6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug7-Ek-ant" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-294"/>
+        </scene>
+        <!--Vocabulary-->
+        <scene sceneID="sGC-4K-wOq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vocabulary" id="plz-sb-gsQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kosakata" image="textformat.abc" catalog="system" id="gKx-QF-iFk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoP-4e-Bsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="-280"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="qJz-hm-F8X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="fP2-fB-i6Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="wab-od-MS3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vb7-h4-ABM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="258"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ryf-BU-YYU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="n0B-g2-CV1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1SS-qp-YkB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Ci-2v-XqG" kind="relationship" relationship="viewControllers" id="1SR-Zh-YcL"/>
+                        <segue destination="plz-sb-gsQ" kind="relationship" relationship="viewControllers" id="puz-3K-5gg"/>
+                        <segue destination="fP2-fB-i6Q" kind="relationship" relationship="viewControllers" id="CdM-or-v87"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15j-Yk-FUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="textformat.abc" catalog="system" width="128" height="61"/>
+    </resources>
+</document>

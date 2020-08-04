@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
 		5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367224D905550044F1EA /* SceneDelegate.swift */; };
-		5A88367524D905550044F1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367424D905550044F1EA /* ViewController.swift */; };
 		5A88367824D905550044F1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367624D905550044F1EA /* Main.storyboard */; };
 		5A88367A24D905570044F1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367924D905570044F1EA /* Assets.xcassets */; };
 		5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367B24D905570044F1EA /* LaunchScreen.storyboard */; };
+		5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368B24D908A90044F1EA /* Vocabulary.storyboard */; };
+		5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368D24D908B80044F1EA /* Lesson.storyboard */; };
+		5A88369024D908D50044F1EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368F24D908D50044F1EA /* Profile.storyboard */; };
+		5A88369524D90D090044F1EA /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369424D90D090044F1EA /* LessonVC.swift */; };
+		5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369624D90D230044F1EA /* VocabularyVC.swift */; };
+		5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369824D90D3F0044F1EA /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88367024D905550044F1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A88367224D905550044F1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A88367424D905550044F1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A88367724D905550044F1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A88367924D905570044F1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A88367C24D905570044F1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A88367E24D905570044F1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A88368B24D908A90044F1EA /* Vocabulary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vocabulary.storyboard; sourceTree = "<group>"; };
+		5A88368D24D908B80044F1EA /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
+		5A88368F24D908D50044F1EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5A88369424D90D090044F1EA /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
+		5A88369624D90D230044F1EA /* VocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyVC.swift; sourceTree = "<group>"; };
+		5A88369824D90D3F0044F1EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,92 @@
 		5A88366F24D905550044F1EA /* Locla */ = {
 			isa = PBXGroup;
 			children = (
+				5A88368724D905DF0044F1EA /* Controller */,
+				5A88368624D905CF0044F1EA /* View */,
+				5A88368424D905C00044F1EA /* Model */,
 				5A88367024D905550044F1EA /* AppDelegate.swift */,
 				5A88367224D905550044F1EA /* SceneDelegate.swift */,
-				5A88367424D905550044F1EA /* ViewController.swift */,
-				5A88367624D905550044F1EA /* Main.storyboard */,
 				5A88367924D905570044F1EA /* Assets.xcassets */,
 				5A88367B24D905570044F1EA /* LaunchScreen.storyboard */,
 				5A88367E24D905570044F1EA /* Info.plist */,
 			);
 			path = Locla;
+			sourceTree = "<group>";
+		};
+		5A88368424D905C00044F1EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A88368624D905CF0044F1EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A88368824D9086A0044F1EA /* Lesson */,
+				5A88368924D908760044F1EA /* Vocabulary */,
+				5A88368A24D908890044F1EA /* Profile */,
+				5A88367624D905550044F1EA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A88368724D905DF0044F1EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A88369224D90CC80044F1EA /* Lesson */,
+				5A88369324D90CCF0044F1EA /* Vocabulary */,
+				5A88369124D90CB70044F1EA /* Profile */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A88368824D9086A0044F1EA /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				5A88368D24D908B80044F1EA /* Lesson.storyboard */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
+		5A88368924D908760044F1EA /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				5A88368B24D908A90044F1EA /* Vocabulary.storyboard */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		5A88368A24D908890044F1EA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5A88368F24D908D50044F1EA /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5A88369124D90CB70044F1EA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5A88369824D90D3F0044F1EA /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5A88369224D90CC80044F1EA /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				5A88369424D90D090044F1EA /* LessonVC.swift */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
+		5A88369324D90CCF0044F1EA /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				5A88369624D90D230044F1EA /* VocabularyVC.swift */,
+			);
+			path = Vocabulary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +212,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A88369024D908D50044F1EA /* Profile.storyboard in Resources */,
+				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
+				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A88367524D905550044F1EA /* ViewController.swift in Sources */,
+				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
+				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
+				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
