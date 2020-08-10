@@ -28,6 +28,16 @@
 		5A9ED9F024E0FFD000BE1200 /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9EF24E0FFD000BE1200 /* Vocabulary.swift */; };
 		5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9F324E1016B00BE1200 /* VocabularyChallenge.swift */; };
 		5A9ED9F624E1021B00BE1200 /* VocabularyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9F524E1021B00BE1200 /* VocabularyCategory.swift */; };
+		5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9F724E1044900BE1200 /* VocabularyChallenge.json */; };
+		5A9EDA0224E1044900BE1200 /* RandomTips.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9F824E1044900BE1200 /* RandomTips.json */; };
+		5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9F924E1044900BE1200 /* Subtopic.json */; };
+		5A9EDA0424E1044900BE1200 /* ChatChallenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FA24E1044900BE1200 /* ChatChallenge.json */; };
+		5A9EDA0524E1044900BE1200 /* ListeningChallenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FB24E1044900BE1200 /* ListeningChallenge.json */; };
+		5A9EDA0624E1044900BE1200 /* Location.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FC24E1044900BE1200 /* Location.json */; };
+		5A9EDA0724E1044900BE1200 /* Topic.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FD24E1044900BE1200 /* Topic.json */; };
+		5A9EDA0824E1044900BE1200 /* VocabularyCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FE24E1044900BE1200 /* VocabularyCategory.json */; };
+		5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FF24E1044900BE1200 /* Vocabulary.json */; };
+		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +64,16 @@
 		5A9ED9EF24E0FFD000BE1200 /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
 		5A9ED9F324E1016B00BE1200 /* VocabularyChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyChallenge.swift; sourceTree = "<group>"; };
 		5A9ED9F524E1021B00BE1200 /* VocabularyCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyCategory.swift; sourceTree = "<group>"; };
+		5A9ED9F724E1044900BE1200 /* VocabularyChallenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VocabularyChallenge.json; sourceTree = "<group>"; };
+		5A9ED9F824E1044900BE1200 /* RandomTips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RandomTips.json; sourceTree = "<group>"; };
+		5A9ED9F924E1044900BE1200 /* Subtopic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Subtopic.json; sourceTree = "<group>"; };
+		5A9ED9FA24E1044900BE1200 /* ChatChallenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChatChallenge.json; sourceTree = "<group>"; };
+		5A9ED9FB24E1044900BE1200 /* ListeningChallenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListeningChallenge.json; sourceTree = "<group>"; };
+		5A9ED9FC24E1044900BE1200 /* Location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Location.json; sourceTree = "<group>"; };
+		5A9ED9FD24E1044900BE1200 /* Topic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Topic.json; sourceTree = "<group>"; };
+		5A9ED9FE24E1044900BE1200 /* VocabularyCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VocabularyCategory.json; sourceTree = "<group>"; };
+		5A9ED9FF24E1044900BE1200 /* Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
+		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +208,16 @@
 		5A9ED9C824E0ED3B00BE1200 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				5A9ED9FA24E1044900BE1200 /* ChatChallenge.json */,
+				5A9ED9FB24E1044900BE1200 /* ListeningChallenge.json */,
+				5A9ED9FC24E1044900BE1200 /* Location.json */,
+				5A9ED9F824E1044900BE1200 /* RandomTips.json */,
+				5A9EDA0024E1044900BE1200 /* Reward.json */,
+				5A9ED9F924E1044900BE1200 /* Subtopic.json */,
+				5A9ED9FD24E1044900BE1200 /* Topic.json */,
+				5A9ED9FF24E1044900BE1200 /* Vocabulary.json */,
+				5A9ED9FE24E1044900BE1200 /* VocabularyCategory.json */,
+				5A9ED9F724E1044900BE1200 /* VocabularyChallenge.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -250,12 +280,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9EDA0224E1044900BE1200 /* RandomTips.json in Resources */,
 				5A88369024D908D50044F1EA /* Profile.storyboard in Resources */,
+				5A9EDA0724E1044900BE1200 /* Topic.json in Resources */,
+				5A9EDA0624E1044900BE1200 /* Location.json in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
+				5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */,
+				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
+				5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */,
+				5A9EDA0524E1044900BE1200 /* ListeningChallenge.json in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
+				5A9EDA0824E1044900BE1200 /* VocabularyCategory.json in Resources */,
 				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
+				5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */,
+				5A9EDA0424E1044900BE1200 /* ChatChallenge.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

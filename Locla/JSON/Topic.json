@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Pengenalan",
+    "image_filename": "people",
+    "location_id": 1,
+    "hex_color": "FA7800"
+  },
+  {
+    "id": 2,
+    "name": "Berbelanja",
+    "image_filename": "cart",
+    "location_id": 1,
+    "hex_color": "8EBF67"
+  },
+  {
+    "id": 3,
+    "name": "Hari Pertama Kerja",
+    "image_filename": "bag",
+    "location_id": 1,
+    "hex_color": "4F6BDC"
+  },
+  {
+    "id": 4,
+    "name": "Liburan",
+    "image_filename": "",
+    "location_id": 1,
+    "hex_color": "855ED8"
+  },
+  {
+    "id": 5,
+    "name": "PDKT",
+    "image_filename": "love",
+    "location_id": 1,
+    "hex_color": "7D243A"
+  }
+]
