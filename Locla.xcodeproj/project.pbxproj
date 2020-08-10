@@ -18,6 +18,14 @@
 		5A88369524D90D090044F1EA /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369424D90D090044F1EA /* LessonVC.swift */; };
 		5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369624D90D230044F1EA /* VocabularyVC.swift */; };
 		5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369824D90D3F0044F1EA /* ProfileVC.swift */; };
+		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
+		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
+		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
+		E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C024E1BD62006D254A /* RewardListViewController.swift */; };
+		E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */; };
+		E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C424E1D863006D254A /* DetailRewardViewController.swift */; };
+		E92092C724E1E1F2006D254A /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C624E1E1F2006D254A /* RewardModel.swift */; };
+		E92092C924E1E289006D254A /* RewardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C824E1E289006D254A /* RewardManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		5A88369424D90D090044F1EA /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
 		5A88369624D90D230044F1EA /* VocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyVC.swift; sourceTree = "<group>"; };
 		5A88369824D90D3F0044F1EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
+		E92092C024E1BD62006D254A /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
+		E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListTableViewCell.swift; sourceTree = "<group>"; };
+		E92092C424E1D863006D254A /* DetailRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardViewController.swift; sourceTree = "<group>"; };
+		E92092C624E1E1F2006D254A /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RewardModel.swift; path = Locla/Controller/Profile/RewardModel.swift; sourceTree = SOURCE_ROOT; };
+		E92092C824E1E289006D254A /* RewardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		5A88368424D905C00044F1EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E92092C624E1E1F2006D254A /* RewardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5A88368F24D908D50044F1EA /* Profile.storyboard */,
+				E92092BE24E1A32E006D254A /* Reward.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -134,6 +152,12 @@
 			isa = PBXGroup;
 			children = (
 				5A88369824D90D3F0044F1EA /* ProfileVC.swift */,
+				E92092BA24E191E7006D254A /* RewardViewController.swift */,
+				E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */,
+				E92092C024E1BD62006D254A /* RewardListViewController.swift */,
+				E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */,
+				E92092C424E1D863006D254A /* DetailRewardViewController.swift */,
+				E92092C824E1E289006D254A /* RewardManager.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -216,6 +240,7 @@
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
+				E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
 				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
 			);
@@ -228,11 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
+				E92092C924E1E289006D254A /* RewardManager.swift in Sources */,
+				E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
 				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
+				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
+				E92092C724E1E1F2006D254A /* RewardModel.swift in Sources */,
+				E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */,
+				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
