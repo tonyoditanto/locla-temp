@@ -10,8 +10,8 @@ import Foundation
 
 // MARK: - RandomTipElement
 struct RandomTip: Codable {
-    let id: Int?
-    let tips, locationID: String?
+    let id, locationID: Int?
+    let tips: String?
 
     enum CodingKeys: String, CodingKey {
         case id, tips

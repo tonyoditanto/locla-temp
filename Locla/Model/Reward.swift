@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - RewardElement
-struct RewardElement: Codable {
+struct Reward: Codable {
     let id, locationID: Int?
     let name, detail: String?
 
