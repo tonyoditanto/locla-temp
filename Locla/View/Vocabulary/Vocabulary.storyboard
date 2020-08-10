@@ -22,10 +22,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-ki-vxB">
-                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-bv-Lce">
                                 <rect key="frame" x="0.0" y="209" width="414" height="604"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -50,21 +46,24 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="0ae-rt-aeg" id="MV1-68-0UV"/>
-                                    <outlet property="delegate" destination="0ae-rt-aeg" id="p3W-Yt-BBJ"/>
+                                    <outlet property="dataSource" destination="0ae-rt-aeg" id="P0V-t7-Zhr"/>
+                                    <outlet property="delegate" destination="0ae-rt-aeg" id="ZyT-LH-COS"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="N2F-aa-K7w">
+                                <rect key="frame" x="0.0" y="144" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="q0f-ki-vxB" firstAttribute="leading" secondItem="dWw-cW-ELe" secondAttribute="leading" id="7A9-gc-6LX"/>
-                            <constraint firstItem="dWw-cW-ELe" firstAttribute="trailing" secondItem="q0f-ki-vxB" secondAttribute="trailing" id="KdU-uq-91G"/>
-                            <constraint firstItem="9Li-bv-Lce" firstAttribute="centerX" secondItem="2J5-on-bw2" secondAttribute="centerX" id="TaX-2a-ykm"/>
-                            <constraint firstItem="q0f-ki-vxB" firstAttribute="top" secondItem="B64-bt-gkT" secondAttribute="bottom" constant="9" id="YfJ-vD-BMa"/>
+                            <constraint firstItem="9Li-bv-Lce" firstAttribute="top" secondItem="dWw-cW-ELe" secondAttribute="top" constant="165" id="HP0-oH-Xy5"/>
+                            <constraint firstItem="N2F-aa-K7w" firstAttribute="trailing" secondItem="dWw-cW-ELe" secondAttribute="trailing" id="LCW-Jx-Dwa"/>
+                            <constraint firstItem="N2F-aa-K7w" firstAttribute="leading" secondItem="dWw-cW-ELe" secondAttribute="leading" id="R9j-5u-o30"/>
+                            <constraint firstItem="N2F-aa-K7w" firstAttribute="top" secondItem="B64-bt-gkT" secondAttribute="bottom" constant="13" id="YXb-FD-vzr"/>
                             <constraint firstItem="9Li-bv-Lce" firstAttribute="leading" secondItem="dWw-cW-ELe" secondAttribute="leading" id="dI2-cK-NDu"/>
                             <constraint firstItem="dWw-cW-ELe" firstAttribute="trailing" secondItem="9Li-bv-Lce" secondAttribute="trailing" id="hyD-K2-Jra"/>
                             <constraint firstItem="9Li-bv-Lce" firstAttribute="bottom" secondItem="dWw-cW-ELe" secondAttribute="bottom" id="iiD-aa-rGt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B64-bt-gkT" secondAttribute="trailing" constant="220" id="l8k-Ox-8n7"/>
                             <constraint firstItem="B64-bt-gkT" firstAttribute="leading" secondItem="2J5-on-bw2" secondAttribute="leadingMargin" id="lPN-01-jo6"/>
                             <constraint firstItem="B64-bt-gkT" firstAttribute="top" secondItem="2J5-on-bw2" secondAttribute="topMargin" constant="47" id="xb4-gT-9HH"/>
                         </constraints>
@@ -73,6 +72,9 @@
                     <tabBarItem key="tabBarItem" title="Kosakata" image="textformat.abc" catalog="system" id="OWe-nb-4cT"/>
                     <navigationItem key="navigationItem" title="Title" id="7Si-Qc-oLD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="categoryVocabCollectionView" destination="9Li-bv-Lce" id="AhL-nv-grl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkJ-RB-zy5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
