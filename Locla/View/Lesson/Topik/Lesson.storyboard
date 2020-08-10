@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dzE-yd-sDQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TETS-->
+        <scene sceneID="5UC-0W-2Vi">
+            <objects>
+                <viewController title="TETS" id="dzE-yd-sDQ" customClass="LessonVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlb-nJ-wW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6xh-Bf-m3V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title="Pelajaran" id="BT4-MT-zVM"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lokasimu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWT-t1-U01">
+                                <rect key="frame" x="12" y="144" width="92" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-Nv-pen">
+                                <rect key="frame" x="116" y="138" width="90" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Surabaya">
+                                    <color key="titleColor" red="0.92941176470588238" green="0.62352941176470589" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9K-8t-2hE">
+                                <rect key="frame" x="231" y="150" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJW-zM-Ven">
+                                <rect key="frame" x="210" y="147" width="18.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="tintColor" red="0.92941176470588238" green="0.62352941176470589" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="chevron.down" catalog="system"/>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KpU-hj-EDT">
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jnc-jl-fHl">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hdF-fc-OKn">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="374" height="114"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GWT-t1-U01" firstAttribute="top" secondItem="6xh-Bf-m3V" secondAttribute="bottom" constant="4" id="7Lm-bi-Hs8"/>
+                            <constraint firstItem="6xh-Bf-m3V" firstAttribute="top" secondItem="I8P-j3-2nb" secondAttribute="top" id="GTy-EI-y9b"/>
+                            <constraint firstItem="KpU-hj-EDT" firstAttribute="top" secondItem="Igi-Nv-pen" secondAttribute="bottom" constant="12" id="Jto-IE-qZc"/>
+                            <constraint firstItem="Igi-Nv-pen" firstAttribute="leading" secondItem="GWT-t1-U01" secondAttribute="trailing" constant="12" id="KME-ZC-3Qt"/>
+                            <constraint firstItem="GWT-t1-U01" firstAttribute="leading" secondItem="I8P-j3-2nb" secondAttribute="leading" constant="12" id="O3D-GE-GkP"/>
+                            <constraint firstItem="aJW-zM-Ven" firstAttribute="leading" secondItem="Igi-Nv-pen" secondAttribute="trailing" constant="4" id="PBV-xD-707"/>
+                            <constraint firstItem="6xh-Bf-m3V" firstAttribute="trailing" secondItem="I8P-j3-2nb" secondAttribute="trailing" id="RnF-cU-Gz7"/>
+                            <constraint firstItem="I8P-j3-2nb" firstAttribute="trailing" secondItem="KpU-hj-EDT" secondAttribute="trailing" id="X42-qh-egg"/>
+                            <constraint firstItem="aJW-zM-Ven" firstAttribute="top" secondItem="6xh-Bf-m3V" secondAttribute="bottom" constant="7" id="Yba-fX-phw"/>
+                            <constraint firstItem="Igi-Nv-pen" firstAttribute="top" secondItem="I8P-j3-2nb" secondAttribute="top" constant="94" id="ZRe-N1-f0A"/>
+                            <constraint firstItem="I8P-j3-2nb" firstAttribute="bottom" secondItem="KpU-hj-EDT" secondAttribute="bottom" id="eTO-Qj-QTw"/>
+                            <constraint firstItem="6xh-Bf-m3V" firstAttribute="leading" secondItem="I8P-j3-2nb" secondAttribute="leading" id="mOG-3F-v8q"/>
+                            <constraint firstItem="KpU-hj-EDT" firstAttribute="leading" secondItem="I8P-j3-2nb" secondAttribute="leading" id="mY9-75-XC1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I8P-j3-2nb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pelajaran" image="circle.grid.2x2" catalog="system" id="l5t-aI-hNT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="fc1-Sf-5nl" kind="show" id="AQt-ix-Lih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwy-vV-WEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="75.669642857142847"/>
+        </scene>
+        <!--Subtopik-->
+        <scene sceneID="szZ-md-9yK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Subtopik" id="fc1-Sf-5nl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gz4-lh-uEZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mab-qk-ysw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+    </resources>
+</document>

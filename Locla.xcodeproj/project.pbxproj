@@ -18,6 +18,11 @@
 		5A88369524D90D090044F1EA /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369424D90D090044F1EA /* LessonVC.swift */; };
 		5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369624D90D230044F1EA /* VocabularyVC.swift */; };
 		5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369824D90D3F0044F1EA /* ProfileVC.swift */; };
+		85577D6424E0EC81001D2220 /* TopikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85577D6224E0EC81001D2220 /* TopikCollectionViewCell.swift */; };
+		85577D6524E0EC81001D2220 /* TopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85577D6324E0EC81001D2220 /* TopikCollectionViewCell.xib */; };
+		85577D6B24E0F463001D2220 /* Subtopik.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85577D6A24E0F463001D2220 /* Subtopik.storyboard */; };
+		85577D7124E103B2001D2220 /* SubtopikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85577D6F24E103B2001D2220 /* SubtopikCollectionViewCell.swift */; };
+		85577D7224E103B2001D2220 /* SubtopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		5A88369424D90D090044F1EA /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
 		5A88369624D90D230044F1EA /* VocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyVC.swift; sourceTree = "<group>"; };
 		5A88369824D90D3F0044F1EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		85577D6224E0EC81001D2220 /* TopikCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopikCollectionViewCell.swift; sourceTree = "<group>"; };
+		85577D6324E0EC81001D2220 /* TopikCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopikCollectionViewCell.xib; sourceTree = "<group>"; };
+		85577D6A24E0F463001D2220 /* Subtopik.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subtopik.storyboard; sourceTree = "<group>"; };
+		85577D6F24E103B2001D2220 /* SubtopikCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopikCollectionViewCell.swift; sourceTree = "<group>"; };
+		85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtopikCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +119,8 @@
 		5A88368824D9086A0044F1EA /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
-				5A88368D24D908B80044F1EA /* Lesson.storyboard */,
+				85577D5F24E0EB14001D2220 /* Topik */,
+				85577D6024E0EB3D001D2220 /* Subtopik */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -152,6 +163,42 @@
 				5A88369624D90D230044F1EA /* VocabularyVC.swift */,
 			);
 			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		85577D5F24E0EB14001D2220 /* Topik */ = {
+			isa = PBXGroup;
+			children = (
+				5A88368D24D908B80044F1EA /* Lesson.storyboard */,
+				85577D6124E0EB56001D2220 /* cells */,
+			);
+			path = Topik;
+			sourceTree = "<group>";
+		};
+		85577D6024E0EB3D001D2220 /* Subtopik */ = {
+			isa = PBXGroup;
+			children = (
+				85577D6A24E0F463001D2220 /* Subtopik.storyboard */,
+				85577D6C24E10346001D2220 /* cells */,
+			);
+			path = Subtopik;
+			sourceTree = "<group>";
+		};
+		85577D6124E0EB56001D2220 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				85577D6224E0EC81001D2220 /* TopikCollectionViewCell.swift */,
+				85577D6324E0EC81001D2220 /* TopikCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		85577D6C24E10346001D2220 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				85577D6F24E103B2001D2220 /* SubtopikCollectionViewCell.swift */,
+				85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +262,9 @@
 				5A88369024D908D50044F1EA /* Profile.storyboard in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
+				85577D6B24E0F463001D2220 /* Subtopik.storyboard in Resources */,
+				85577D6524E0EC81001D2220 /* TopikCollectionViewCell.xib in Resources */,
+				85577D7224E103B2001D2220 /* SubtopikCollectionViewCell.xib in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
 				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
@@ -228,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85577D6424E0EC81001D2220 /* TopikCollectionViewCell.swift in Sources */,
+				85577D7124E103B2001D2220 /* SubtopikCollectionViewCell.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
 				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
