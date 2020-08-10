@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "location_id": 1,
+    "name": "Rekomendasi Tempat Liburan",
+    "detail": ""
+  },
+  {
+    "id": 2,
+    "location_id": 1,
+    "name": "Fun Fact Surabaya",
+    "detail": ""
+  },
+  {
+    "id": 3,
+    "location_id": 1,
+    "name": "Explicit Content",
+    "detail": ""
+  },
+  {
+    "id": 4,
+    "location_id": 1,
+    "name": "Itinerary liburan 3H 2M di Jawa Timur",
+    "detail": ""
+  },
+  {
+    "id": 5,
+    "location_id": 1,
+    "name": "",
+    "detail": ""
+  }
+]
