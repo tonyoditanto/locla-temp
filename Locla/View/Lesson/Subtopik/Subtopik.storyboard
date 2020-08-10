@@ -34,6 +34,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="80"/>
+                                        <connections>
+                                            <segue destination="Qxn-We-L5E" kind="presentation" id="clz-kd-9yd"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -75,6 +78,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zV-US-8DB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2334.7826086956525" y="364.95535714285711"/>
+        </scene>
+        <!--Mendengarkan-->
+        <scene sceneID="8lN-vR-Jdb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mendengarkan" id="Qxn-We-L5E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQh-Ml-Jaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2968" y="368"/>
         </scene>
     </scenes>
     <resources>

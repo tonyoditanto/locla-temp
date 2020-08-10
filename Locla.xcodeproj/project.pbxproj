@@ -23,6 +23,8 @@
 		85577D6B24E0F463001D2220 /* Subtopik.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85577D6A24E0F463001D2220 /* Subtopik.storyboard */; };
 		85577D7124E103B2001D2220 /* SubtopikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85577D6F24E103B2001D2220 /* SubtopikCollectionViewCell.swift */; };
 		85577D7224E103B2001D2220 /* SubtopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */; };
+		85577D7824E10855001D2220 /* SubtopikVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85577D7724E10855001D2220 /* SubtopikVC.swift */; };
+		85577D7C24E109AC001D2220 /* Mendengarkan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85577D7B24E109AC001D2220 /* Mendengarkan.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		85577D6A24E0F463001D2220 /* Subtopik.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subtopik.storyboard; sourceTree = "<group>"; };
 		85577D6F24E103B2001D2220 /* SubtopikCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopikCollectionViewCell.swift; sourceTree = "<group>"; };
 		85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtopikCollectionViewCell.xib; sourceTree = "<group>"; };
+		85577D7724E10855001D2220 /* SubtopikVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopikVC.swift; sourceTree = "<group>"; };
+		85577D7B24E109AC001D2220 /* Mendengarkan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mendengarkan.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,9 @@
 			children = (
 				85577D5F24E0EB14001D2220 /* Topik */,
 				85577D6024E0EB3D001D2220 /* Subtopik */,
+				85577D7424E107D1001D2220 /* Challenge Kosakata */,
+				85577D7624E10804001D2220 /* Challenge Obrolan */,
+				85577D7524E107E4001D2220 /* Challenge Mendengarkan */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5A88369424D90D090044F1EA /* LessonVC.swift */,
+				85577D7724E10855001D2220 /* SubtopikVC.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -199,6 +207,28 @@
 				85577D7024E103B2001D2220 /* SubtopikCollectionViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		85577D7424E107D1001D2220 /* Challenge Kosakata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Challenge Kosakata";
+			sourceTree = "<group>";
+		};
+		85577D7524E107E4001D2220 /* Challenge Mendengarkan */ = {
+			isa = PBXGroup;
+			children = (
+				85577D7B24E109AC001D2220 /* Mendengarkan.storyboard */,
+			);
+			path = "Challenge Mendengarkan";
+			sourceTree = "<group>";
+		};
+		85577D7624E10804001D2220 /* Challenge Obrolan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Challenge Obrolan";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +298,7 @@
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
 				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
+				85577D7C24E109AC001D2220 /* Mendengarkan.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +314,7 @@
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
 				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
+				85577D7824E10855001D2220 /* SubtopikVC.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 			);

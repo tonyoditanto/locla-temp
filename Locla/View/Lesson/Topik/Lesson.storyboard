@@ -65,6 +65,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                         <size key="customSize" width="374" height="114"/>
+                                        <connections>
+                                            <segue destination="fc1-Sf-5nl" kind="show" id="azE-TM-L6V"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -89,9 +92,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pelajaran" image="circle.grid.2x2" catalog="system" id="l5t-aI-hNT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="fc1-Sf-5nl" kind="show" id="AQt-ix-Lih"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwy-vV-WEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
