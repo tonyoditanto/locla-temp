@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F19B31824E242D500AB69C3 /* vocabCategoryDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F19B31724E242D500AB69C3 /* vocabCategoryDetailsCell.swift */; };
+		0F48698124E18F2100314745 /* VocabularyDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F48698024E18F2100314745 /* VocabularyDetailVC.swift */; };
+		0FEFBA4824DEE5C700066CEF /* vocabularyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFBA4624DEE5C700066CEF /* vocabularyCategoryCell.swift */; };
+		0FEFBA4924DEE5C700066CEF /* vocabularyCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFBA4724DEE5C700066CEF /* vocabularyCategoryCell.xib */; };
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
 		5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367224D905550044F1EA /* SceneDelegate.swift */; };
 		5A88367824D905550044F1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367624D905550044F1EA /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F19B31724E242D500AB69C3 /* vocabCategoryDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabCategoryDetailsCell.swift; sourceTree = "<group>"; };
+		0F48698024E18F2100314745 /* VocabularyDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDetailVC.swift; sourceTree = "<group>"; };
+		0FEFBA4624DEE5C700066CEF /* vocabularyCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabularyCategoryCell.swift; sourceTree = "<group>"; };
+		0FEFBA4724DEE5C700066CEF /* vocabularyCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = vocabularyCategoryCell.xib; sourceTree = "<group>"; };
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88367024D905550044F1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A88367224D905550044F1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FEFBA4124DEE4EC00066CEF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FEFBA4624DEE5C700066CEF /* vocabularyCategoryCell.swift */,
+				0FEFBA4724DEE5C700066CEF /* vocabularyCategoryCell.xib */,
+				0F19B31724E242D500AB69C3 /* vocabCategoryDetailsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5A88366424D905550044F1EA = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5A88368B24D908A90044F1EA /* Vocabulary.storyboard */,
+				0FEFBA4124DEE4EC00066CEF /* Cells */,
 			);
 			path = Vocabulary;
 			sourceTree = "<group>";
@@ -150,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5A88369624D90D230044F1EA /* VocabularyVC.swift */,
+				0F48698024E18F2100314745 /* VocabularyDetailVC.swift */,
 			);
 			path = Vocabulary;
 			sourceTree = "<group>";
@@ -214,6 +234,7 @@
 			files = (
 				5A88369024D908D50044F1EA /* Profile.storyboard in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
+				0FEFBA4924DEE5C700066CEF /* vocabularyCategoryCell.xib in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
@@ -228,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F48698124E18F2100314745 /* VocabularyDetailVC.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
+				0FEFBA4824DEE5C700066CEF /* vocabularyCategoryCell.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
+				0F19B31824E242D500AB69C3 /* vocabCategoryDetailsCell.swift in Sources */,
 				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
