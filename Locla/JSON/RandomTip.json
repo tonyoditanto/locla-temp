@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "tips": "Random tip 1",
+    "location_id": 1
+  },
+  {
+    "id": 2,
+    "tips": "Random tip 2",
+    "location_id": 1
+  },
+  {
+    "id": 3,
+    "tips": "Random tip 3",
+    "location_id": 1
+  },
+  {
+    "id": 4,
+    "tips": "Random tip 4",
+    "location_id": 1
+  },
+  {
+    "id": 5,
+    "tips": "Random tip 5",
+    "location_id": 1
+  },
+  {
+    "id": 6,
+    "tips": "Random tip 6",
+    "location_id": 1
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "location_id": 1,
+    "name": "Kata Ganti Orang",
+    "image_filename": "Person1"
+  },
+  {
+    "id": 2,
+    "location_id": 1,
+    "name": "Belanja",
+    "image_filename": "Cart"
+  },
+  {
+    "id": 3,
+    "location_id": 1,
+    "name": "",
+    "image_filename": ""
+  }
+]
