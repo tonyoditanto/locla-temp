@@ -10,13 +10,14 @@ import UIKit
 
 class RewardListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-     var DetailListRewardArray : [Reward] = []
+     var DetailListRewardArray : [DetailListReward] = []
     
       override func viewDidLoad() {
           super.viewDidLoad()
           //List Reward array
-  let rewardmanager: RewardManager = RewardManager()
-        DetailListRewardArray = rewardmanager.arrayOfReward
+        DetailListRewardArray.append(DetailListReward(name: "Kenjeran park", lokasi: "jalan X1"))
+        DetailListRewardArray.append(DetailListReward(name: "Mangrove", lokasi: "jalan X2"))
+        DetailListRewardArray.append(DetailListReward(name: "HouseOfSampoerna", lokasi: "jalanX3"))
           // Do any additional setup after loading the view.
       }
 
@@ -25,10 +26,9 @@ class RewardListViewController: UIViewController, UITableViewDataSource, UITable
   }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
    let cell = tableView.dequeueReusableCell(withIdentifier: "DetailRewardTableViewCell", for: indexPath) as! RewardListTableViewCell
-    let detaillistreward = DetailListRewardArray[indexPath.row]
-    cell.namaReward.text = String(detaillistreward.name)
-    cell.lokasiReward.text = String(detaillistreward.lokasi)
-    cell.imgReward.image = UIImage(named: detaillistreward.imageRewardName)
+    cell.namaReward.text = DetailListRewardArray[indexPath.row].name
+    
+    cell.lokasiReward.text = DetailListRewardArray[indexPath.row].lokasi
     
               
     return cell
@@ -36,12 +36,22 @@ class RewardListViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "DetailRewardViewController")as? DetailRewardViewController{
-            vc.detailReward = DetailListRewardArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
+
         
     }
    
 }
-
+class DetailListReward {
+    var name = ""
+    var lokasi = ""
+       var checked = false
+       
+    convenience init(name: String, lokasi: String){
+           self.init()
+           self.name = name
+    self.lokasi = lokasi
+}
+}
 
