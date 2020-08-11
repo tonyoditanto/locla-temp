@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "subtopic_id": 1,
+    "word": "Aku",
+    "meaning": "Aku",
+    "category_id": 1,
+    "sound_filename": "Aku_SBY"
+  },
+  {
+    "id": 2,
+    "subtopic_id": 1,
+    "word": "Kon",
+    "meaning": "Kau",
+    "category_id": 1,
+    "sound_filename": "Kau_SBY"
+  },
+  {
+    "id": 3,
+    "subtopic_id": 1,
+    "word": "Bapak",
+    "meaning": "Bapak",
+    "category_id": 1,
+    "sound_filename": "Bapak_SBY"
+  },
+  {
+    "id": 4,
+    "subtopic_id": 1,
+    "word": "Awakdewe",
+    "meaning": "Kita",
+    "category_id": 1,
+    "sound_filename": "Kita_SBY"
+  },
+  {
+    "id": 5,
+    "subtopic_id": 1,
+    "word": "Konco",
+    "meaning": "Teman",
+    "category_id": 1,
+    "sound_filename": "Teman_SBY"
+  },
+  {
+    "id": 6,
+    "subtopic_id": 1,
+    "word": "Mbah Lanang",
+    "meaning": "Kakek",
+    "category_id": 1,
+    "sound_filename": "Kakek_SBY"
+  },
+  {
+    "id": 7,
+    "subtopic_id": 1,
+    "word": "Awakmu",
+    "meaning": "Kamu",
+    "category_id": 1,
+    "sound_filename": "Kamu_SBY"
+  },
+  {
+    "id": 8,
+    "subtopic_id": 1,
+    "word": "Cak",
+    "meaning": "Kakak laki-laki",
+    "category_id": 1,
+    "sound_filename": "KakakLaki_SBY"
+  },
+  {
+    "id": 9,
+    "subtopic_id": 1,
+    "word": "Ning",
+    "meaning": "Kakak Perempuan",
+    "category_id": 1,
+    "sound_filename": "KakakPerempuan_SBY"
+  },
+  {
+    "id": 10,
+    "subtopic_id": 1,
+    "word": "Jeneng",
+    "meaning": "Nama",
+    "category_id": 1,
+    "sound_filename": "Nama_SBY"
+  }
+]
