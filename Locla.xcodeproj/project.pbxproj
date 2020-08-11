@@ -37,8 +37,13 @@
 		5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FF24E1044900BE1200 /* Vocabulary.json */; };
 		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 		5A9EDA0D24E105C700BE1200 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0C24E105C700BE1200 /* DataLoader.swift */; };
-		5AE13E0424E2800F003A077E /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE13E0324E2800F003A077E /* Lesson.storyboard */; };
 		5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE13E0524E280A4003A077E /* LessonVC.swift */; };
+		856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */; };
+		856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */; };
+		856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */; };
+		856E7FB224E2B93B0044CB36 /* SubtopikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FAE24E2B93B0044CB36 /* SubtopikCollectionViewCell.swift */; };
+		856E7FB324E2B93B0044CB36 /* SubtopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAF24E2B93B0044CB36 /* SubtopikCollectionViewCell.xib */; };
+		856E7FB424E2B93B0044CB36 /* TopikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FB024E2B93B0044CB36 /* TopikCollectionViewCell.swift */; };
 		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
 		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
 		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
@@ -80,8 +85,13 @@
 		5A9ED9FF24E1044900BE1200 /* Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
 		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 		5A9EDA0C24E105C700BE1200 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
-		5AE13E0324E2800F003A077E /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		5AE13E0524E280A4003A077E /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
+		856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtopikVC.swift; sourceTree = "<group>"; };
+		856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Lesson.storyboard; path = Topik/Lesson.storyboard; sourceTree = "<group>"; };
+		856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopikCollectionViewCell.xib; path = Locla/View/Lesson/Topik/cells/TopikCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		856E7FAE24E2B93B0044CB36 /* SubtopikCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubtopikCollectionViewCell.swift; path = Locla/View/Lesson/Topik/cells/SubtopikCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		856E7FAF24E2B93B0044CB36 /* SubtopikCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubtopikCollectionViewCell.xib; path = Locla/View/Lesson/Topik/cells/SubtopikCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		856E7FB024E2B93B0044CB36 /* TopikCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopikCollectionViewCell.swift; path = Locla/View/Lesson/Topik/cells/TopikCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
@@ -175,7 +185,8 @@
 		5A88368824D9086A0044F1EA /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
-				5AE13E0324E2800F003A077E /* Lesson.storyboard */,
+				856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */,
+				856E7FAC24E2B9230044CB36 /* cells */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 		5A88369224D90CC80044F1EA /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */,
 				5AE13E0524E280A4003A077E /* LessonVC.swift */,
 			);
 			path = Lesson;
@@ -249,6 +261,17 @@
 				5A9EDA0C24E105C700BE1200 /* DataLoader.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		856E7FAC24E2B9230044CB36 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				856E7FAE24E2B93B0044CB36 /* SubtopikCollectionViewCell.swift */,
+				856E7FAF24E2B93B0044CB36 /* SubtopikCollectionViewCell.xib */,
+				856E7FB024E2B93B0044CB36 /* TopikCollectionViewCell.swift */,
+				856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +337,13 @@
 				5A9EDA0724E1044900BE1200 /* Topic.json in Resources */,
 				5A9EDA0624E1044900BE1200 /* Location.json in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
-				5AE13E0424E2800F003A077E /* Lesson.storyboard in Resources */,
+				856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */,
 				5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */,
 				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
+				856E7FB324E2B93B0044CB36 /* SubtopikCollectionViewCell.xib in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
 				5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */,
+				856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */,
 				5A9EDA0524E1044900BE1200 /* ListeningChallenge.json in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */,
@@ -352,11 +377,14 @@
 				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */,
+				856E7FB424E2B93B0044CB36 /* TopikCollectionViewCell.swift in Sources */,
+				856E7FB224E2B93B0044CB36 /* SubtopikCollectionViewCell.swift in Sources */,
 				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
 				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
+				856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */,
 				5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */,
 				5A9ED9EC24E0FDAE00BE1200 /* Subtopic.swift in Sources */,
 			);
