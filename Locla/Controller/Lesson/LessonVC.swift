@@ -8,17 +8,19 @@
 
 import UIKit
 
-class LessonVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
-
+class LessonVC: UIViewController{
+    var locationId : Int?
+    var topics : [Topic] = []
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchTopiks()
+        fetchTopics()
         setupCollectionView()
     }
     
-    func fetchTopiks(){
+    func fetchTopics(){
+        topics = DataLoader.getTopics(locationID: locationId ?? 1)
     }
     
     func setupCollectionView() {
@@ -30,32 +32,44 @@ class LessonVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
         self.collectionView.register(nib, forCellWithReuseIdentifier: TopikCollectionViewCell.cellID)
     }
     
-// MARK: UICollectionViewDataSource
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TopicToSubtopic" {
+            guard let subtopicVC = segue.destination as? SubtopikVC,
+                let index = sender as? Int
+                else {
+                    return
+            }
+            subtopicVC.topicId = topics[index].id
+        }
     }
-        
+    
+}
+
+extension LessonVC : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return topics.count
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopikCollectionViewCell.cellID, for: indexPath) as! TopikCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopikCollectionViewCell.cellID, for: indexPath) as? TopikCollectionViewCell else { return UICollectionViewCell() }
+        cell.judulTopikLabel.text = topics[indexPath.row].name
+        cell.topikImageView.image = UIImage(named: topics[indexPath.row].imageFilename ?? "person2")
+        let subtopics = DataLoader.getSubtopics(topicID: topics[indexPath.row].id ?? 1)
+        cell.jumlahSubtopikLabel.text = "\(subtopics.count) Topik"
+        var stargained = 0
+        for subtopic in subtopics {
+            stargained += subtopic.starGained ?? 0
+        }
+        cell.raihanBintangLabel.text = "\(stargained)"
         return cell
     }
         
         
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showSubtopik", sender: indexPath)
+        performSegue(withIdentifier: "TopicToSubtopic", sender: indexPath.row)
     }
 
-        
-// MARK: - Sent Data to other ViewController
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
 
 }
 
