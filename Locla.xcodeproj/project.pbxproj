@@ -18,7 +18,6 @@
 		5A88369524D90D090044F1EA /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369424D90D090044F1EA /* LessonVC.swift */; };
 		5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369624D90D230044F1EA /* VocabularyVC.swift */; };
 		5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369824D90D3F0044F1EA /* ProfileVC.swift */; };
-<<<<<<< Locla.xcodeproj/project.pbxproj
 		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
 		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
 		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
@@ -46,7 +45,6 @@
 		5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FF24E1044900BE1200 /* Vocabulary.json */; };
 		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 		5A9EDA0D24E105C700BE1200 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0C24E105C700BE1200 /* DataLoader.swift */; };
->>>>>>> Locla.xcodeproj/project.pbxproj
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +61,6 @@
 		5A88369424D90D090044F1EA /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
 		5A88369624D90D230044F1EA /* VocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyVC.swift; sourceTree = "<group>"; };
 		5A88369824D90D3F0044F1EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-<<<<<<< Locla.xcodeproj/project.pbxproj
 		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
@@ -91,7 +88,6 @@
 		5A9ED9FF24E1044900BE1200 /* Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
 		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 		5A9EDA0C24E105C700BE1200 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
->>>>>>> Locla.xcodeproj/project.pbxproj
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Locla.xcodeproj/project.pbxproj
 				E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */,
@@ -351,12 +346,10 @@
 				5A9ED9F624E1021B00BE1200 /* VocabularyCategory.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				5A9ED9E624E0FB5400BE1200 /* Location.swift in Sources */,
->>>>>>> Locla.xcodeproj/project.pbxproj
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
 				5A9ED9EA24E0FCF900BE1200 /* Reward.swift in Sources */,
 				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
-<<<<<<< Locla.xcodeproj/project.pbxproj
 				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */,
@@ -366,7 +359,6 @@
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
 				5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */,
 				5A9ED9EC24E0FDAE00BE1200 /* Subtopic.swift in Sources */,
->>>>>>> Locla.xcodeproj/project.pbxproj
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
