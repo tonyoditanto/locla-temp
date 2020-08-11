@@ -8,23 +8,52 @@
 
 import UIKit
 
-class SubtopikVC: UIViewController {
+class SubtopikVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        fetchSubtopiks()
+        setupCollectionView()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      
+    func fetchSubtopiks(){
     }
-    */
+      
+    func setupCollectionView() {
+        registerCollectionView()
+    }
+      
+    func registerCollectionView(){
+        let nib = UINib(nibName: SubtopikCollectionViewCell.cellID, bundle: Bundle.main)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: SubtopikCollectionViewCell.cellID)
+    }
+      
+  // MARK: UICollectionViewDataSource
 
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+          
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+          
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubtopikCollectionViewCell.cellID, for: indexPath) as! SubtopikCollectionViewCell
+        return cell
+    }
+          
+          
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+//        performSegue(withIdentifier: "showSubtopik", sender: indexPath)
+    }
+
+          
+  // MARK: - Sent Data to other ViewController
+  //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  //
+  //    }
 }
