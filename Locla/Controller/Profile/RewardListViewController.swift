@@ -27,10 +27,8 @@ class RewardListViewController: UIViewController, UITableViewDataSource, UITable
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
    let cell = tableView.dequeueReusableCell(withIdentifier: "DetailRewardTableViewCell", for: indexPath) as! RewardListTableViewCell
     cell.namaReward.text = DetailListRewardArray[indexPath.row].name
-    
     cell.lokasiReward.text = DetailListRewardArray[indexPath.row].lokasi
-    
-              
+        
     return cell
    }
     

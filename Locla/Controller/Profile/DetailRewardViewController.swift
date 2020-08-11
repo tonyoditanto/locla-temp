@@ -25,7 +25,7 @@ class DetailRewardViewController: UIViewController {
         descDetailReward.text = "ini deskripsi"
         nameDetailReward.text = "nama tempat"
         lokasiDetailReward.text = "lokasi tempat"
-        source.text = "source image"
+        source.text = "source dari image"
         }
         
         // Do any additional setup after loading the view.
