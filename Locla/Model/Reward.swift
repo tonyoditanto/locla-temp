@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - RewardElement
 struct Reward: Codable {
-    let id, locationID: Int?
+    let id, locationID: Int
     let name, detail: String?
 
     enum CodingKeys: String, CodingKey {

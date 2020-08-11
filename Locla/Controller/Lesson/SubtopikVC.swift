@@ -45,7 +45,7 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubtopikCollectionViewCell.cellID, for: indexPath) as? SubtopikCollectionViewCell else { return UICollectionViewCell() }
         cell.judulSubtopikLabel.text = subtopics[indexPath.row].name
         cell.jenisChallengeLabel.text = subtopics[indexPath.row].challengeType?.rawValue
-        cell.raihanBintangLabel.text = "\(subtopics[indexPath.row].starGained ?? 0) / \(subtopics[indexPath.row].totalStar ?? 0)"
+        cell.raihanBintangLabel.text = "\(subtopics[indexPath.row].starGained) / \(subtopics[indexPath.row].totalStar)"
         return cell
     }
           

@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: - VocabularyElement
 struct Vocabulary: Codable {
-    let id, subtopicID: Int?
+    let id, subtopicID: Int
     let word, meaning: String?
     let categoryID: Int?
     let soundFilename: String?
