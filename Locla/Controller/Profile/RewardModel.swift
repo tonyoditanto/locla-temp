@@ -13,5 +13,6 @@ public struct Reward {
     var lokasi : String
     var imageRewardName : String
     var descReward : String
+    var sourceIMG : String
 }
 

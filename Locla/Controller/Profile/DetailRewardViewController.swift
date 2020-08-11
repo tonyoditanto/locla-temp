@@ -15,18 +15,20 @@ class DetailRewardViewController: UIViewController {
     @IBOutlet weak var imgDetailReward: UIImageView!
     @IBOutlet weak var nameDetailReward: UILabel!
     
+    @IBOutlet weak var source: UILabel!
     var detailReward : Reward?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let detailreward = detailReward{
             imgDetailReward.layer.cornerRadius = 10
-                  imgDetailReward.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
+                  //imgDetailReward.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
             
             imgDetailReward.image = UIImage(named: detailreward.imageRewardName)
             nameDetailReward.text = detailreward.name
             lokasiDetailReward.text = detailreward.lokasi
             descDetailReward.text = detailreward.descReward
+            source.text = detailreward.sourceIMG
         }
         
         // Do any additional setup after loading the view.

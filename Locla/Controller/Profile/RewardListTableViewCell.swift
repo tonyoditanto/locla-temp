@@ -20,7 +20,7 @@ class RewardListTableViewCell: UITableViewCell {
         
     
        imgReward.layer.cornerRadius = 10
-        imgReward.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
+        //imgReward.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
         
         // Initialization code
     

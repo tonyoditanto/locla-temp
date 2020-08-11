@@ -14,7 +14,7 @@ class RewardTableViewCell: UITableViewCell {
         super.awakeFromNib()
         bgRewardCell.layer.cornerRadius = 10
         bgRewardCell.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
-        hadiahCell.image = UIImage(named: "reward")
+        //hadiahCell.image = UIImage(named: "reward")
         // Initialization code
     }
 

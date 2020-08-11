@@ -15,15 +15,15 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        // backProfil = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        backProfil.image = UIImage(named : "backgroundProfil")
-        ProfilPic.image = UIImage(named: "people2")
-        bintang.image = UIImage(named: "star")
-        percobaanPertama.image = UIImage(named: "Image-1")
+      //  backProfil.image = UIImage(named : "backgroundProfil")
+       // ProfilPic.image = UIImage(named: "people2")
+        //bintang.image = UIImage(named: "star")
+        //percobaanPertama.image = UIImage(named: "Image-1")
         bgBintang.layer.cornerRadius = 10
         bgPercobaanPertama.layer.cornerRadius = 10
         bgBintang.backgroundColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 100)
         bgPercobaanPertama.backgroundColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 100)
-        imgHadiah.image = UIImage(named: "reward")
+       // imgHadiah.image = UIImage(named: "reward")
         buttonHadiah.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
         buttonHadiah.layer.cornerRadius = 10
         progressView.layer.cornerRadius = 10

@@ -37,12 +37,8 @@ class RewardListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "DetailRewardViewController")as? DetailRewardViewController{
             vc.detailReward = DetailListRewardArray[indexPath.row]
-            self.present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
-       /* vc?.nameDetailReward = DetailListRewardArray[indexPath.row].name
-               vc?.lokasi = DetailListRewardArray[indexPath.row].lokasi
-               vc?.imgReward = DetailListRewardArray[indexPath.row]
- */
         
     }
    
