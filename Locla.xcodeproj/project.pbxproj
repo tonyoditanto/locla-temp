@@ -13,17 +13,9 @@
 		5A88367A24D905570044F1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367924D905570044F1EA /* Assets.xcassets */; };
 		5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367B24D905570044F1EA /* LaunchScreen.storyboard */; };
 		5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368B24D908A90044F1EA /* Vocabulary.storyboard */; };
-		5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368D24D908B80044F1EA /* Lesson.storyboard */; };
 		5A88369024D908D50044F1EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88368F24D908D50044F1EA /* Profile.storyboard */; };
-		5A88369524D90D090044F1EA /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369424D90D090044F1EA /* LessonVC.swift */; };
 		5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369624D90D230044F1EA /* VocabularyVC.swift */; };
 		5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88369824D90D3F0044F1EA /* ProfileVC.swift */; };
-		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
-		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
-		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
-		E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C024E1BD62006D254A /* RewardListViewController.swift */; };
-		E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */; };
-		E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C424E1D863006D254A /* DetailRewardViewController.swift */; };
 		5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9E124E0FA4F00BE1200 /* ChatChallenge.swift */; };
 		5A9ED9E424E0FB0B00BE1200 /* ListeningChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9E324E0FB0B00BE1200 /* ListeningChallenge.swift */; };
 		5A9ED9E624E0FB5400BE1200 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ED9E524E0FB5400BE1200 /* Location.swift */; };
@@ -45,6 +37,14 @@
 		5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FF24E1044900BE1200 /* Vocabulary.json */; };
 		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 		5A9EDA0D24E105C700BE1200 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0C24E105C700BE1200 /* DataLoader.swift */; };
+		5AE13E0424E2800F003A077E /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE13E0324E2800F003A077E /* Lesson.storyboard */; };
+		5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE13E0524E280A4003A077E /* LessonVC.swift */; };
+		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
+		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
+		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
+		E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C024E1BD62006D254A /* RewardListViewController.swift */; };
+		E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */; };
+		E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C424E1D863006D254A /* DetailRewardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,17 +56,9 @@
 		5A88367C24D905570044F1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A88367E24D905570044F1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A88368B24D908A90044F1EA /* Vocabulary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vocabulary.storyboard; sourceTree = "<group>"; };
-		5A88368D24D908B80044F1EA /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		5A88368F24D908D50044F1EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		5A88369424D90D090044F1EA /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
 		5A88369624D90D230044F1EA /* VocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyVC.swift; sourceTree = "<group>"; };
 		5A88369824D90D3F0044F1EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
-		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
-		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
-		E92092C024E1BD62006D254A /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
-		E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListTableViewCell.swift; sourceTree = "<group>"; };
-		E92092C424E1D863006D254A /* DetailRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardViewController.swift; sourceTree = "<group>"; };
 		5A9ED9E124E0FA4F00BE1200 /* ChatChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChallenge.swift; sourceTree = "<group>"; };
 		5A9ED9E324E0FB0B00BE1200 /* ListeningChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningChallenge.swift; sourceTree = "<group>"; };
 		5A9ED9E524E0FB5400BE1200 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -88,6 +80,14 @@
 		5A9ED9FF24E1044900BE1200 /* Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
 		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 		5A9EDA0C24E105C700BE1200 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		5AE13E0324E2800F003A077E /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
+		5AE13E0524E280A4003A077E /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
+		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
+		E92092C024E1BD62006D254A /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
+		E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListTableViewCell.swift; sourceTree = "<group>"; };
+		E92092C424E1D863006D254A /* DetailRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +175,7 @@
 		5A88368824D9086A0044F1EA /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
-				5A88368D24D908B80044F1EA /* Lesson.storyboard */,
+				5AE13E0324E2800F003A077E /* Lesson.storyboard */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 		5A88369224D90CC80044F1EA /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
-				5A88369424D90D090044F1EA /* LessonVC.swift */,
+				5AE13E0524E280A4003A077E /* LessonVC.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -314,6 +314,7 @@
 				5A9EDA0724E1044900BE1200 /* Topic.json in Resources */,
 				5A9EDA0624E1044900BE1200 /* Location.json in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
+				5AE13E0424E2800F003A077E /* Lesson.storyboard in Resources */,
 				5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */,
 				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
@@ -323,7 +324,6 @@
 				E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
 				5A9EDA0824E1044900BE1200 /* VocabularyCategory.json in Resources */,
-				5A88368E24D908B80044F1EA /* Lesson.storyboard in Resources */,
 				5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */,
 				5A9EDA0424E1044900BE1200 /* ChatChallenge.json in Resources */,
 			);
@@ -348,11 +348,11 @@
 				5A9ED9E624E0FB5400BE1200 /* Location.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
 				5A9ED9EA24E0FCF900BE1200 /* Reward.swift in Sources */,
-				5A88369524D90D090044F1EA /* LessonVC.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */,
+				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
 				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
