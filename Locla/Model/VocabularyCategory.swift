@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - VocabularyCategoryElement
 struct VocabularyCategory: Codable {
-    let id, locationID: Int?
+    let id, locationID: Int
     let name, imageFilename: String?
 
     enum CodingKeys: String, CodingKey {

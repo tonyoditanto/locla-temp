@@ -9,9 +9,9 @@
 import Foundation
 
 
-// MARK: - ChatChallengeElement
+// MARK: - ChatChallenge
 struct ChatChallenge: Codable {
-    let id, subtopicID: Int?
+    let id, subtopicID: Int
     let opponentChatText, opponentChatTextIndo, opponentFilename, selfChatTextIndo: String?
     let selfChatText, selfSoundFilename, optionA, optionB: String?
     let optionC, optionD, fill1, fill2: String?

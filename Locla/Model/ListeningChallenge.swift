@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - ChatChallengeElement
 struct ListeningChallenge: Codable {
-    let id, subtopicID: Int?
+    let id, subtopicID: Int
     let question, optionA, optionB, optionC: String?
     let optionD, selfChatText, fill1, fill2: String?
     let tips: String?
