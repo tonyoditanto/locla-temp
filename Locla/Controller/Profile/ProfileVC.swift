@@ -13,9 +13,6 @@ import Foundation
 class ProfileVC: UIViewController {
 
     @IBOutlet weak var buttonHadiah: UIButton!
-    
-       @IBAction func buttonHadiah(_ sender: Any) {
-       }
        @IBOutlet weak var progressView: UIProgressView!
        @IBOutlet weak var imgHadiah: UIImageView!
        @IBOutlet weak var bgPercobaanPertama: UIImageView!
@@ -24,45 +21,21 @@ class ProfileVC: UIViewController {
        @IBOutlet weak var backProfil: UIImageView!
        @IBOutlet weak var ProfilPic: UIImageView!
        @IBOutlet weak var bgBintang: UIImageView!
-    
+    @IBOutlet weak var lblBintang: UILabel!
+    @IBOutlet weak var lblPercobaanPertama: UILabel!
     @IBOutlet weak var lblnama: UILabel!
-    @IBAction func renameButton(_ sender: Any) {
-        // create the actual alert controller view that will be the pop-up
-        let alertController = UIAlertController(title: "Welcome", message: "Input your Name", preferredStyle: .alert)
-
-        alertController.addTextField { (textField) in
-            // configure the properties of the text field
-            textField.placeholder = "Name"
-        }
-
-
-        // add the buttons/actions to the view controller
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
-
-            // this code runs when the user hits the "save" button
-
-            let inputName = alertController.textFields![0].text
-
-            print(inputName)
-            self.lblnama.text = inputName
-
-        }
-
-        alertController.addAction(cancelAction)
-        alertController.addAction(saveAction)
-
-        present(alertController, animated: true, completion: nil)
-       
-    }
     @IBOutlet weak var lblPV: UILabel!
+    
     var status : Status?
-  
+    var totalPercobaanPertama : Int?
+    var totalstar : Int = 0
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ProgressLearning()
+        //fetchSubtopiks()
        // backProfil = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
       //  backProfil.image = UIImage(named : "backgroundProfil")
        // ProfilPic.image = UIImage(named: "people2")
@@ -77,18 +50,76 @@ class ProfileVC: UIViewController {
         buttonHadiah.layer.cornerRadius = 10
         progressView.layer.cornerRadius = 10
         progressView.clipsToBounds = true
-        
+        getStar()
+        getPercobaanPertama()
         //ProfilPic.layer.cornerRadius = 14
        
     
     }
+    /*
+    func fetchSubtopiks(){
+           subtopik = DataLoader.getSubtopics(topicID: topicId ?? 1)
+       }
+    */
+    func getStar (){
+        let gettotalstar = Subtopic.CodingKeys.totalStar.intValue
+       
+        totalstar = gettotalstar ?? 0
+        if totalstar == nil {
+            lblBintang.text = "0"
+        }
+        else {
+             lblBintang.text = "\(totalstar)"
+        }
+       
+    }
+    var percobaanpertama : Int = 0
+    func getPercobaanPertama () {
+        if Subtopic.CodingKeys.starGained.intValue == 3 {
+            let totalpercobaanpertama = percobaanpertama + 1
+            lblPercobaanPertama.text = "\(totalpercobaanpertama)"
+        }
+        
+    }
+    
+    
+    //rename
+       @IBAction func renameButton(_ sender: Any) {
+          //pop up alert rename
+           let alertController = UIAlertController(title: "Welcome", message: "Input your Name", preferredStyle: .alert)
+
+           alertController.addTextField { (textField) in
+               // configure the properties of the text field
+               textField.placeholder = "Name"
+           }
+
+
+           // add the buttons/actions to the view controller
+           let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+           let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+
+
+               let inputName = alertController.textFields![0].text
+
+               //print(inputName)
+               self.lblnama.text = inputName
+           }
+           alertController.addAction(cancelAction)
+           alertController.addAction(saveAction)
+
+           present(alertController, animated: true, completion: nil)
+          
+       }
+    @IBAction func buttonHadiah(_ sender: Any) {
+    }
+    
+
     var maxTime : Float = 10.0
         var currentTime : Float = -1.1
     
     @objc func updateProgress(){
         currentTime = currentTime + 1.1
            progressView.progress = currentTime/maxTime
-    
        }
        
        @objc func decreaseProgress (){
