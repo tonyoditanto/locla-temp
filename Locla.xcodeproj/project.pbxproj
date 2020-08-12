@@ -12,6 +12,7 @@
 		0F3B31A724E2E5E900891C1B /* vocabularyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B31A424E2E5E900891C1B /* vocabularyCategoryCell.swift */; };
 		0F3B31A824E2E5E900891C1B /* vocabularyCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B31A524E2E5E900891C1B /* vocabularyCategoryCell.xib */; };
 		0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000624E425E70070CA25 /* SearchBarVC.swift */; };
+		0F4B000924E426890070CA25 /* SearchBarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000824E426890070CA25 /* SearchBarResultCell.swift */; };
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		0F3B31A424E2E5E900891C1B /* vocabularyCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vocabularyCategoryCell.swift; sourceTree = "<group>"; };
 		0F3B31A524E2E5E900891C1B /* vocabularyCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCategoryCell.xib; sourceTree = "<group>"; };
 		0F4B000624E425E70070CA25 /* SearchBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarVC.swift; sourceTree = "<group>"; };
+		0F4B000824E426890070CA25 /* SearchBarResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarResultCell.swift; sourceTree = "<group>"; };
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 			children = (
 				0F3B31A324E2E5E900891C1B /* vocabCategoryDetailsCell.swift */,
 				0F3B31A424E2E5E900891C1B /* vocabularyCategoryCell.swift */,
+				0F4B000824E426890070CA25 /* SearchBarResultCell.swift */,
 				0F3B31A524E2E5E900891C1B /* vocabularyCategoryCell.xib */,
 				5A88368B24D908A90044F1EA /* Vocabulary.storyboard */,
 			);
@@ -414,6 +417,7 @@
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
 				856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */,
 				5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */,
+				0F4B000924E426890070CA25 /* SearchBarResultCell.swift in Sources */,
 				5A9ED9EC24E0FDAE00BE1200 /* Subtopic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,8 +22,6 @@ class VocabularyDetailVC: UIViewController {
         vocabDetailTableView.dataSource = self
         fetchVocabularies()
         
-        
-        
     }
     
     func fetchVocabularies(){
