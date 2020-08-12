@@ -16,10 +16,10 @@ class VocabularyVC: UIViewController {
     var locationId : Int?
     var categoriID : Int?
     var vocabularyCategories : [VocabularyCategory] = []
-    var colors : [UIColor] = [#colorLiteral(red: 0.9294117647, green: 0.6235294118, blue: 0.2235294118, alpha: 1),#colorLiteral(red: 0.3098039216, green: 0.4196078431, blue: 0.862745098, alpha: 1),#colorLiteral(red: 0.5215686275, green: 0.368627451, blue: 0.8470588235, alpha: 1),#colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1),#colorLiteral(red: 0.5568627451, green: 0.7490196078, blue: 0.4039215686, alpha: 1),#colorLiteral(red: 0.4901960784, green: 0.1411764706, blue: 0.2274509804, alpha: 1)]
     var searchBarVocabulary : [Vocabulary] = []
-    
     var dataResult : [Vocabulary] = []
+    
+    var colors : [UIColor] = [#colorLiteral(red: 0.9294117647, green: 0.6235294118, blue: 0.2235294118, alpha: 1),#colorLiteral(red: 0.3098039216, green: 0.4196078431, blue: 0.862745098, alpha: 1),#colorLiteral(red: 0.5215686275, green: 0.368627451, blue: 0.8470588235, alpha: 1),#colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1),#colorLiteral(red: 0.5568627451, green: 0.7490196078, blue: 0.4039215686, alpha: 1),#colorLiteral(red: 0.4901960784, green: 0.1411764706, blue: 0.2274509804, alpha: 1)]
     var searchController: UISearchController!
     
     private var searchBarVc : SearchBarVC!
@@ -107,7 +107,6 @@ extension VocabularyVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         performSegue(withIdentifier: "vocabularyToDetailCategory", sender: indexPath.row)
         print("masuk\(indexPath.row)")
     }
-    
 
 }
 
@@ -152,6 +151,6 @@ extension VocabularyVC : UISearchControllerDelegate{
         print(searchText)
         searchBarVc.dataResult = searchBarVocabulary
         searchBarVc.searchBarResultTableView.reloadData()
-        }
+    }
 }
 
