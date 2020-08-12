@@ -10,13 +10,15 @@ import Foundation
 
 // MARK: - RewardElement
 struct Reward: Codable {
-    let id, locationID: Int
-    let name, detail: String?
+    let id, categoryID: Int
+    let name, detail, imageFilename, imageSource: String?
 
     enum CodingKeys: String, CodingKey {
         case id
-        case locationID = "location_id"
+        case categoryID = "category_id"
         case name, detail
+        case imageFilename = "img_filename"
+        case imageSource = "source_img"
     }
 }
 

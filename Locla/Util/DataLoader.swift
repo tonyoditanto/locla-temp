@@ -21,6 +21,7 @@ class DataLoader {
     private static let vocabularyCategoryFilename = "VocabularyCategory"
     private static let randomTipFilename = "RandomTip"
     private static let rewardFilename = "Reward"
+    private static let rewardCategoryFilename = "RewardCategory"
     
     static func getAllLocation() -> [Location] {
         var locations = [Location]()
@@ -172,18 +173,33 @@ class DataLoader {
         return tip
     }
     
-    static func getRewards(locationID: Int) -> [Reward] {
+    static func getRewards(categoryID: Int) -> [Reward] {
         var rewards = [Reward]()
         if let path = Bundle.main.url(forResource: rewardFilename, withExtension: fileExtension){
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
                 rewards = try decoder.decode([Reward].self, from: data)
-                rewards = rewards.filter{ $0.locationID == locationID}
+                rewards = rewards.filter{ $0.categoryID == categoryID}
             } catch {
                 print(error)
             }
         }
         return rewards
+    }
+    
+    static func getRewardCategories(locationID: Int) -> [RewardCategory] {
+        var rewardCategories = [RewardCategory]()
+        if let path = Bundle.main.url(forResource: rewardCategoryFilename, withExtension: fileExtension){
+            do {
+                let data = try Data(contentsOf: path)
+                let decoder = JSONDecoder()
+                rewardCategories = try decoder.decode([RewardCategory].self, from: data)
+                rewardCategories = rewardCategories.filter{ $0.locationID == locationID}
+            } catch {
+                print(error)
+            }
+        }
+        return rewardCategories
     }
 }

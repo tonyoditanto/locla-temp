@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "location_id": 1,
+    "name": "Rekomendasi Tempat Liburan",
+    "required_star": 20
+  },
+  {
+    "id": 2,
+    "location_id": 1,
+    "name": "Fun Fact",
+    "required_star": 40
+  },
+  {
+    "id": 3,
+    "location_id": 1,
+    "name": "Explicit Content",
+    "required_star": 60
+  }
+]
