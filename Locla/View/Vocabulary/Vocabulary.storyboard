@@ -22,15 +22,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="689" id="1h0-WG-a54"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JFw-1c-3ui">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="10" id="JFw-1c-3ui">
                                     <size key="itemSize" width="200" height="197"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="10" maxX="20" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QBT-DO-b6d">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="197"/>
+                                        <rect key="frame" x="107" y="10" width="200" height="197"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sRQ-BO-lgx">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="197"/>
@@ -38,7 +38,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="200" height="197"/>
                                         <connections>
-                                            <segue destination="mCe-zk-t2z" kind="show" identifier="vocabularyCategory" id="lJV-be-250"/>
+                                            <segue destination="mCe-zk-t2z" kind="show" identifier="vocabularyToDetailCategory" id="lJV-be-250"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

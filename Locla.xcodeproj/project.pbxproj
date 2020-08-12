@@ -249,8 +249,8 @@
 		5A88369324D90CCF0044F1EA /* Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				0F3B31A124E2E5DA00891C1B /* VocabularyDetailVC.swift */,
 				5A88369624D90D230044F1EA /* VocabularyVC.swift */,
+				0F3B31A124E2E5DA00891C1B /* VocabularyDetailVC.swift */,
 			);
 			path = Vocabulary;
 			sourceTree = "<group>";

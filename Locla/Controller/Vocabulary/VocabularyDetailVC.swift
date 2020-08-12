@@ -12,23 +12,35 @@ class VocabularyDetailVC: UIViewController {
     
     @IBOutlet weak var vocabDetailTableView: UITableView!
     
+    var categoriID : Int?
+    var vocabularies : [Vocabulary] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         vocabDetailTableView.delegate = self
         vocabDetailTableView.dataSource = self
-       
+        fetchVocabularies()
+        
+        
+        
+    }
+    
+    func fetchVocabularies(){
+        vocabularies = DataLoader.getVocabularies(categoryID: categoriID ?? 1)
     }
 }
 
 extension VocabularyDetailVC: UITableViewDataSource, UITableViewDelegate,UICollectionViewDelegateFlowLayout {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return vocabularies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCategoryDetailsCell", for: indexPath) as! vocabCategoryDetailsCell
-        //cell.backgroundColor = colors[indexPath.row]
+        cell.word.text = vocabularies[indexPath.row].word
+        cell.meaning.text = vocabularies[indexPath.row].meaning
+        //self.title = vocabularies[indexPath.row].word
         return cell
     }
     
