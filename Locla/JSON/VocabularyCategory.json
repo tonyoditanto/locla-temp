@@ -3,18 +3,42 @@
     "id": 1,
     "location_id": 1,
     "name": "Kata Ganti Orang",
-    "image_filename": "Person1"
+    "image_filename": "Person1",
+    "hex_color": "ED9F39"
   },
   {
     "id": 2,
     "location_id": 1,
     "name": "Belanja",
-    "image_filename": "Cart"
+    "image_filename": "Cart",
+    "hex_color": "4F6BDC"
   },
   {
     "id": 3,
     "location_id": 1,
-    "name": "",
-    "image_filename": ""
+    "name": "Angka",
+    "image_filename": "Number",
+    "hex_color": "855ED8"
+  },
+  {
+    "id": 4,
+    "location_id": 1,
+    "name": "Hari",
+    "image_filename": "Calendar",
+    "hex_color": "FA7800"
+  },
+  {
+    "id": 5,
+    "location_id": 1,
+    "name": "Makanan",
+    "image_filename": "Bowl",
+    "hex_color": "8EBF67"
+  },
+  {
+    "id": 6,
+    "location_id": 1,
+    "name": "Binatang",
+    "image_filename": "Animal",
+    "hex_color": "7D243A"
   }
 ]
