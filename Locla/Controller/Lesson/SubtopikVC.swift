@@ -10,12 +10,19 @@ import UIKit
 
 class SubtopikVC: UIViewController{
 
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var starLbl: UILabel!
+    
     var topicId : Int?
     var subtopics : [Subtopic] = []
+    
+    var titleText, star : String?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLbl.text = titleText
+        starLbl.text = star
         fetchSubtopiks()
         setupCollectionView()
     }
