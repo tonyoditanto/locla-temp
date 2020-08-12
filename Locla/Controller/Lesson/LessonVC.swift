@@ -63,7 +63,7 @@ extension LessonVC : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopikCollectionViewCell.cellID, for: indexPath) as? TopikCollectionViewCell else { return UICollectionViewCell() }
         cell.judulTopikLabel.text = topics[indexPath.row].name
-        cell.topikImageView.image = UIImage(named: topics[indexPath.row].imageFilename ?? "person2")
+        cell.topikImageView.image = UIImage(named: topics[indexPath.row].imageFilename ?? "Person1")
         let subtopics = DataLoader.getSubtopics(topicID: topics[indexPath.row].id)
         cell.jumlahSubtopikLabel.text = "\(subtopics.count) Topik"
         var stargained = 0
