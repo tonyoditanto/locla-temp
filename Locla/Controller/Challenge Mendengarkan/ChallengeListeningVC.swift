@@ -21,10 +21,13 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
     @IBOutlet weak var viewInputUser: UIView!
+    @IBOutlet weak var keterangan1Label: UILabel!
+    @IBOutlet weak var keterangan2Label: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureKeterangan()
         configureProgressView()
         configureButton()
         configureImage()
@@ -34,6 +37,11 @@ class ChallengeListeningVC: UIViewController {
     }
     
 
+    func configureKeterangan(){
+        self.keterangan1Label.isHidden = true
+        self.keterangan2Label.isHidden = true
+    }
+    
     func configureProgressView(){
         self.progressView.layer.cornerRadius = 10.0
         self.progressView.layer.masksToBounds = true
