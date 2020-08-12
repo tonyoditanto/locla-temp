@@ -28,14 +28,15 @@ class ProfileVC: UIViewController {
     
     var status : Status?
     var totalPercobaanPertama : Int?
-    var totalstar : Int = 0
-    
+    var totalstar : Int?
+    var topics : [Subtopic] = []
+    var LocationId : Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ProgressLearning()
-        //fetchSubtopiks()
+    fetchSubtopiks()
        // backProfil = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
       //  backProfil.image = UIImage(named : "backgroundProfil")
        // ProfilPic.image = UIImage(named: "people2")
@@ -51,36 +52,56 @@ class ProfileVC: UIViewController {
         progressView.layer.cornerRadius = 10
         progressView.clipsToBounds = true
         getStar()
-        getPercobaanPertama()
+       // getPercobaanPertama()
         //ProfilPic.layer.cornerRadius = 14
        
     
     }
-    /*
+    
     func fetchSubtopiks(){
-           subtopik = DataLoader.getSubtopics(topicID: topicId ?? 1)
+        topics = DataLoader.getSubtopics(topicID: LocationId ?? 1)
        }
-    */
+    
     func getStar (){
-        let gettotalstar = Subtopic.CodingKeys.totalStar.intValue
-       
-        totalstar = gettotalstar ?? 0
-        if totalstar == nil {
+        let subtopics =  DataLoader.getSubtopics(topicID: LocationId ?? 1)
+
+       var stargained = 0
+              for subtopic in subtopics {
+                  stargained += subtopic.starGained ?? 0
+              }
+        if stargained == 0 {
             lblBintang.text = "0"
+           print (stargained)
         }
         else {
-             lblBintang.text = "\(totalstar)"
+             lblBintang.text = "\(stargained)"
         }
        
     }
-    var percobaanpertama : Int = 0
+   
     func getPercobaanPertama () {
-        if Subtopic.CodingKeys.starGained.intValue == 3 {
+        let subtopics =  DataLoader.getSubtopics(topicID: LocationId ?? 1)
+
+        var percobaanpertama = 0
+        var totalpercobaanpertama = 0
+               for subtopic in subtopics {
+                   percobaanpertama += subtopic.starGained ?? 0
+        }
+                if percobaanpertama == 3 {
+                    totalpercobaanpertama = totalpercobaanpertama + 1
+  
+               }
+                lblPercobaanPertama.text = "\(totalpercobaanpertama)"
+      
+
+        }
+       /* if Subtopic.CodingKeys.starGained.intValue == 3 {
             let totalpercobaanpertama = percobaanpertama + 1
             lblPercobaanPertama.text = "\(totalpercobaanpertama)"
-        }
+            print()
+ */
         
-    }
+        
     
     
     //rename
@@ -115,7 +136,7 @@ class ProfileVC: UIViewController {
     
 
     var maxTime : Float = 10.0
-        var currentTime : Float = -1.1
+    var currentTime : Float = 0
     
     @objc func updateProgress(){
         currentTime = currentTime + 1.1
@@ -127,7 +148,8 @@ class ProfileVC: UIViewController {
            progressView.progress = currentTime/maxTime
        }
     func ProgressLearning() {
-        if status == Status(rawValue: "Unlocked"){
+        
+        if Status.unlocked.rawValue == "Unlocked" {
             perform(#selector(updateProgress))
             self.lblPV.text = "\(Int(self.progressView.progress * 100))%"
         }
