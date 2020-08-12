@@ -20,7 +20,10 @@ class AlertStarVC: UIViewController {
     @IBOutlet weak var customAlertView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureBackground()
+        configureImageview()
+        configureLabel()
+        configureButton()
         // Do any additional setup after loading the view.
     }
     
@@ -45,6 +48,8 @@ class AlertStarVC: UIViewController {
     }
     
     @IBAction func didTapLanjutButton(_ sender: Any) {
+        self.removeFromParent()
+        self.view.removeFromSuperview()
     }
     
     /*

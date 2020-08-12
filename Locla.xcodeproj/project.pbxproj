@@ -205,8 +205,7 @@
 				856E7FBA24E315810044CB36 /* Challenge Obrolan */,
 				856E7FB924E315700044CB36 /* Challenge Kosakata */,
 				856E7FB824E315630044CB36 /* Challenge Mendengarkan */,
-				85C7CA3B24E417410025E1AA /* AlertExitVC.swift */,
-				85C7CA3D24E421C50025E1AA /* AlertStarVC.swift */,
+				85C7CA4224E465200025E1AA /* Custom Alert */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +363,15 @@
 			isa = PBXGroup;
 			children = (
 				85C7CA4024E4228B0025E1AA /* CustomAlert.storyboard */,
+			);
+			path = "Custom Alert";
+			sourceTree = "<group>";
+		};
+		85C7CA4224E465200025E1AA /* Custom Alert */ = {
+			isa = PBXGroup;
+			children = (
+				85C7CA3B24E417410025E1AA /* AlertExitVC.swift */,
+				85C7CA3D24E421C50025E1AA /* AlertStarVC.swift */,
 			);
 			path = "Custom Alert";
 			sourceTree = "<group>";

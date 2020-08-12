@@ -128,7 +128,7 @@ tidak akan tersimpan</string>
         <!--Alert StarVC-->
         <scene sceneID="DL2-im-cwl">
             <objects>
-                <viewController id="Fyk-xI-5Ga" customClass="AlertStarVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlertStarVC" id="Fyk-xI-5Ga" customClass="AlertStarVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJn-kd-eIV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +259,7 @@ tidak akan tersimpan</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAd-AP-wmy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="80"/>
+            <point key="canvasLocation" x="780" y="80"/>
         </scene>
     </scenes>
 </document>
