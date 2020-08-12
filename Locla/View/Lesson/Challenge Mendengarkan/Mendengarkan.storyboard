@@ -11,7 +11,7 @@
         <!--Intro ListeningVC-->
         <scene sceneID="3dI-DK-xEg">
             <objects>
-                <viewController id="KCq-I3-ByE" customClass="IntroListeningVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="KCq-I3-ByE" customClass="IntroListeningVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HEB-jt-5UM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

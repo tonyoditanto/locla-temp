@@ -122,6 +122,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                         <size key="customSize" width="374" height="80"/>
+                                        <connections>
+                                            <segue destination="dED-WS-8gC" kind="presentation" identifier="showMendengarkan" id="jMr-aP-gn4"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -171,6 +174,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="75.669642857142847"/>
+        </scene>
+        <!--Mendengarkan-->
+        <scene sceneID="ptB-Pr-kT3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mendengarkan" id="dED-WS-8gC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TlX-CS-rft"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYE-ig-mSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2509" y="76"/>
         </scene>
         <!--Pelajaran-->
         <scene sceneID="sQX-F7-1L6">
