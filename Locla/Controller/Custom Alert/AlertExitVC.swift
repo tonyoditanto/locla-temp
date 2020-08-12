@@ -1,5 +1,5 @@
 //
-//  AlertExitViewController.swift
+//  AlertExitVC.swift
 //  Locla
 //
 //  Created by Tony Varian Yoditanto on 12/08/20.

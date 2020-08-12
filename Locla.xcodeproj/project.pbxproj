@@ -51,9 +51,9 @@
 		856E7FC624E3A9590044CB36 /* ListeningResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FC524E3A9590044CB36 /* ListeningResultVC.swift */; };
 		856E7FCA24E3AA270044CB36 /* NewWordsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FC824E3AA270044CB36 /* NewWordsCollectionViewCell.swift */; };
 		856E7FCB24E3AA270044CB36 /* NewWordsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FC924E3AA270044CB36 /* NewWordsCollectionViewCell.xib */; };
-		85C7CA3C24E417410025E1AA /* AlertExitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA3B24E417410025E1AA /* AlertExitVC.swift */; };
 		85C7CA3E24E421C50025E1AA /* AlertStarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA3D24E421C50025E1AA /* AlertStarVC.swift */; };
 		85C7CA4124E4228B0025E1AA /* CustomAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7CA4024E4228B0025E1AA /* CustomAlert.storyboard */; };
+		85C7CA4424E471330025E1AA /* AlertExitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA4324E471330025E1AA /* AlertExitVC.swift */; };
 		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
 		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
 		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
@@ -109,9 +109,9 @@
 		856E7FC524E3A9590044CB36 /* ListeningResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningResultVC.swift; sourceTree = "<group>"; };
 		856E7FC824E3AA270044CB36 /* NewWordsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordsCollectionViewCell.swift; sourceTree = "<group>"; };
 		856E7FC924E3AA270044CB36 /* NewWordsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewWordsCollectionViewCell.xib; sourceTree = "<group>"; };
-		85C7CA3B24E417410025E1AA /* AlertExitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExitVC.swift; sourceTree = "<group>"; };
 		85C7CA3D24E421C50025E1AA /* AlertStarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertStarVC.swift; sourceTree = "<group>"; };
 		85C7CA4024E4228B0025E1AA /* CustomAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlert.storyboard; sourceTree = "<group>"; };
+		85C7CA4324E471330025E1AA /* AlertExitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExitVC.swift; sourceTree = "<group>"; };
 		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
@@ -370,8 +370,8 @@
 		85C7CA4224E465200025E1AA /* Custom Alert */ = {
 			isa = PBXGroup;
 			children = (
-				85C7CA3B24E417410025E1AA /* AlertExitVC.swift */,
 				85C7CA3D24E421C50025E1AA /* AlertStarVC.swift */,
+				85C7CA4324E471330025E1AA /* AlertExitVC.swift */,
 			);
 			path = "Custom Alert";
 			sourceTree = "<group>";
@@ -476,7 +476,6 @@
 				5A9ED9F024E0FFD000BE1200 /* Vocabulary.swift in Sources */,
 				5A9ED9F624E1021B00BE1200 /* VocabularyCategory.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
-				85C7CA3C24E417410025E1AA /* AlertExitVC.swift in Sources */,
 				856E7FCA24E3AA270044CB36 /* NewWordsCollectionViewCell.swift in Sources */,
 				5A9ED9E624E0FB5400BE1200 /* Location.swift in Sources */,
 				5A88367124D905550044F1EA /* AppDelegate.swift in Sources */,
@@ -492,6 +491,7 @@
 				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
 				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
+				85C7CA4424E471330025E1AA /* AlertExitVC.swift in Sources */,
 				856E7FC424E3178E0044CB36 /* ChallengeListeningVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
