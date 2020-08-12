@@ -53,6 +53,7 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.judulSubtopikLabel.text = subtopics[indexPath.row].name
         cell.jenisChallengeLabel.text = subtopics[indexPath.row].challengeType?.rawValue
         cell.raihanBintangLabel.text = "\(subtopics[indexPath.row].starGained) / \(subtopics[indexPath.row].totalStar)"
+        cell.container.backgroundColor = subtopics[indexPath.row].status == Status.unlocked ? .systemOrange : .systemGray
         return cell
     }
           
