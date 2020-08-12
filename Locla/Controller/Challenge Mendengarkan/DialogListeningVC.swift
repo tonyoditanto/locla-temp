@@ -16,9 +16,6 @@ class DialogListeningVC: UIViewController {
     @IBOutlet weak var mulaiButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButton()
@@ -41,4 +38,11 @@ class DialogListeningVC: UIViewController {
         subtopikImageView.image = UIImage(named: "people1")
     }
 
+    @IBAction func didTapCloseButton(_ sender: Any) {
+        let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC
+        
+        alertVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.addChild(alertVC)
+        self.view.addSubview(alertVC.view)
+    }
 }

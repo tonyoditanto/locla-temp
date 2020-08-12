@@ -36,5 +36,15 @@ class IntroListeningVC: UIViewController {
     func configureImage(){
         subtopikImageView.image = UIImage(named: "people1")
     }
+    
+    @IBAction func didTapCloseButton(_ sender: Any) {
+        //let alertVC = self.storyboard?.instantiateViewController(withIdentifier: "AlertExitViewController") as! AlertExitViewController
+        let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC
+        
+        alertVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.addChild(alertVC)
+        self.view.addSubview(alertVC.view)
+    }
+    
 
 }

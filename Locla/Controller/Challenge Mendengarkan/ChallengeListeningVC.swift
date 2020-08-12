@@ -77,5 +77,14 @@ class ChallengeListeningVC: UIViewController {
         self.viewInputUser.layer.cornerRadius = 50
         self.viewInputUser.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
-
+    
+    
+    @IBAction func didTapCloseButton(_ sender: Any) {
+        let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC
+        
+        alertVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.addChild(alertVC)
+        self.view.addSubview(alertVC.view)
+    }
+    
 }
