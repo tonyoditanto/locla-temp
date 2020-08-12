@@ -16,25 +16,11 @@ class TopikCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var judulTopikLabel: UILabel!
     @IBOutlet weak var jumlahSubtopikLabel: UILabel!
     @IBOutlet weak var raihanBintangLabel: UILabel!
+    @IBOutlet weak var container: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureBackground()
-        configureImage()
-        configureLabel()
-    }
-    
-    func configureBackground(){
         self.layer.cornerRadius = 10.0
     }
     
-    func configureLabel(){
-        judulTopikLabel.text = "Pengenalan"
-        jumlahSubtopikLabel.text = "6 Topik"
-        raihanBintangLabel.text = "12/54"
-    }
-    
-    func configureImage(){
-        topikImageView.image = UIImage(named: "people1")
-    }
 }

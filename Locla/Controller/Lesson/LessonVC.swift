@@ -40,7 +40,16 @@ class LessonVC: UIViewController{
                     return
             }
             subtopicVC.topicId = topics[index].id
-            //title.
+            subtopicVC.titleText = topics[index].name
+            
+            let subtopics = DataLoader.getSubtopics(topicID: topics[index].id)
+            var stargained = 0
+            var starMax = 0
+            for subtopic in subtopics {
+                stargained += subtopic.starGained
+                starMax += subtopic.totalStar
+            }
+            subtopicVC.star = "\(stargained) / \(starMax)"
         }
     }
     
@@ -58,10 +67,13 @@ extension LessonVC : UICollectionViewDataSource, UICollectionViewDelegate {
         let subtopics = DataLoader.getSubtopics(topicID: topics[indexPath.row].id)
         cell.jumlahSubtopikLabel.text = "\(subtopics.count) Topik"
         var stargained = 0
+        var starMax = 0
         for subtopic in subtopics {
             stargained += subtopic.starGained
+            starMax += subtopic.totalStar
         }
-        cell.raihanBintangLabel.text = "\(stargained)"
+        cell.raihanBintangLabel.text = "\(stargained) / \(starMax)"
+        cell.container.backgroundColor = UIColor(hex: topics[indexPath.row].hexColor ?? "FFFFFF")
         return cell
     }
         

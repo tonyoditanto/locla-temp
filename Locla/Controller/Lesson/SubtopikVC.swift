@@ -10,12 +10,19 @@ import UIKit
 
 class SubtopikVC: UIViewController{
 
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var starLbl: UILabel!
+    
     var topicId : Int?
     var subtopics : [Subtopic] = []
+    
+    var titleText, star : String?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLbl.text = titleText
+        starLbl.text = star
         fetchSubtopiks()
         setupCollectionView()
     }
@@ -46,6 +53,7 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.judulSubtopikLabel.text = subtopics[indexPath.row].name
         cell.jenisChallengeLabel.text = subtopics[indexPath.row].challengeType?.rawValue
         cell.raihanBintangLabel.text = "\(subtopics[indexPath.row].starGained) / \(subtopics[indexPath.row].totalStar)"
+        cell.container.backgroundColor = subtopics[indexPath.row].status == Status.unlocked ? .systemOrange : .systemGray
         return cell
     }
           

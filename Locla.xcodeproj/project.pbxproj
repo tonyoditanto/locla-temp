@@ -15,6 +15,7 @@
 		0F4B000924E426890070CA25 /* SearchBarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000824E426890070CA25 /* SearchBarResultCell.swift */; };
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
+		5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873D24E3844200FC55E2 /* UIColor.swift */; };
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
 		5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367224D905550044F1EA /* SceneDelegate.swift */; };
 		5A88367824D905550044F1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367624D905550044F1EA /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		0F4B000824E426890070CA25 /* SearchBarResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarResultCell.swift; sourceTree = "<group>"; };
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
+		5A34873D24E3844200FC55E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88367024D905550044F1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A88367224D905550044F1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A34873F24E38DDD00FC55E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A34873D24E3844200FC55E2 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5A88366424D905550044F1EA = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				5A9EDA0C24E105C700BE1200 /* DataLoader.swift */,
+				5A34873F24E38DDD00FC55E2 /* Extensions */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -409,6 +420,7 @@
 				856E7FB424E2B93B0044CB36 /* TopikCollectionViewCell.swift in Sources */,
 				856E7FB224E2B93B0044CB36 /* SubtopikCollectionViewCell.swift in Sources */,
 				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
+				5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */,
 				0F3B31A624E2E5E900891C1B /* vocabCategoryDetailsCell.swift in Sources */,
 				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
@@ -569,7 +581,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.Locla;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funtastic4.locla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38BCD2JQ3H;
 				INFOPLIST_FILE = Locla/Info.plist;
@@ -587,8 +601,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ada.Locla;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funtastic4.locla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
