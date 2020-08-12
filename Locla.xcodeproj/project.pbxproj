@@ -14,6 +14,7 @@
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
 		5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873D24E3844200FC55E2 /* UIColor.swift */; };
+		5A4F4B3B24E431D000874C0F /* FillInTheBlank.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */; };
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
 		5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367224D905550044F1EA /* SceneDelegate.swift */; };
 		5A88367824D905550044F1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367624D905550044F1EA /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
 		5A34873D24E3844200FC55E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillInTheBlank.xib; sourceTree = "<group>"; };
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88367024D905550044F1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A88367224D905550044F1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5A4F4B3924E4319600874C0F /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		5A88366424D905550044F1EA = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		5A88368624D905CF0044F1EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A4F4B3924E4319600874C0F /* Container */,
 				5A88368824D9086A0044F1EA /* Lesson */,
 				5A88368924D908760044F1EA /* Vocabulary */,
 				5A88368A24D908890044F1EA /* Profile */,
@@ -367,6 +378,7 @@
 				5A9EDA0724E1044900BE1200 /* Topic.json in Resources */,
 				5A9EDA0624E1044900BE1200 /* Location.json in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
+				5A4F4B3B24E431D000874C0F /* FillInTheBlank.xib in Resources */,
 				856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */,
 				5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */,
 				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
