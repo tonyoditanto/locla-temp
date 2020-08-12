@@ -654,50 +654,62 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                     <constraint firstAttribute="width" secondItem="uhk-DX-Aop" secondAttribute="height" multiplier="1:1" id="xYM-pq-Po3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Random Tip" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbN-gc-Waj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83C-5l-YlY">
                                 <rect key="frame" x="37" y="636" width="340" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Random Tip" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbN-gc-Waj">
+                                        <rect key="frame" x="5" y="0.0" width="330" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="eaw-kX-Run"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="NbN-gc-Waj" secondAttribute="height" multiplier="17:4" id="0Mu-qP-NTA"/>
-                                    <constraint firstAttribute="width" constant="340" id="Miv-2V-WH0"/>
-                                    <constraint firstAttribute="height" constant="80" id="eaw-kX-Run"/>
+                                    <constraint firstAttribute="width" secondItem="83C-5l-YlY" secondAttribute="height" multiplier="17:4" id="6sA-PC-geR"/>
+                                    <constraint firstItem="NbN-gc-Waj" firstAttribute="leading" secondItem="83C-5l-YlY" secondAttribute="leading" constant="5" id="9cX-8B-us9"/>
+                                    <constraint firstAttribute="trailing" secondItem="NbN-gc-Waj" secondAttribute="trailing" constant="5" id="R1H-TH-QxF"/>
+                                    <constraint firstAttribute="height" constant="80" id="SIJ-mQ-sQ8"/>
+                                    <constraint firstAttribute="width" constant="340" id="XWA-yb-fN6"/>
+                                    <constraint firstItem="NbN-gc-Waj" firstAttribute="top" secondItem="83C-5l-YlY" secondAttribute="top" id="YGU-Xb-G4n"/>
+                                    <constraint firstAttribute="bottom" secondItem="NbN-gc-Waj" secondAttribute="bottom" id="z94-i8-FYb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ehe-8G-7YE" firstAttribute="trailing" secondItem="LVT-Su-1DH" secondAttribute="trailing" constant="48" id="5tM-b7-b7g"/>
-                            <constraint firstItem="LVT-Su-1DH" firstAttribute="top" secondItem="NbN-gc-Waj" secondAttribute="bottom" constant="28" id="8Rw-ZQ-XBM"/>
                             <constraint firstItem="i0K-g4-fUu" firstAttribute="top" secondItem="AnV-Hr-DyD" secondAttribute="bottom" constant="40" id="9nc-DW-lG8"/>
                             <constraint firstItem="X9M-7i-eGA" firstAttribute="top" secondItem="7G0-BO-9di" secondAttribute="bottom" constant="30" id="CBl-NN-uPB"/>
                             <constraint firstItem="LVT-Su-1DH" firstAttribute="leading" secondItem="ehe-8G-7YE" secondAttribute="leading" constant="48" id="CcF-Wc-bSh"/>
+                            <constraint firstItem="83C-5l-YlY" firstAttribute="leading" secondItem="ehe-8G-7YE" secondAttribute="leading" constant="37" id="E18-vF-rH6"/>
                             <constraint firstItem="sTF-47-8Kl" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="FOf-N0-dmQ"/>
                             <constraint firstItem="Kpp-iE-Yss" firstAttribute="leading" secondItem="uhk-DX-Aop" secondAttribute="trailing" constant="60" id="GcL-hH-pQk"/>
                             <constraint firstItem="6bt-yE-qCq" firstAttribute="leading" secondItem="ehe-8G-7YE" secondAttribute="leading" constant="37" id="IW1-2O-9SZ"/>
+                            <constraint firstItem="LVT-Su-1DH" firstAttribute="top" secondItem="83C-5l-YlY" secondAttribute="bottom" constant="28" id="JDY-vv-S4x"/>
                             <constraint firstItem="843-fA-1iz" firstAttribute="top" secondItem="ieb-7B-bz6" secondAttribute="bottom" constant="10" id="L5O-NN-xdj"/>
+                            <constraint firstItem="83C-5l-YlY" firstAttribute="top" secondItem="6bt-yE-qCq" secondAttribute="bottom" constant="10" id="NpV-S5-s2K"/>
                             <constraint firstItem="Kpp-iE-Yss" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="QPk-UE-0Ik"/>
                             <constraint firstItem="sTF-47-8Kl" firstAttribute="top" secondItem="ehe-8G-7YE" secondAttribute="top" constant="60" id="ScM-Bf-KuA"/>
                             <constraint firstItem="7G0-BO-9di" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="Tuk-Xr-6fE"/>
                             <constraint firstItem="ieb-7B-bz6" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="W2W-jc-qEp"/>
                             <constraint firstItem="i0K-g4-fUu" firstAttribute="leading" secondItem="Kpp-iE-Yss" secondAttribute="trailing" constant="60" id="X4h-AC-zV1"/>
-                            <constraint firstItem="NbN-gc-Waj" firstAttribute="leading" secondItem="ehe-8G-7YE" secondAttribute="leading" constant="37" id="Yk1-4k-hKb"/>
                             <constraint firstItem="Kpp-iE-Yss" firstAttribute="top" secondItem="AnV-Hr-DyD" secondAttribute="bottom" constant="40" id="a9f-NL-UPo"/>
                             <constraint firstItem="AnV-Hr-DyD" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="ayL-gc-8cq"/>
-                            <constraint firstItem="NbN-gc-Waj" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="b0w-Iu-kI6"/>
+                            <constraint firstItem="ehe-8G-7YE" firstAttribute="trailing" secondItem="83C-5l-YlY" secondAttribute="trailing" constant="37" id="cCZ-xE-tI9"/>
                             <constraint firstItem="X9M-7i-eGA" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="cnU-jJ-wTx"/>
                             <constraint firstItem="ehe-8G-7YE" firstAttribute="trailing" secondItem="6bt-yE-qCq" secondAttribute="trailing" constant="37" id="hYr-LF-aYu"/>
                             <constraint firstItem="843-fA-1iz" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="heO-qA-BN8"/>
                             <constraint firstItem="uhk-DX-Aop" firstAttribute="top" secondItem="AnV-Hr-DyD" secondAttribute="bottom" constant="40" id="iVh-0i-6m6"/>
                             <constraint firstItem="Ihz-vF-x2A" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="jcv-WL-JGK"/>
-                            <constraint firstItem="ehe-8G-7YE" firstAttribute="trailing" secondItem="NbN-gc-Waj" secondAttribute="trailing" constant="37" id="mMW-I1-hcO"/>
                             <constraint firstItem="Ihz-vF-x2A" firstAttribute="top" secondItem="sTF-47-8Kl" secondAttribute="bottom" constant="10" id="n3T-pn-wxh"/>
                             <constraint firstItem="ehe-8G-7YE" firstAttribute="bottom" secondItem="LVT-Su-1DH" secondAttribute="bottom" constant="58" id="oF6-Sx-YZ1"/>
                             <constraint firstItem="6bt-yE-qCq" firstAttribute="top" secondItem="X9M-7i-eGA" secondAttribute="bottom" constant="10" id="opW-HC-d1M"/>
                             <constraint firstItem="7G0-BO-9di" firstAttribute="top" secondItem="843-fA-1iz" secondAttribute="bottom" constant="2" id="ptS-hp-PuN"/>
-                            <constraint firstItem="NbN-gc-Waj" firstAttribute="top" secondItem="6bt-yE-qCq" secondAttribute="bottom" constant="10" id="qkP-FT-1eL"/>
+                            <constraint firstItem="83C-5l-YlY" firstAttribute="centerX" secondItem="pJE-gM-iwE" secondAttribute="centerX" id="uKn-oI-TMz"/>
                             <constraint firstItem="AnV-Hr-DyD" firstAttribute="top" secondItem="Ihz-vF-x2A" secondAttribute="bottom" constant="2" id="vNC-qV-Doq"/>
                             <constraint firstItem="ieb-7B-bz6" firstAttribute="top" secondItem="Kpp-iE-Yss" secondAttribute="bottom" constant="20" id="ynR-P1-OH7"/>
                         </constraints>
@@ -715,6 +727,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                         <outlet property="star2Imageview" destination="Kpp-iE-Yss" id="LYe-pS-pn6"/>
                         <outlet property="star3Imageview" destination="i0K-g4-fUu" id="B4W-0z-IK3"/>
                         <outlet property="subtopikImageview" destination="sTF-47-8Kl" id="Ndm-cO-9l3"/>
+                        <outlet property="viewRandomTip" destination="83C-5l-YlY" id="75E-qE-cTG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFo-QX-Syb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

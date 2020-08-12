@@ -20,6 +20,7 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var randomTipLabel: UILabel!
     @IBOutlet weak var selesaiButton: UIButton!
+    @IBOutlet weak var viewRandomTip: UIView!
     
     
     override func viewDidLoad() {
@@ -40,7 +41,7 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
         self.resultIndoLabel.text = "Kamu yang terbaik!!"
         self.resultLocalLabel.text = "Kon sangar"
         self.randomTipLabel.text = "*Random Tip : Cok biasanya di gunakan kalau kondisi sudah akrab, jangan pada orang yang baru anda kenal"
-        self.randomTipLabel.layer.cornerRadius = 10.0
+        self.viewRandomTip.layer.cornerRadius = 10.0
     }
     
     func configureImage(){
