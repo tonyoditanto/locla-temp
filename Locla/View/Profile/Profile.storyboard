@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="width" constant="252" id="fOS-uP-j5c"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnr-oj-mqY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnr-oj-mqY">
                                 <rect key="frame" x="325" y="347" width="42" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="textColor"/>
@@ -120,6 +120,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.98039215686274506" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="renameButton:" destination="Uf2-aH-9tP" eventType="touchUpInside" id="TkT-Q1-rWe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hadiah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vd-XW-u9W">
                                 <rect key="frame" x="105" y="685.5" width="56.5" height="21"/>
@@ -207,6 +210,8 @@
                         <outlet property="bintang" destination="ADO-y0-2dK" id="FmM-PA-q4g"/>
                         <outlet property="buttonHadiah" destination="bWA-28-1YF" id="yTR-7t-H5H"/>
                         <outlet property="imgHadiah" destination="Vzu-Dc-iA4" id="fqL-Yu-YTD"/>
+                        <outlet property="lblPV" destination="Qnr-oj-mqY" id="6qa-t3-leb"/>
+                        <outlet property="lblnama" destination="yil-Sf-NTE" id="yeC-5B-1xi"/>
                         <outlet property="percobaanPertama" destination="PHY-b2-Zs3" id="aM8-qN-fAl"/>
                         <outlet property="progressView" destination="lR1-lF-sJV" id="Jmi-jE-8Cp"/>
                     </connections>
