@@ -84,6 +84,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="container" destination="u83-2c-N5V" id="dhJ-Ee-MxX"/>
                 <outlet property="judulTopikLabel" destination="bGw-mn-aFC" id="gDA-gH-90u"/>
                 <outlet property="jumlahSubtopikLabel" destination="06f-h5-y04" id="pYT-gM-eev"/>
                 <outlet property="raihanBintangLabel" destination="bLR-Fb-oKa" id="nMA-x1-hIy"/>

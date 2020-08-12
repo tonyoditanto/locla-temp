@@ -166,6 +166,8 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="xig-62-qli"/>
                     <connections>
                         <outlet property="collectionView" destination="cOh-4W-ZCE" id="fvj-nm-AWP"/>
+                        <outlet property="starLbl" destination="gRX-RT-mGv" id="MDg-vy-I4t"/>
+                        <outlet property="titleLbl" destination="Cos-ps-UPA" id="fnh-zh-rFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

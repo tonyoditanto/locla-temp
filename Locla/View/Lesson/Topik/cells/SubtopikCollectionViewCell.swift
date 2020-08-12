@@ -10,6 +10,7 @@ import UIKit
 
 class SubtopikCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var container: UIView!
     static let cellID = "SubtopikCollectionViewCell"
     
     @IBOutlet weak var judulSubtopikLabel: UILabel!

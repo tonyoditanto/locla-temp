@@ -73,6 +73,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="container" destination="wCS-aS-lNY" id="Rzv-Fe-npj"/>
                 <outlet property="jenisChallengeLabel" destination="Fjv-n8-mO7" id="P7L-QC-gdV"/>
                 <outlet property="judulSubtopikLabel" destination="UGi-c3-eg9" id="ddz-B5-6nG"/>
                 <outlet property="raihanBintangLabel" destination="Coh-bs-ptR" id="ozV-p2-bSg"/>
