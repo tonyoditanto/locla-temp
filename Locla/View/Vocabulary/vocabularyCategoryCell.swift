@@ -8,7 +8,7 @@
 
 import UIKit
 
-class vocabularyCategoryCell: UICollectionViewCell {
+class VocabularyCategoryCell: UICollectionViewCell {
     
     @IBOutlet weak var backgroundCell: UIView!
     @IBOutlet weak var categoryVocalImage: UIImageView!

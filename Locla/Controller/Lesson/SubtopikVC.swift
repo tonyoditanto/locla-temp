@@ -60,7 +60,16 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
           
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showMendengarkan", sender: indexPath)
+        if subtopics[indexPath.row].status == Status.locked { return }
+        if subtopics[indexPath.row].challengeType == ChallengeType.kosakata {
+            performSegue(withIdentifier: "SubtopicToVocabChallenge", sender: indexPath)
+        }
+        if subtopics[indexPath.row].challengeType == ChallengeType.mendengarkan {
+            performSegue(withIdentifier: "SubtopicToListeningChallenge", sender: indexPath)
+        }
+        if subtopics[indexPath.row].challengeType == ChallengeType.obrolan {
+            performSegue(withIdentifier: "SubtopicToChatChallenge", sender: indexPath)
+        }
     }
 
           
