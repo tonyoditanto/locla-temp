@@ -122,9 +122,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                         <size key="customSize" width="374" height="80"/>
-                                        <connections>
-                                            <segue destination="dED-WS-8gC" kind="presentation" identifier="showMendengarkan" id="jMr-aP-gn4"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -171,21 +168,31 @@
                         <outlet property="collectionView" destination="cOh-4W-ZCE" id="fvj-nm-AWP"/>
                         <outlet property="starLbl" destination="gRX-RT-mGv" id="MDg-vy-I4t"/>
                         <outlet property="titleLbl" destination="Cos-ps-UPA" id="fnh-zh-rFz"/>
+                        <segue destination="dED-WS-8gC" kind="presentation" identifier="SubtopicToVocabChallenge" id="VU1-dW-eUC"/>
+                        <segue destination="m9c-MA-xjP" kind="presentation" identifier="SubtopicToListeningChallenge" id="CPa-yL-97j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="75.669642857142847"/>
         </scene>
-        <!--Mendengarkan-->
+        <!--Storyboard Reference-->
+        <scene sceneID="Oov-s9-VXB">
+            <objects>
+                <viewControllerPlaceholder id="03Q-4O-lsD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHD-CL-rY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="-233"/>
+        </scene>
+        <!--Kosakata-->
         <scene sceneID="ptB-Pr-kT3">
             <objects>
-                <viewControllerPlaceholder storyboardName="Mendengarkan" id="dED-WS-8gC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Kosakata" id="dED-WS-8gC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TlX-CS-rft"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYE-ig-mSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2509" y="76"/>
+            <point key="canvasLocation" x="2475" y="-28"/>
         </scene>
         <!--Pelajaran-->
         <scene sceneID="sQX-F7-1L6">
@@ -205,6 +212,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRE-aU-y4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="75.669642857142847"/>
+        </scene>
+        <!--Mendengarkan-->
+        <scene sceneID="b2X-jV-q8g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mendengarkan" id="m9c-MA-xjP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aa4-qs-npl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="170"/>
         </scene>
     </scenes>
     <resources>
