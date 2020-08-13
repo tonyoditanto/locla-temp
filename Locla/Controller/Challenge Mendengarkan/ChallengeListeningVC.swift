@@ -38,32 +38,9 @@ class ChallengeListeningVC: UIViewController {
         configureLabel()
         configureAnswer()
         configureInputUser()
-        
-//        var totalBlank : TotalBlank = .blank1
-//        var pertanyaan : String = "blank1, nggak , blank2, boso jowo ta?"
-//        let jawaban1 = "kon"
-//        let jawaban2 = "iso"
-//
-//        var arrays = pertanyaan.components(separatedBy: ", ")
-//        for array in arrays {
-//            //print(array)
-//            if array == "blank2" {
-//                totalBlank = .blank2
-//            }
-//        }
-//        print(arrays[0])
-//
-//        switch totalBlank {
-//        case .blank1:
-//            print()
-//        case .blank2:
-//        print()
-//        default:
-//            print()
-//        }
+        configureLogic()
     }
     
-
     func configureKeterangan(){
         self.keterangan1Label.isHidden = true
         self.keterangan2Label.isHidden = true
@@ -103,6 +80,31 @@ class ChallengeListeningVC: UIViewController {
     func configureInputUser(){
         self.viewInputUser.layer.cornerRadius = 50
         self.viewInputUser.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
+    
+    func configureLogic(){
+//        var totalBlank : TotalBlank = .blank1
+//        var pertanyaan : String = "blank1, nggak , blank2, boso jowo ta?"
+//        let jawaban1 = "kon"
+//        let jawaban2 = "iso"
+//
+//        var arrays = pertanyaan.components(separatedBy: ", ")
+//        for array in arrays {
+//            //print(array)
+//            if array == "blank2" {
+//                totalBlank = .blank2
+//            }
+//        }
+//        print(arrays[0])
+//
+//        switch totalBlank {
+//        case .blank1:
+//            print()
+//        case .blank2:
+//        print()
+//        default:
+//            print()
+//        }
     }
     
     

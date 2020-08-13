@@ -1,18 +1,18 @@
 //
-//  ListeningResultVC.swift
+//  KosakataResultVC.swift
 //  Locla
 //
-//  Created by Tony Varian Yoditanto on 12/08/20.
+//  Created by Tony Varian Yoditanto on 13/08/20.
 //  Copyright © 2020 Apple Developer Academy. All rights reserved.
 //
 
 import UIKit
 
-class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var subtopikImageview: UIImageView!
-    @IBOutlet weak var resultIndoLabel: UILabel!
-    @IBOutlet weak var resultLocalLabel: UILabel!
+    @IBOutlet weak var keteranganIndoLabel: UILabel!
+    @IBOutlet weak var keteranganLocalLabel: UILabel!
     @IBOutlet weak var star1Imageview: UIImageView!
     @IBOutlet weak var star2Imageview: UIImageView!
     @IBOutlet weak var star3Imageview: UIImageView!
@@ -21,29 +21,14 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var randomTipLabel: UILabel!
     @IBOutlet weak var selesaiButton: UIButton!
-    @IBOutlet weak var viewRandomTip: UIView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        configureButton()
-        configureLabel()
         configureImage()
+        configureLabel()
+        configureButton()
         configureCollectionView()
-    }
-    
-    func configureButton(){
-        self.selesaiButton.layer.cornerRadius = 10.0
-
-    }
-    
-    func configureLabel(){
-        self.resultIndoLabel.text = "Kamu yang terbaik!!"
-        self.resultLocalLabel.text = "Kon sangar"
-        self.randomTipLabel.text = "*Random Tip : Cok biasanya di gunakan kalau kondisi sudah akrab, jangan pada orang yang baru anda kenal"
-        self.viewRandomTip.layer.cornerRadius = 10.0
-        self.percobaanPertamaLabel.text = "5/5"
+        // Do any additional setup after loading the view.
     }
     
     func configureImage(){
@@ -52,6 +37,16 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
         self.star2Imageview.image = UIImage(named: "star")
         self.star3Imageview.image = UIImage(named: "star")
         self.jempolImageview.image = UIImage(named: "star")
+    }
+    
+    func configureLabel(){
+        self.keteranganIndoLabel.text = "Kamu yang terbaik!!"
+        self.keteranganLocalLabel.text = "Kon Sangar"
+        self.percobaanPertamaLabel.text = "5/5"
+    }
+    
+    func configureButton(){
+        self.selesaiButton.layer.cornerRadius = 10.0
     }
     
     func configureCollectionView(){
@@ -80,8 +75,9 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
         collectionView.deselectItem(at: indexPath, animated: true)
         //performSegue(withIdentifier: "showResult", sender: indexPath)
     }
-
+    
     @IBAction func didTapSelesaiButton(_ sender: Any) {
         self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
     }
+    
 }

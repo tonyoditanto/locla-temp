@@ -608,7 +608,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WT9-UH-qcS" kind="show" id="gSw-iM-AzJ"/>
+                                    <action selector="didTapSelesaiButton:" destination="RwA-kl-hV3" eventType="touchUpInside" id="r6I-MA-71t"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6bt-yE-qCq">
@@ -728,6 +728,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                     <connections>
                         <outlet property="collectionView" destination="6bt-yE-qCq" id="cEg-fv-xjp"/>
                         <outlet property="jempolImageview" destination="ieb-7B-bz6" id="bjo-6P-gYU"/>
+                        <outlet property="percobaanPertamaLabel" destination="843-fA-1iz" id="kH1-qr-KUh"/>
                         <outlet property="randomTipLabel" destination="NbN-gc-Waj" id="dzi-Qg-vT5"/>
                         <outlet property="resultIndoLabel" destination="Ihz-vF-x2A" id="KUS-Fx-e2f"/>
                         <outlet property="resultLocalLabel" destination="AnV-Hr-DyD" id="8x6-JC-ehr"/>

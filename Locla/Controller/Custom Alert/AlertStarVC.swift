@@ -50,6 +50,7 @@ class AlertStarVC: UIViewController {
     @IBAction func didTapLanjutButton(_ sender: Any) {
         self.removeFromParent()
         self.view.removeFromSuperview()
+        self.parent?.view.reloadInputViews()
     }
     
     /*
