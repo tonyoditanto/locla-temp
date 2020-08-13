@@ -13,6 +13,7 @@
 		0F3B31A824E2E5E900891C1B /* vocabularyCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B31A524E2E5E900891C1B /* vocabularyCategoryCell.xib */; };
 		0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000624E425E70070CA25 /* SearchBarVC.swift */; };
 		0F4B000924E426890070CA25 /* SearchBarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000824E426890070CA25 /* SearchBarResultCell.swift */; };
+		0FECA58324E4E1C3006FE47C /* Obrolan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECA58224E4E1C3006FE47C /* Obrolan.storyboard */; };
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
 		5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873D24E3844200FC55E2 /* UIColor.swift */; };
@@ -85,6 +86,7 @@
 		0F3B31A524E2E5E900891C1B /* vocabularyCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCategoryCell.xib; sourceTree = "<group>"; };
 		0F4B000624E425E70070CA25 /* SearchBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarVC.swift; sourceTree = "<group>"; };
 		0F4B000824E426890070CA25 /* SearchBarResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarResultCell.swift; sourceTree = "<group>"; };
+		0FECA58224E4E1C3006FE47C /* Obrolan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Obrolan.storyboard; sourceTree = "<group>"; };
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
 		5A34873D24E3844200FC55E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -163,6 +165,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FECA58024E4E124006FE47C /* Challenge Obrolan */ = {
+			isa = PBXGroup;
+			children = (
+				0FECA58224E4E1C3006FE47C /* Obrolan.storyboard */,
+				0FECA58124E4E137006FE47C /* cells */,
+			);
+			path = "Challenge Obrolan";
+			sourceTree = "<group>";
+		};
+		0FECA58124E4E137006FE47C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		5A34873F24E38DDD00FC55E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +245,7 @@
 			children = (
 				85C7CA4524E47E160025E1AA /* Challenge Kosakata */,
 				856E7FB524E2CBBD0044CB36 /* Challenge Mendengarkan */,
+				0FECA58024E4E124006FE47C /* Challenge Obrolan */,
 				5A88368824D9086A0044F1EA /* Lesson */,
 				5A88368924D908760044F1EA /* Vocabulary */,
 				5A88368A24D908890044F1EA /* Profile */,
@@ -519,6 +538,7 @@
 				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
 				856E7FB324E2B93B0044CB36 /* SubtopikCollectionViewCell.xib in Resources */,
 				856E7FB724E2CC090044CB36 /* Mendengarkan.storyboard in Resources */,
+				0FECA58324E4E1C3006FE47C /* Obrolan.storyboard in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
 				5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */,
 				856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */,
