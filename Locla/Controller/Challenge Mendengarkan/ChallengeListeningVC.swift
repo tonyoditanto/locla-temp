@@ -24,7 +24,7 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var keterangan1Label: UILabel!
     @IBOutlet weak var keterangan2Label: UILabel!
     
-    var selfChatText = "# nggak # boso jowo?"
+    var selfChatText = "# nggak ## boso jowo ?"
     var fill1 = "kon"
     var fill2 = "iso"
     var fillBlank = UIView()
@@ -91,26 +91,43 @@ class ChallengeListeningVC: UIViewController {
     }
     
     func configureFillTheBlank(){
-        fillTheBlankStack.spacing = 2.0
+        fillTheBlankStack.spacing = 5.0
+        fillTheBlankStack.distribution = .fillEqually
+        fillTheBlankStack.alignment = .fill
+        fillTheBlankStack.translatesAutoresizingMaskIntoConstraints = true
         
-        fillBlank.layer.cornerRadius = 10.0
+        fillBlank.layer.cornerRadius = 5.0
         fillBlank.widthAnchor.constraint(equalToConstant: 50).isActive = true
         fillBlank.heightAnchor.constraint(equalToConstant: 40).isActive = true
         fillBlank.backgroundColor = .white
+        
+        fillBlank2.layer.cornerRadius = 5.0
+        fillBlank2.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        fillBlank2.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        fillBlank2.backgroundColor = .white
         
         fillLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
         fillLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         let arrays = selfChatText.components(separatedBy: " ")
-        for array in arrays {
-            if array == "#" {
+
+        for index in 1...arrays.count {
+            if arrays[index-1] == "#" {
                 self.fillTheBlankStack.addArrangedSubview(fillBlank)
+                //self.fillTheBlankStack.addSubview(fillBlank)
             }
-            if array != "#" {
-                fillLabel.text = array
+            
+            if arrays[index-1] == "##" {
+                self.fillTheBlankStack.addArrangedSubview(fillBlank2)
+                //self.fillTheBlankStack.addSubview(fillBlank)
+            }
+            
+            if arrays[index-1] != "#" && arrays[index-1] != "##"{
+                fillLabel.text = arrays[index-1]
                 self.fillTheBlankStack.addArrangedSubview(fillLabel)
+                //self.fillTheBlankStack.addSubview(fillLabel)
             }
-            print(array)
+            print(arrays[index-1])
             
         }
     }
