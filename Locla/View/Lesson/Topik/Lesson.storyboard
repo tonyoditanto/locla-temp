@@ -168,8 +168,8 @@
                         <outlet property="collectionView" destination="cOh-4W-ZCE" id="fvj-nm-AWP"/>
                         <outlet property="starLbl" destination="gRX-RT-mGv" id="MDg-vy-I4t"/>
                         <outlet property="titleLbl" destination="Cos-ps-UPA" id="fnh-zh-rFz"/>
-                        <segue destination="dED-WS-8gC" kind="presentation" identifier="SubtopicToVocabChallenge" id="VU1-dW-eUC"/>
-                        <segue destination="m9c-MA-xjP" kind="presentation" identifier="SubtopicToListeningChallenge" id="CPa-yL-97j"/>
+                        <segue destination="dED-WS-8gC" kind="presentation" identifier="SubtopicToVocabChallenge" modalPresentationStyle="fullScreen" id="VU1-dW-eUC"/>
+                        <segue destination="m9c-MA-xjP" kind="presentation" identifier="SubtopicToListeningChallenge" modalPresentationStyle="fullScreen" id="CPa-yL-97j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
