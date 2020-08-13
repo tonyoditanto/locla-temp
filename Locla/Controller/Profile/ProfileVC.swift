@@ -12,7 +12,7 @@ import Foundation
 
 class ProfileVC: UIViewController {
 
-    @IBOutlet weak var buttonHadiah: UIButton!
+    @IBOutlet weak var hadiahBtn: UIButton!
        @IBOutlet weak var progressView: UIProgressView!
        @IBOutlet weak var imgHadiah: UIImageView!
        @IBOutlet weak var bgPercobaanPertama: UIImageView!
@@ -26,48 +26,43 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var lblnama: UILabel!
     @IBOutlet weak var lblPV: UILabel!
     
-    var status : Status?
     var totalPercobaanPertama : Int?
     var totalstar : Int?
-    var topics : [Subtopic] = []
-    var LocationId : Int?
+    var topics : [Topic] = []
+    var locationId : Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ProgressLearning()
-    fetchSubtopiks()
-       // backProfil = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-      //  backProfil.image = UIImage(named : "backgroundProfil")
-       // ProfilPic.image = UIImage(named: "people2")
-        //bintang.image = UIImage(named: "star")
-        //percobaanPertama.image = UIImage(named: "Image-1")
+        progressLearning()
+        fetchTopics()
         bgBintang.layer.cornerRadius = 10
         bgPercobaanPertama.layer.cornerRadius = 10
         bgBintang.backgroundColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 100)
         bgPercobaanPertama.backgroundColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 100)
-       // imgHadiah.image = UIImage(named: "reward")
-        buttonHadiah.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
-        buttonHadiah.layer.cornerRadius = 10
+        hadiahBtn.backgroundColor = UIColor.init(red: 250/255, green: 120/255, blue: 0/255, alpha: 100)
+        hadiahBtn.layer.cornerRadius = 10
         progressView.layer.cornerRadius = 10
         progressView.clipsToBounds = true
         getStar()
-       // getPercobaanPertama()
         //ProfilPic.layer.cornerRadius = 14
        
     
     }
     
-    func fetchSubtopiks(){
-        topics = DataLoader.getSubtopics(topicID: LocationId ?? 1)
+    func fetchTopics(){
+        topics = DataLoader.getTopics(locationID: locationId ?? 1)
        }
     
     func getStar (){
-        let subtopics =  DataLoader.getSubtopics(topicID: LocationId ?? 1)
-
+        
+        var subtopics : [Subtopic] = []
+        for topic in topics {
+            subtopics.append(contentsOf: DataLoader.getSubtopics(topicID: topic.id))
+        }
        var stargained = 0
               for subtopic in subtopics {
-                  stargained += subtopic.starGained ?? 0
+                stargained += subtopic.starGained
               }
         if stargained == 0 {
             lblBintang.text = "0"
@@ -80,29 +75,9 @@ class ProfileVC: UIViewController {
     }
    
     func getPercobaanPertama () {
-        let subtopics =  DataLoader.getSubtopics(topicID: LocationId ?? 1)
-
-        var percobaanpertama = 0
-        var totalpercobaanpertama = 0
-               for subtopic in subtopics {
-                   percobaanpertama += subtopic.starGained ?? 0
-        }
-                if percobaanpertama == 3 {
-                    totalpercobaanpertama = totalpercobaanpertama + 1
-  
-               }
-                lblPercobaanPertama.text = "\(totalpercobaanpertama)"
-      
-
-        }
-       /* if Subtopic.CodingKeys.starGained.intValue == 3 {
-            let totalpercobaanpertama = percobaanpertama + 1
-            lblPercobaanPertama.text = "\(totalpercobaanpertama)"
-            print()
- */
+       
+    }
         
-        
-    
     
     //rename
        @IBAction func renameButton(_ sender: Any) {
@@ -147,7 +122,8 @@ class ProfileVC: UIViewController {
            currentTime = currentTime - 1.1
            progressView.progress = currentTime/maxTime
        }
-    func ProgressLearning() {
+    func progressLearning() {
+     
         
         if Status.unlocked.rawValue == "Unlocked" {
             perform(#selector(updateProgress))

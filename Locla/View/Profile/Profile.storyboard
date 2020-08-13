@@ -208,7 +208,7 @@
                         <outlet property="bgBintang" destination="Kfh-8d-BWr" id="bk6-VD-ltc"/>
                         <outlet property="bgPercobaanPertama" destination="QhO-Fz-8qo" id="vsI-W0-dX8"/>
                         <outlet property="bintang" destination="ADO-y0-2dK" id="FmM-PA-q4g"/>
-                        <outlet property="buttonHadiah" destination="bWA-28-1YF" id="yTR-7t-H5H"/>
+                        <outlet property="hadiahBtn" destination="bWA-28-1YF" id="yTR-7t-H5H"/>
                         <outlet property="imgHadiah" destination="Vzu-Dc-iA4" id="fqL-Yu-YTD"/>
                         <outlet property="lblBintang" destination="xx1-qL-vEj" id="MoX-0o-iwN"/>
                         <outlet property="lblPV" destination="Qnr-oj-mqY" id="6qa-t3-leb"/>
