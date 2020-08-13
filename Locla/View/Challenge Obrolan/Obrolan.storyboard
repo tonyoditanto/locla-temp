@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C57-3u-4is">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XM6-s0-nfm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,23 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="akj-qZ-odX">
-            <objects>
-                <navigationController id="C57-3u-4is" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="17i-ph-PxM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mjG-wn-GRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-523" y="-216"/>
-        </scene>
-        <!--View Controller-->
+        <!--Intro ObrolanVC-->
         <scene sceneID="kZt-dP-7Zz">
             <objects>
-                <viewController id="XM6-s0-nfm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroObrolanVC" id="XM6-s0-nfm" customClass="IntroObrolanVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSm-si-pbv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +73,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="didCloseBtn:" destination="XM6-s0-nfm" eventType="touchUpInside" id="4Tb-ib-DR9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ib-dp-gGA">
                                 <rect key="frame" x="52" y="747" width="318" height="66"/>
@@ -98,6 +88,9 @@
                                 <state key="normal" title="Mulai">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xre-o0-xq2" kind="modal" modalPresentationStyle="fullScreen" id="Njm-cs-4sj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -132,15 +125,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lwT-Gj-YsR"/>
                     </view>
+                    <connections>
+                        <outlet property="deskripsiLbl" destination="VhI-oE-F5I" id="hOe-vI-Re7"/>
+                        <outlet property="judulSubtopicLbl" destination="TK3-KI-cFJ" id="zkr-8m-86K"/>
+                        <outlet property="misiLbl" destination="BNJ-LT-nNG" id="Jgh-vb-q6L"/>
+                        <outlet property="mulaiBtn" destination="8ib-dp-gGA" id="Fh3-4A-HOk"/>
+                        <outlet property="subtopicIV" destination="eHp-lI-Ecb" id="QBX-SA-M5D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wV-PU-RqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="314.49275362318843" y="-216.29464285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Challenge ObrolanVC-->
         <scene sceneID="CN3-Pv-jmy">
             <objects>
-                <viewController id="xre-o0-xq2" sceneMemberID="viewController">
+                <viewController id="xre-o0-xq2" customClass="ChallengeObrolanVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HE6-4r-IO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,6 +161,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="didTapCloseBtn:" destination="xre-o0-xq2" eventType="touchUpInside" id="624-s8-fRw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pl-2A-3Gn">
                                 <rect key="frame" x="89" y="84" width="64" height="30"/>
@@ -337,10 +340,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bvM-7h-OD1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KuJ-L3-SMc"/>
+                    <connections>
+                        <outlet property="answerBtn1" destination="U38-9N-hmY" id="avU-q7-Nel"/>
+                        <outlet property="answerBtn2" destination="U38-9N-hmY" id="jMi-Hu-XVZ"/>
+                        <outlet property="answerBtn3" destination="y2n-Qn-g2M" id="k5b-IU-h6b"/>
+                        <outlet property="answerBtn4" destination="yJD-Cg-2dh" id="QaK-6z-ZZ4"/>
+                        <outlet property="failedNotification1Lbl" destination="iuy-5V-8mv" id="7m9-KS-t5M"/>
+                        <outlet property="failedNotification2Lbl" destination="TqV-ev-r2T" id="HhY-eJ-YYB"/>
+                        <outlet property="identityProfilLbl" destination="gdm-eT-oKt" id="4oU-D4-nm4"/>
+                        <outlet property="listChatTableView" destination="Ela-ab-SnJ" id="g6H-SJ-bFt"/>
+                        <outlet property="nameProfilLbl" destination="7pl-2A-3Gn" id="Dkj-CW-bif"/>
+                        <outlet property="profilIV" destination="xWu-dm-HuG" id="bkZ-Fs-jks"/>
+                        <outlet property="selfChatTexLblt" destination="JiH-5r-eSj" id="CoO-ej-y6l"/>
+                        <outlet property="submitBtn" destination="acM-1Q-1a4" id="jhU-db-ADn"/>
+                        <outlet property="viewInputUser" destination="L9E-tJ-Iid" id="LJM-wc-DLY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjr-OB-qXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.985507246377" y="-216.29464285714286"/>
+            <point key="canvasLocation" x="1191" y="-216"/>
         </scene>
     </scenes>
     <resources>
