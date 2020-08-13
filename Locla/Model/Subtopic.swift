@@ -32,7 +32,7 @@ struct Subtopic: Codable {
 
 enum ChallengeType: String, Codable {
     case kosakata = "Kosakata"
-    case mendengarkan = "mendengarkan"
+    case mendengarkan = "Mendengarkan"
     case obrolan = "Obrolan"
 }
 

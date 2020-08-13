@@ -8,7 +8,7 @@
 
 import UIKit
 
-class vocabCategoryDetailsCell: UITableViewCell {
+class VocabCategoryDetailsCell: UITableViewCell {
     
     @IBOutlet weak var backgroundCell: UIView!
     @IBOutlet weak var word: UILabel!
