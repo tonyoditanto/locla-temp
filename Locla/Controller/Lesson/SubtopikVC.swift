@@ -60,7 +60,7 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
           
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-//        performSegue(withIdentifier: "showSubtopik", sender: indexPath)
+        performSegue(withIdentifier: "showMendengarkan", sender: indexPath)
     }
 
           

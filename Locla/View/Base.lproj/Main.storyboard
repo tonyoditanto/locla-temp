@@ -39,7 +39,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Ryf-BU-YYU">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="n0B-g2-CV1" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="n0B-g2-CV1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1SS-qp-YkB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
