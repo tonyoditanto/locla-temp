@@ -48,6 +48,7 @@
 		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 		5A9EDA0D24E105C700BE1200 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0C24E105C700BE1200 /* DataLoader.swift */; };
 		5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE13E0524E280A4003A077E /* LessonVC.swift */; };
+		850BF72224E4DDAB00B5DE88 /* FillTheBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */; };
 		856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */; };
 		856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */; };
 		856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */; };
@@ -123,6 +124,7 @@
 		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 		5A9EDA0C24E105C700BE1200 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		5AE13E0524E280A4003A077E /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
+		850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTheBlank.swift; sourceTree = "<group>"; };
 		856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtopikVC.swift; sourceTree = "<group>"; };
 		856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Lesson.storyboard; path = Topik/Lesson.storyboard; sourceTree = "<group>"; };
 		856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopikCollectionViewCell.xib; path = Locla/View/Lesson/Topik/cells/TopikCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */,
+				850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				856E7FC624E3A9590044CB36 /* ListeningResultVC.swift in Sources */,
 				5A9ED9EA24E0FCF900BE1200 /* Reward.swift in Sources */,
 				85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */,
+				850BF72224E4DDAB00B5DE88 /* FillTheBlank.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				0F3B31A724E2E5E900891C1B /* vocabularyCategoryCell.swift in Sources */,
 				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,

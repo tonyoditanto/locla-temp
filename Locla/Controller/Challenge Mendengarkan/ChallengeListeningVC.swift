@@ -14,7 +14,7 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var progressViewLabel: UILabel!
     @IBOutlet weak var subtopikImageView: UIImageView!
     @IBOutlet weak var pertanyaanLabel: UILabel!
-    @IBOutlet weak var selfChatTextLabel: UILabel!
+    @IBOutlet weak var fillTheBlankStack: UIStackView!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
@@ -23,6 +23,16 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var viewInputUser: UIView!
     @IBOutlet weak var keterangan1Label: UILabel!
     @IBOutlet weak var keterangan2Label: UILabel!
+    
+    var selfChatText = "# nggak # boso jowo?"
+    var fill1 = "kon"
+    var fill2 = "iso"
+    var fillBlank = UIView()
+    var fillBlank2 = UIView()
+    var fillLabel = UILabel()
+    var fillLabel2 = UILabel()
+    var fillLabel3 = UILabel()
+    
     
     enum TotalBlank: Int {
         case blank1 = 1
@@ -38,7 +48,7 @@ class ChallengeListeningVC: UIViewController {
         configureLabel()
         configureAnswer()
         configureInputUser()
-        configureLogic()
+        configureFillTheBlank()
     }
     
     func configureKeterangan(){
@@ -69,8 +79,6 @@ class ChallengeListeningVC: UIViewController {
     
     func configureLabel(){
         pertanyaanLabel.text = "Apa bahasa surabaya dari “Kamu nggak bisa bahasa jawa ya?”"
-        
-        selfChatTextLabel.text = "___ nggak ___ boso jowo ta?"
     }
     
     func configureImage(){
@@ -82,35 +90,34 @@ class ChallengeListeningVC: UIViewController {
         self.viewInputUser.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
-    func configureLogic(){
-//        var totalBlank : TotalBlank = .blank1
-//        var pertanyaan : String = "blank1, nggak , blank2, boso jowo ta?"
-//        let jawaban1 = "kon"
-//        let jawaban2 = "iso"
-//
-//        var arrays = pertanyaan.components(separatedBy: ", ")
-//        for array in arrays {
-//            //print(array)
-//            if array == "blank2" {
-//                totalBlank = .blank2
-//            }
-//        }
-//        print(arrays[0])
-//
-//        switch totalBlank {
-//        case .blank1:
-//            print()
-//        case .blank2:
-//        print()
-//        default:
-//            print()
-//        }
+    func configureFillTheBlank(){
+        fillTheBlankStack.spacing = 2.0
+        
+        fillBlank.layer.cornerRadius = 10.0
+        fillBlank.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        fillBlank.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        fillBlank.backgroundColor = .white
+        
+        fillLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        fillLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        let arrays = selfChatText.components(separatedBy: " ")
+        for array in arrays {
+            if array == "#" {
+                self.fillTheBlankStack.addArrangedSubview(fillBlank)
+            }
+            if array != "#" {
+                fillLabel.text = array
+                self.fillTheBlankStack.addArrangedSubview(fillLabel)
+            }
+            print(array)
+            
+        }
     }
     
     
     @IBAction func didTapCloseButton(_ sender: Any) {
         let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC
-        
         alertVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         self.addChild(alertVC)
         self.view.addSubview(alertVC.view)

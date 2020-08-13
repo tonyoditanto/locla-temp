@@ -336,12 +336,6 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label self chat text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id3-zv-Bwx">
-                                        <rect key="frame" x="30" y="80" width="308" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R92-O0-V0F">
                                         <rect key="frame" x="344" y="75" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -412,27 +406,33 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm1-L9-7FC">
+                                        <rect key="frame" x="30" y="75" width="308" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Fm1-L9-7FC" secondAttribute="height" multiplier="77:10" id="jZA-V4-bKv"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89411764705882346" green="0.88235294117647056" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="R92-O0-V0F" secondAttribute="trailing" constant="30" id="2t7-Q6-7g3"/>
-                                    <constraint firstItem="Id3-zv-Bwx" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="3MO-zx-0Py"/>
-                                    <constraint firstItem="R92-O0-V0F" firstAttribute="leading" secondItem="Id3-zv-Bwx" secondAttribute="trailing" constant="6" id="Avb-R2-ZBe"/>
+                                    <constraint firstItem="HHY-XL-i5Q" firstAttribute="top" secondItem="R92-O0-V0F" secondAttribute="bottom" constant="21" id="3PQ-Dn-0Sm"/>
                                     <constraint firstItem="cR2-Li-ch5" firstAttribute="top" secondItem="ZcF-b4-9Yf" secondAttribute="top" constant="10" id="CpG-a5-DAE"/>
                                     <constraint firstAttribute="width" constant="414" id="DdV-M8-C24"/>
+                                    <constraint firstItem="ZNW-wN-ZUN" firstAttribute="top" secondItem="Fm1-L9-7FC" secondAttribute="bottom" constant="21" id="IfR-Ye-27G"/>
                                     <constraint firstItem="R92-O0-V0F" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="10" id="J1J-Wc-6tx"/>
+                                    <constraint firstItem="R92-O0-V0F" firstAttribute="leading" secondItem="Fm1-L9-7FC" secondAttribute="trailing" constant="6" id="MUa-RE-Lyh"/>
+                                    <constraint firstItem="5IH-aa-1c1" firstAttribute="top" secondItem="Fm1-L9-7FC" secondAttribute="bottom" constant="21" id="MYG-sm-y8C"/>
                                     <constraint firstItem="5IH-aa-1c1" firstAttribute="leading" secondItem="7UO-rl-HUO" secondAttribute="trailing" constant="10" id="NNI-iV-foX"/>
-                                    <constraint firstItem="HHY-XL-i5Q" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="NP4-Xe-xKo"/>
                                     <constraint firstAttribute="width" secondItem="ZcF-b4-9Yf" secondAttribute="height" multiplier="207:125" id="O9J-JM-7kk"/>
                                     <constraint firstItem="7UO-rl-HUO" firstAttribute="leading" secondItem="ZNW-wN-ZUN" secondAttribute="trailing" constant="10" id="PeJ-x7-U94"/>
+                                    <constraint firstItem="Fm1-L9-7FC" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="Pro-rQ-PiM"/>
                                     <constraint firstAttribute="height" constant="250" id="PyW-Vz-bPV"/>
-                                    <constraint firstItem="7UO-rl-HUO" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="SYJ-mP-yeA"/>
                                     <constraint firstItem="cR2-Li-ch5" firstAttribute="centerX" secondItem="ZcF-b4-9Yf" secondAttribute="centerX" id="Sdz-5r-ty3"/>
                                     <constraint firstItem="gQg-Si-uc6" firstAttribute="top" secondItem="cR2-Li-ch5" secondAttribute="bottom" constant="8" id="WNS-2t-t2g"/>
-                                    <constraint firstItem="ZNW-wN-ZUN" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="XIR-io-UAO"/>
                                     <constraint firstItem="ZNW-wN-ZUN" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="ZVl-Wq-t4Q"/>
-                                    <constraint firstItem="5IH-aa-1c1" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="gah-Bi-pWE"/>
-                                    <constraint firstItem="Id3-zv-Bwx" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="15" id="p2X-Sl-5fS"/>
+                                    <constraint firstItem="Fm1-L9-7FC" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="10" id="ce2-yO-gsR"/>
+                                    <constraint firstItem="7UO-rl-HUO" firstAttribute="top" secondItem="Fm1-L9-7FC" secondAttribute="bottom" constant="21" id="fue-HA-qOb"/>
                                     <constraint firstItem="HHY-XL-i5Q" firstAttribute="leading" secondItem="5IH-aa-1c1" secondAttribute="trailing" constant="10" id="pxH-fe-FxR"/>
                                     <constraint firstItem="gQg-Si-uc6" firstAttribute="centerX" secondItem="ZcF-b4-9Yf" secondAttribute="centerX" id="zY5-OS-OTd"/>
                                 </constraints>
@@ -516,12 +516,12 @@ mendengarkan audio ini saat memulai tantangan.</string>
                         <outlet property="buttonB" destination="7UO-rl-HUO" id="I0w-Cs-cBa"/>
                         <outlet property="buttonC" destination="5IH-aa-1c1" id="3p1-vM-ZNP"/>
                         <outlet property="buttonD" destination="HHY-XL-i5Q" id="ZII-4N-T7i"/>
+                        <outlet property="fillTheBlankStack" destination="Fm1-L9-7FC" id="R5o-K0-LWy"/>
                         <outlet property="keterangan1Label" destination="cR2-Li-ch5" id="rJh-nw-0oB"/>
                         <outlet property="keterangan2Label" destination="gQg-Si-uc6" id="hXs-45-bUy"/>
                         <outlet property="pertanyaanLabel" destination="up9-ny-xrg" id="Jqi-XY-cb6"/>
                         <outlet property="progressView" destination="fac-Yw-Zpl" id="gCZ-a3-wag"/>
                         <outlet property="progressViewLabel" destination="nDy-jw-edC" id="K8C-HF-ck3"/>
-                        <outlet property="selfChatTextLabel" destination="Id3-zv-Bwx" id="9Uz-sQ-EXB"/>
                         <outlet property="submitButton" destination="R92-O0-V0F" id="0s5-kh-gnk"/>
                         <outlet property="subtopikImageView" destination="H9P-XJ-T5n" id="Yz3-0g-sHW"/>
                         <outlet property="viewInputUser" destination="ZcF-b4-9Yf" id="bCa-5U-OFe"/>
