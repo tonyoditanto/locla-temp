@@ -10,6 +10,6 @@ import Foundation
 
 // MARK: - LocationElement
 struct Location: Codable {
-    let id: Int?
+    let id: Int
     let name: String?
 }

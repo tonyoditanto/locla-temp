@@ -8,17 +8,27 @@
 
 import UIKit
 
-class SubtopikVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class SubtopikVC: UIViewController{
 
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var starLbl: UILabel!
+    
+    var topicId : Int?
+    var subtopics : [Subtopic] = []
+    
+    var titleText, star : String?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLbl.text = titleText
+        starLbl.text = star
         fetchSubtopiks()
         setupCollectionView()
     }
       
     func fetchSubtopiks(){
+        subtopics = DataLoader.getSubtopics(topicID: topicId ?? 1)
     }
       
     func setupCollectionView() {
@@ -30,18 +40,20 @@ class SubtopikVC: UIViewController,UICollectionViewDelegate, UICollectionViewDat
         self.collectionView.register(nib, forCellWithReuseIdentifier: SubtopikCollectionViewCell.cellID)
     }
       
+}
   // MARK: UICollectionViewDataSource
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
+extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
           
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return subtopics.count
     }
           
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubtopikCollectionViewCell.cellID, for: indexPath) as! SubtopikCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubtopikCollectionViewCell.cellID, for: indexPath) as? SubtopikCollectionViewCell else { return UICollectionViewCell() }
+        cell.judulSubtopikLabel.text = subtopics[indexPath.row].name
+        cell.jenisChallengeLabel.text = subtopics[indexPath.row].challengeType?.rawValue
+        cell.raihanBintangLabel.text = "\(subtopics[indexPath.row].starGained) / \(subtopics[indexPath.row].totalStar)"
+        cell.container.backgroundColor = subtopics[indexPath.row].status == Status.unlocked ? .systemOrange : .systemGray
         return cell
     }
           

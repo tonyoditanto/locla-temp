@@ -9,11 +9,11 @@ import Foundation
 
 // MARK: - SubtopicElement
 struct Subtopic: Codable {
-    let id, topicID: Int?
+    let id, topicID: Int
     let name: String?
     let challengeType: ChallengeType?
     let status: Status?
-    let starGained, totalStar: Int?
+    let starGained, totalStar: Int
     let subtopicDescription, mission, listeningFilename: String?
 
     enum CodingKeys: String, CodingKey {

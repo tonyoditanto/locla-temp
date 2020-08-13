@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - VocabularyChallengeElement
 struct VocabularyChallenge: Codable {
-    let id, subtopicID: Int?
+    let id, subtopicID: Int
     let question, optionA, optionB, optionC: String?
     let optionD: String?
     let answer: Answer?

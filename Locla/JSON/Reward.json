@@ -1,32 +1,26 @@
 [
   {
     "id": 1,
-    "location_id": 1,
-    "name": "Rekomendasi Tempat Liburan",
-    "detail": ""
+    "category_id": 1,
+    "name": "Kenjeran Park",
+    "detail": "Jl. Sukolilo, Desa Sukolilo Baru, Kecamatan Bulak, Kota Surabaya",
+    "img_filename": "kenjeran.jpg",
+    "source_img": "nativeindonesia.com"
   },
   {
     "id": 2,
-    "location_id": 1,
-    "name": "Fun Fact Surabaya",
-    "detail": ""
+    "category_id": 1,
+    "name": "Mangrove",
+    "detail": "Jl. Raya Wonorejo No.1, Wonorejo, Kec. Rungkut, Kota SBY, Jawa Timur",
+    "img_filename": "mangrove.jpg",
+    "source_img": "sewabussurabaya.com"
   },
   {
     "id": 3,
-    "location_id": 1,
-    "name": "Explicit Content",
-    "detail": ""
-  },
-  {
-    "id": 4,
-    "location_id": 1,
-    "name": "Itinerary liburan 3H 2M di Jawa Timur",
-    "detail": ""
-  },
-  {
-    "id": 5,
-    "location_id": 1,
-    "name": "",
-    "detail": ""
+    "category_id": 1,
+    "name": "House of Sampoerna",
+    "detail": "Taman Sampoerna No.6, Krembangan Utara, Kec. Pabean Cantian, Kota SBY, Jawa Timur",
+    "img_filename": "houseofsampoerna.jpg",
+    "source_img": "commons.wikimedia.org"
   }
 ]

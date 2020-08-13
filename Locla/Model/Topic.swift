@@ -11,9 +11,9 @@ import Foundation
 
 // MARK: - SubtopicElement
 struct Topic: Codable {
-    let id: Int?
+    let id: Int
     let name, imageFilename: String?
-    let locationID: Int?
+    let locationID: Int
     let hexColor: String?
 
     enum CodingKeys: String, CodingKey {

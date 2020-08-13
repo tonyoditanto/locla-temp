@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="vocabularyCategoryCell" id="gTV-IL-0wX" customClass="vocabularyCategoryCell" customModule="Locla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2t-rp-sLF">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zf-5g-g3r">
+                                <rect key="frame" x="8" y="131" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people1" translatesAutoresizingMaskIntoConstraints="NO" id="Bef-ao-2eD">
+                                <rect key="frame" x="45" y="30" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="azq-NS-LUn"/>
+                                    <constraint firstAttribute="width" constant="80" id="d5q-6G-WML"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="0ch-JG-bry"/>
+                            <constraint firstAttribute="trailing" secondItem="8zf-5g-g3r" secondAttribute="trailing" constant="8" id="EVT-S8-qqA"/>
+                            <constraint firstItem="8zf-5g-g3r" firstAttribute="top" secondItem="Bef-ao-2eD" secondAttribute="bottom" constant="21" id="HJg-mW-a5S"/>
+                            <constraint firstAttribute="trailing" secondItem="Bef-ao-2eD" secondAttribute="trailing" constant="45" id="PBH-Ad-YJe"/>
+                            <constraint firstItem="Bef-ao-2eD" firstAttribute="top" secondItem="D2t-rp-sLF" secondAttribute="top" constant="30" id="Rw5-aW-EuW"/>
+                            <constraint firstAttribute="height" constant="170" id="ZcS-CD-R9M"/>
+                            <constraint firstItem="Bef-ao-2eD" firstAttribute="leading" secondItem="D2t-rp-sLF" secondAttribute="leading" constant="45" id="f0n-0v-lCf"/>
+                            <constraint firstItem="8zf-5g-g3r" firstAttribute="leading" secondItem="D2t-rp-sLF" secondAttribute="leading" constant="8" id="hFd-ag-TfA"/>
+                            <constraint firstAttribute="width" secondItem="D2t-rp-sLF" secondAttribute="height" multiplier="1:1" id="y3h-ev-qOb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="D2t-rp-sLF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e5n-0e-rUj"/>
+                <constraint firstAttribute="bottom" secondItem="D2t-rp-sLF" secondAttribute="bottom" id="gMn-yj-VrC"/>
+                <constraint firstItem="D2t-rp-sLF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jct-MQ-EEy"/>
+                <constraint firstAttribute="trailing" secondItem="D2t-rp-sLF" secondAttribute="trailing" id="zqV-hD-MTt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundCell" destination="D2t-rp-sLF" id="MDV-13-xxY"/>
+                <outlet property="categoryVocalImage" destination="Bef-ao-2eD" id="ulg-Hm-lje"/>
+                <outlet property="categoryVocalLabel" destination="8zf-5g-g3r" id="Fv2-jr-QkR"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="119.86607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="people1" width="986" height="1023"/>
+    </resources>
+</document>
