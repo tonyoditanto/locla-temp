@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ListKosakataTableViewCell" customModule="Locla" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUz-7i-uSe">
+                        <rect key="frame" x="23" y="7" width="369" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aku = Aku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-UT-iOe">
+                                <rect key="frame" x="20" y="19" width="277" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QVB-UT-iOe" secondAttribute="height" multiplier="277:21" id="oTy-JR-yXQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-zH-8On">
+                                <rect key="frame" x="317" y="12" width="32" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="M2g-5d-zx4"/>
+                                    <constraint firstAttribute="height" constant="35" id="caE-yT-JPL"/>
+                                    <constraint firstAttribute="width" secondItem="OHM-zH-8On" secondAttribute="height" multiplier="32:35" id="vKj-wi-8jp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="speaker.3.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSoundButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ODi-Xr-Aqh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QVB-UT-iOe" secondAttribute="bottom" constant="20" id="HSB-pn-VFM"/>
+                            <constraint firstAttribute="bottom" secondItem="OHM-zH-8On" secondAttribute="bottom" constant="13" id="Imf-DA-Up1"/>
+                            <constraint firstItem="OHM-zH-8On" firstAttribute="leading" secondItem="QVB-UT-iOe" secondAttribute="trailing" constant="20" id="O6v-eC-YwY"/>
+                            <constraint firstAttribute="trailing" secondItem="OHM-zH-8On" secondAttribute="trailing" constant="20" id="bG2-M1-3p2"/>
+                            <constraint firstItem="OHM-zH-8On" firstAttribute="top" secondItem="oUz-7i-uSe" secondAttribute="top" constant="12" id="bLY-ap-cOv"/>
+                            <constraint firstAttribute="height" constant="60" id="jeW-8Z-qZi"/>
+                            <constraint firstItem="QVB-UT-iOe" firstAttribute="top" secondItem="oUz-7i-uSe" secondAttribute="top" constant="19" id="nzP-oW-kmk"/>
+                            <constraint firstAttribute="width" constant="369" id="qeW-o2-7bf"/>
+                            <constraint firstAttribute="width" secondItem="oUz-7i-uSe" secondAttribute="height" multiplier="123:20" id="r93-7b-mFy"/>
+                            <constraint firstItem="QVB-UT-iOe" firstAttribute="leading" secondItem="oUz-7i-uSe" secondAttribute="leading" constant="20" id="zLB-3z-7De"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oUz-7i-uSe" secondAttribute="bottom" constant="8" id="FyX-sI-OjB"/>
+                    <constraint firstItem="oUz-7i-uSe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="HCm-Hs-ZJh"/>
+                    <constraint firstItem="oUz-7i-uSe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="cjT-gx-15A"/>
+                    <constraint firstItem="oUz-7i-uSe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="san-um-uw8"/>
+                    <constraint firstAttribute="trailing" secondItem="oUz-7i-uSe" secondAttribute="trailing" constant="23" id="wRC-FE-B3q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundCellView" destination="oUz-7i-uSe" id="oze-JG-JCe"/>
+                <outlet property="kosakataLabel" destination="QVB-UT-iOe" id="UC8-5C-0Yb"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="132.92410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="speaker.3.fill" catalog="system" width="128" height="90"/>
+    </resources>
+</document>
