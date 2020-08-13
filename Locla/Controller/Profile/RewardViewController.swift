@@ -11,23 +11,23 @@ import UIKit
 class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     
-    var ListRewardArray : [ListReward] = []
+    var listRewards : [ListReward] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //List Reward array
-        ListRewardArray.append(ListReward(name :"Rekomendasi Tempat Liburan"))
-        ListRewardArray.append(ListReward(name :"Fun fact Surabaya"))
-        ListRewardArray.append(ListReward(name :"Explicit Content"))
-        ListRewardArray.append(ListReward(name :"Itinery Liburan di Jawa Timur"))
+        listRewards.append(ListReward(name :"Rekomendasi Tempat Liburan"))
+        listRewards.append(ListReward(name :"Fun fact Surabaya"))
+        listRewards.append(ListReward(name :"Explicit Content"))
+        listRewards.append(ListReward(name :"Itinery Liburan di Jawa Timur"))
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     return ListRewardArray.count
+     return listRewards.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: "RewardTableViewCell", for: indexPath) as! RewardTableViewCell
-     cell.textReward.text = ListRewardArray[indexPath.row].name
+     cell.textReward.text = listRewards[indexPath.row].name
       return cell
      }
  
