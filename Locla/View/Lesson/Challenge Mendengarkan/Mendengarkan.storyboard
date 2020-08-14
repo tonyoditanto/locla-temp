@@ -516,7 +516,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                         <outlet property="buttonB" destination="7UO-rl-HUO" id="I0w-Cs-cBa"/>
                         <outlet property="buttonC" destination="5IH-aa-1c1" id="3p1-vM-ZNP"/>
                         <outlet property="buttonD" destination="HHY-XL-i5Q" id="ZII-4N-T7i"/>
-                        <outlet property="fillTheBlankStack" destination="Fm1-L9-7FC" id="R5o-K0-LWy"/>
+                        <outlet property="fillTheBlankStack" destination="Fm1-L9-7FC" id="KU8-aY-6lS"/>
                         <outlet property="keterangan1Label" destination="cR2-Li-ch5" id="rJh-nw-0oB"/>
                         <outlet property="keterangan2Label" destination="gQg-Si-uc6" id="hXs-45-bUy"/>
                         <outlet property="pertanyaanLabel" destination="up9-ny-xrg" id="Jqi-XY-cb6"/>

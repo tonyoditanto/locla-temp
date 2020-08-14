@@ -24,7 +24,7 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var keterangan1Label: UILabel!
     @IBOutlet weak var keterangan2Label: UILabel!
     
-    var selfChatText = "# nggak ## boso jowo ?"
+    var selfChatText = "#+nggak+##+boso jowo ?"
     var fill1 = "kon"
     var fill2 = "iso"
     var fillBlank = UIView()
@@ -73,7 +73,7 @@ class ChallengeListeningVC: UIViewController {
         self.buttonA.setTitle("iso", for: .normal)
         self.buttonB.setTitle("sak", for: .normal)
         self.buttonC.setTitle("kon", for: .normal)
-        self.buttonD.setTitle("pirosasasas", for: .normal)
+        self.buttonD.setTitle("mbah lanang", for: .normal)
 
     }
     
@@ -91,47 +91,54 @@ class ChallengeListeningVC: UIViewController {
     }
     
     func configureFillTheBlank(){
+        //fillTheBlankStack.layer.cornerRadius = 10.0
         fillTheBlankStack.spacing = 5.0
-        fillTheBlankStack.distribution = .fillEqually
+        fillTheBlankStack.distribution = .fillProportionally
         fillTheBlankStack.alignment = .fill
         fillTheBlankStack.translatesAutoresizingMaskIntoConstraints = true
+        //fillTheBlankStack.backgroundColor = .blue
+//
+//        fillBlank.layer.cornerRadius = 5.0
+//        fillBlank.widthAnchor.constraint(equalToConstant: 50).isActive = true
+//        fillBlank.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        fillBlank.backgroundColor = .white
+//
         
-        fillBlank.layer.cornerRadius = 5.0
-        fillBlank.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        fillBlank.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        fillBlank.backgroundColor = .white
+        let selfChat = selfChatText.components(separatedBy: "+")
+        var buttonArray = [UIButton]()
+        var viewArray = [UIView]()
         
-        fillBlank2.layer.cornerRadius = 5.0
-        fillBlank2.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        fillBlank2.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        fillBlank2.backgroundColor = .white
-        
-        fillLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        fillLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-
-        let arrays = selfChatText.components(separatedBy: " ")
-
-        for index in 1...arrays.count {
-            if arrays[index-1] == "#" {
-                self.fillTheBlankStack.addArrangedSubview(fillBlank)
-                //self.fillTheBlankStack.addSubview(fillBlank)
+        for index in 1...selfChat.count{
+            if (selfChat[index-1] == "#" || selfChat[index-1] == "##"){
+                viewArray += [viewSelfChatButtonContainer()]
+                buttonArray += [viewSelfChatButton(withColor: UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0), title: selfChat[index-1])]
+                buttonArray[index-1].layer.cornerRadius = 7.0
+            }
+            if selfChat[index-1] != "#" && selfChat[index-1] != "##"{
+                viewArray += [viewSelfChatButtonContainer()]
+                buttonArray += [viewSelfChatButton(withColor: UIColor(red: 249.0, green: 157.0, blue: 3.0, alpha: 1.0), title: selfChat[index-1])]
             }
             
-            if arrays[index-1] == "##" {
-                self.fillTheBlankStack.addArrangedSubview(fillBlank2)
-                //self.fillTheBlankStack.addSubview(fillBlank)
-            }
-            
-            if arrays[index-1] != "#" && arrays[index-1] != "##"{
-                fillLabel.text = arrays[index-1]
-                self.fillTheBlankStack.addArrangedSubview(fillLabel)
-                //self.fillTheBlankStack.addSubview(fillLabel)
-            }
-            print(arrays[index-1])
-            
+            viewArray[index-1].addSubview(buttonArray[index-1])
+            //self.fillTheBlankStack.addArrangedSubview(viewArray[index-1])
+            self.fillTheBlankStack.addArrangedSubview(buttonArray[index-1])
         }
     }
     
+    func viewSelfChatButton(withColor color:UIColor, title:String) -> UIButton{
+        let newButton = UIButton(type: .system)
+        
+        newButton.backgroundColor = UIColor(red: 249.0, green: 157.0, blue: 3.0, alpha: 1.0)
+        newButton.tintColor = color
+        newButton.setTitle(title, for: .normal)
+        newButton.setTitleColor(UIColor.black, for: .normal)
+        return newButton
+    }
+    
+    func viewSelfChatButtonContainer() -> UIView{
+        let newView = UIButton(type: .system)
+        return newView
+    }
     
     @IBAction func didTapCloseButton(_ sender: Any) {
         let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC
