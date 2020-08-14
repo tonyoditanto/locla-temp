@@ -22,7 +22,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var percentageLbl: UILabel!
     
     var totalPercobaanPertama : Int?
-    var totalstar : Int?
+    var totalStar : Int?
     var topics : [Topic] = []
     var locationId : Int?
     
@@ -55,9 +55,9 @@ class ProfileVC: UIViewController {
         for subtopic in subtopics {
             stargained += subtopic.starGained
         }
+        totalStar = stargained
         if stargained == 0 {
             totalStarLbl.text = "0"
-            print (stargained)
         }
         else {
             totalStarLbl.text = "\(stargained)"
@@ -91,8 +91,6 @@ class ProfileVC: UIViewController {
         present(alertController, animated: true, completion: nil)
         
     }
-    @IBAction func onRewardBtnClicked(_ sender: Any) {
-    }
     
     func setProgressLearning() {
         var subtopics : [Subtopic] = []
@@ -101,11 +99,20 @@ class ProfileVC: UIViewController {
         }
         let unlockedSubtopics = subtopics.filter{ $0.status == Status.cleared}
         userPV.progress = Float(unlockedSubtopics.count) / Float(subtopics.count)
-        print(userPV.progress)
         percentageLbl.text = "\(Int((userPV.progress * 100).rounded())) % "
         
     }
     
+    @IBAction func onRewardBtnClicked(_ sender: Any?) {
+        performSegue(withIdentifier: "ProfileToRewardCategory", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProfileToRewardCategory" {
+            guard let rewardCategoryVC = segue.destination as? RewardCategoryVC else { return }
+            rewardCategoryVC.starGained = totalStar
+        }
+    }
     
     
     

@@ -70,8 +70,8 @@
 		85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5024E483360025E1AA /* ListKosakataVC.swift */; };
 		85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */; };
 		85C7CA5624E49A2E0025E1AA /* ListKosakataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */; };
-		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
-		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
+		E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardCategoryVC.swift */; };
+		E92092BD24E1A1C7006D254A /* RewardCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardCategoryCell.swift */; };
 		E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C024E1BD62006D254A /* RewardListViewController.swift */; };
 		E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */; };
 		E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C424E1D863006D254A /* DetailRewardViewController.swift */; };
@@ -143,8 +143,8 @@
 		85C7CA5024E483360025E1AA /* ListKosakataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataVC.swift; sourceTree = "<group>"; };
 		85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataTableViewCell.swift; sourceTree = "<group>"; };
 		85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListKosakataTableViewCell.xib; sourceTree = "<group>"; };
-		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
-		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		E92092BA24E191E7006D254A /* RewardCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryVC.swift; sourceTree = "<group>"; };
+		E92092BC24E1A1C7006D254A /* RewardCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryCell.swift; sourceTree = "<group>"; };
 		E92092C024E1BD62006D254A /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
 		E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListTableViewCell.swift; sourceTree = "<group>"; };
 		E92092C424E1D863006D254A /* DetailRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardViewController.swift; sourceTree = "<group>"; };
@@ -283,8 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				5A88369824D90D3F0044F1EA /* ProfileVC.swift */,
-				E92092BA24E191E7006D254A /* RewardViewController.swift */,
-				E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */,
+				E92092BA24E191E7006D254A /* RewardCategoryVC.swift */,
+				E92092BC24E1A1C7006D254A /* RewardCategoryCell.swift */,
 				E92092C024E1BD62006D254A /* RewardListViewController.swift */,
 				E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */,
 				E92092C424E1D863006D254A /* DetailRewardViewController.swift */,
@@ -559,7 +559,7 @@
 				85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				0F3B31A724E2E5E900891C1B /* VocabularyCategoryCell.swift in Sources */,
-				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
+				E92092BD24E1A1C7006D254A /* RewardCategoryCell.swift in Sources */,
 				0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				0F3B31A224E2E5DA00891C1B /* VocabularyDetailVC.swift in Sources */,
@@ -570,7 +570,7 @@
 				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
 				5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */,
 				0F3B31A624E2E5E900891C1B /* VocabCategoryDetailsCell.swift in Sources */,
-				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
+				E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
 				85C7CA4424E471330025E1AA /* AlertExitVC.swift in Sources */,
 				856E7FC424E3178E0044CB36 /* ChallengeListeningVC.swift in Sources */,
