@@ -336,14 +336,8 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label self chat text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id3-zv-Bwx">
-                                        <rect key="frame" x="30" y="80" width="308" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R92-O0-V0F">
-                                        <rect key="frame" x="344" y="75" width="40" height="40"/>
+                                        <rect key="frame" x="364" y="75" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nAD-pw-Rqk"/>
@@ -354,11 +348,11 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RwA-kl-hV3" kind="show" identifier="showResult" id="kmx-R1-EOu"/>
+                                            <action selector="didTapSubmitButton:" destination="ide-IT-suo" eventType="touchUpInside" id="EUU-1S-AkU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZNW-wN-ZUN">
-                                        <rect key="frame" x="30" y="136" width="80" height="50"/>
+                                        <rect key="frame" x="30" y="135.5" width="80" height="50"/>
                                         <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="PPZ-4U-nEV"/>
@@ -368,9 +362,12 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <state key="normal" title="answer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapOptionAButton:" destination="ide-IT-suo" eventType="touchUpInside" id="Dex-Y7-Lw7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5IH-aa-1c1">
-                                        <rect key="frame" x="210" y="136" width="80" height="50"/>
+                                        <rect key="frame" x="210" y="135.5" width="80" height="50"/>
                                         <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5IH-aa-1c1" secondAttribute="height" multiplier="8:5" id="fdf-pq-hrv"/>
@@ -380,6 +377,9 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <state key="normal" title="answer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapOptionCButton:" destination="ide-IT-suo" eventType="touchUpInside" id="x8D-2S-ASD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-XL-i5Q">
                                         <rect key="frame" x="300" y="136" width="80" height="50"/>
@@ -387,12 +387,14 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HHY-XL-i5Q" secondAttribute="height" multiplier="8:5" id="Bn0-do-xFh"/>
                                             <constraint firstAttribute="height" constant="50" id="Rdj-mZ-r6f"/>
-                                            <constraint firstAttribute="width" secondItem="HHY-XL-i5Q" secondAttribute="height" multiplier="8:5" id="c3M-a3-Ijv"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="answer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapOptionDButton:" destination="ide-IT-suo" eventType="touchUpInside" id="xCC-ol-beg"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jawabanmu kurang tepat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-Si-uc6">
                                         <rect key="frame" x="110.5" y="44.5" width="193" height="20.5"/>
@@ -401,7 +403,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7UO-rl-HUO">
-                                        <rect key="frame" x="120" y="136" width="80" height="50"/>
+                                        <rect key="frame" x="120" y="135.5" width="80" height="50"/>
                                         <color key="backgroundColor" red="0.97697454689999996" green="0.61395424600000004" blue="0.011027240190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="CF1-Nl-BtA"/>
@@ -411,29 +413,44 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                         <state key="normal" title="answer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapOptionBButton:" destination="ide-IT-suo" eventType="touchUpInside" id="44U-ao-AuD"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___ nggak ___ boso jowo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-Fs-Qnu">
+                                        <rect key="frame" x="30" y="73" width="328" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="9bG-tI-nSA"/>
+                                            <constraint firstAttribute="width" constant="328" id="oxK-u9-Tww"/>
+                                            <constraint firstAttribute="width" secondItem="cNd-Fs-Qnu" secondAttribute="height" multiplier="328:55" id="w8W-XF-Vlc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89411764705882346" green="0.88235294117647056" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="R92-O0-V0F" secondAttribute="trailing" constant="30" id="2t7-Q6-7g3"/>
-                                    <constraint firstItem="Id3-zv-Bwx" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="3MO-zx-0Py"/>
-                                    <constraint firstItem="R92-O0-V0F" firstAttribute="leading" secondItem="Id3-zv-Bwx" secondAttribute="trailing" constant="6" id="Avb-R2-ZBe"/>
                                     <constraint firstItem="cR2-Li-ch5" firstAttribute="top" secondItem="ZcF-b4-9Yf" secondAttribute="top" constant="10" id="CpG-a5-DAE"/>
                                     <constraint firstAttribute="width" constant="414" id="DdV-M8-C24"/>
-                                    <constraint firstItem="R92-O0-V0F" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="10" id="J1J-Wc-6tx"/>
                                     <constraint firstItem="5IH-aa-1c1" firstAttribute="leading" secondItem="7UO-rl-HUO" secondAttribute="trailing" constant="10" id="NNI-iV-foX"/>
-                                    <constraint firstItem="HHY-XL-i5Q" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="NP4-Xe-xKo"/>
                                     <constraint firstAttribute="width" secondItem="ZcF-b4-9Yf" secondAttribute="height" multiplier="207:125" id="O9J-JM-7kk"/>
                                     <constraint firstItem="7UO-rl-HUO" firstAttribute="leading" secondItem="ZNW-wN-ZUN" secondAttribute="trailing" constant="10" id="PeJ-x7-U94"/>
                                     <constraint firstAttribute="height" constant="250" id="PyW-Vz-bPV"/>
-                                    <constraint firstItem="7UO-rl-HUO" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="SYJ-mP-yeA"/>
                                     <constraint firstItem="cR2-Li-ch5" firstAttribute="centerX" secondItem="ZcF-b4-9Yf" secondAttribute="centerX" id="Sdz-5r-ty3"/>
                                     <constraint firstItem="gQg-Si-uc6" firstAttribute="top" secondItem="cR2-Li-ch5" secondAttribute="bottom" constant="8" id="WNS-2t-t2g"/>
-                                    <constraint firstItem="ZNW-wN-ZUN" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="XIR-io-UAO"/>
                                     <constraint firstItem="ZNW-wN-ZUN" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="ZVl-Wq-t4Q"/>
-                                    <constraint firstItem="5IH-aa-1c1" firstAttribute="top" secondItem="Id3-zv-Bwx" secondAttribute="bottom" constant="35" id="gah-Bi-pWE"/>
-                                    <constraint firstItem="Id3-zv-Bwx" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="15" id="p2X-Sl-5fS"/>
+                                    <constraint firstItem="cNd-Fs-Qnu" firstAttribute="leading" secondItem="ZcF-b4-9Yf" secondAttribute="leading" constant="30" id="aGb-fb-mCt"/>
+                                    <constraint firstItem="HHY-XL-i5Q" firstAttribute="top" secondItem="cNd-Fs-Qnu" secondAttribute="bottom" constant="8" id="dVd-2g-Wca"/>
+                                    <constraint firstItem="5IH-aa-1c1" firstAttribute="top" secondItem="cNd-Fs-Qnu" secondAttribute="bottom" constant="7.5" id="e9m-ty-Onp"/>
+                                    <constraint firstItem="R92-O0-V0F" firstAttribute="top" secondItem="ZcF-b4-9Yf" secondAttribute="top" constant="75" id="ixi-66-2MU"/>
+                                    <constraint firstItem="cNd-Fs-Qnu" firstAttribute="top" secondItem="gQg-Si-uc6" secondAttribute="bottom" constant="8" id="jwM-yM-cnQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="R92-O0-V0F" secondAttribute="trailing" constant="15" id="nHR-65-6OH"/>
                                     <constraint firstItem="HHY-XL-i5Q" firstAttribute="leading" secondItem="5IH-aa-1c1" secondAttribute="trailing" constant="10" id="pxH-fe-FxR"/>
+                                    <constraint firstItem="ZNW-wN-ZUN" firstAttribute="top" secondItem="cNd-Fs-Qnu" secondAttribute="bottom" constant="7.5" id="rzy-JE-DpE"/>
+                                    <constraint firstItem="R92-O0-V0F" firstAttribute="leading" secondItem="cNd-Fs-Qnu" secondAttribute="trailing" constant="6" id="sfW-20-eiD"/>
+                                    <constraint firstItem="7UO-rl-HUO" firstAttribute="top" secondItem="cNd-Fs-Qnu" secondAttribute="bottom" constant="7.5" id="waG-cu-iAE"/>
                                     <constraint firstItem="gQg-Si-uc6" firstAttribute="centerX" secondItem="ZcF-b4-9Yf" secondAttribute="centerX" id="zY5-OS-OTd"/>
                                 </constraints>
                             </view>
@@ -521,7 +538,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                         <outlet property="pertanyaanLabel" destination="up9-ny-xrg" id="Jqi-XY-cb6"/>
                         <outlet property="progressView" destination="fac-Yw-Zpl" id="gCZ-a3-wag"/>
                         <outlet property="progressViewLabel" destination="nDy-jw-edC" id="K8C-HF-ck3"/>
-                        <outlet property="selfChatTextLabel" destination="Id3-zv-Bwx" id="9Uz-sQ-EXB"/>
+                        <outlet property="selfChatLabel" destination="cNd-Fs-Qnu" id="gdH-gN-0ag"/>
                         <outlet property="submitButton" destination="R92-O0-V0F" id="0s5-kh-gnk"/>
                         <outlet property="subtopikImageView" destination="H9P-XJ-T5n" id="Yz3-0g-sHW"/>
                         <outlet property="viewInputUser" destination="ZcF-b4-9Yf" id="bCa-5U-OFe"/>
@@ -534,7 +551,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
         <!--Listening ResultVC-->
         <scene sceneID="TQG-af-kac">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="RwA-kl-hV3" customClass="ListeningResultVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ListeningResultVC" storyboardIdentifier="ListeningResultVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="RwA-kl-hV3" customClass="ListeningResultVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJE-gM-iwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

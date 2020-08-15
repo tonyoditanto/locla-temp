@@ -7,7 +7,7 @@
     "option_b": "Sampean",
     "option_c": "Sopo",
     "option_d": "Nuwun",
-    "self_chat_text": "________ Bu Nur, jenengmu ____?",
+    "self_chat_text": "# Bu Nur, jenengmu #?",
     "fill_1": "A",
     "fill_2": "C",
     "tips": "",
@@ -22,7 +22,7 @@
     "option_b": "Endi",
     "option_c": "Lapo",
     "option_d": "Neng",
-    "self_chat_text": "Asline ____ le?",
+    "self_chat_text": "Asline # le?",
     "fill_1": "B",
     "fill_2": "",
     "tips": "",
@@ -37,7 +37,7 @@
     "option_b": "Endi",
     "option_c": "Teko",
     "option_d": "Neng",
-    "self_chat_text": "Aku ____ Makassar?",
+    "self_chat_text": "Aku # Makassar?",
     "fill_1": "C",
     "fill_2": "",
     "tips": "",
@@ -52,7 +52,7 @@
     "option_b": "Lipo",
     "option_c": "Suwun",
     "option_d": "Awakmu",
-    "self_chat_text": "______ lapo ____ Suroboyo ?",
+    "self_chat_text": "# lapo # Suroboyo ?",
     "fill_1": "D",
     "fill_2": "A",
     "tips": "",
@@ -67,7 +67,7 @@
     "option_b": "Kon",
     "option_c": "Awakmu",
     "option_d": "Nuwun",
-    "self_chat_text": "_____ bu",
+    "self_chat_text": "# bu",
     "fill_1": "A",
     "fill_2": "",
     "tips": "",
@@ -157,12 +157,12 @@
     "option_b": "Kene",
     "option_c": "Belonjo",
     "option_d": "Suwon",
-    "self_chat_text": "Lek ____ ______kebutuhan sehari-hari nang ndi ya bu?",
+    "self_chat_text": "Lek # # kebutuhan sehari-hari nang ndi ya bu?",
     "fill_1": "A",
     "fill_2": "C",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_021_Sub3_SBY"
   },
   {
     "id": 12,
@@ -172,12 +172,12 @@
     "option_b": "Tokone",
     "option_c": "Lapo",
     "option_d": "Mangan",
-    "self_chat_text": "Nang ndi ______ bu?",
+    "self_chat_text": "Nang ndi # bu?",
     "fill_1": "B",
     "fill_2": "",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_021_Sub3_SBY"
   },
   {
     "id": 13,
@@ -187,12 +187,12 @@
     "option_b": "Tuku",
     "option_c": "Cidek",
     "option_d": "Mangan",
-    "self_chat_text": "Oh ____ Toko “LoclaMart” nang _____ kene",
+    "self_chat_text": "Oh # Toko “LoclaMart” nang # kene",
     "fill_1": "A",
     "fill_2": "C",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_021_Sub3_SBY"
   },
   {
     "id": 14,
@@ -202,12 +202,12 @@
     "option_b": "Opo",
     "option_c": "Lek",
     "option_d": "Cidek",
-    "self_chat_text": "Oh ya ____ takok___?",
+    "self_chat_text": "Oh ya # takok #?",
     "fill_1": "A",
     "fill_2": "B",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_021_Sub3_SBY"
   },
   {
     "id": 15,
@@ -217,12 +217,12 @@
     "option_b": "Oke",
     "option_c": "Awakmu",
     "option_d": "Infone",
-    "self_chat_text": "oh oke ______ ______",
+    "self_chat_text": "oh oke # # nggih",
     "fill_1": "A",
     "fill_2": "D",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_021_Sub3_SBY"
   },
   {
     "id": 16,
@@ -232,27 +232,27 @@
     "option_b": "Kata",
     "option_c": "Golek",
     "option_d": "Golok",
-    "self_chat_text": "Isuk, ____ _____ opo?",
+    "self_chat_text": "Pagi, # # opo?",
     "fill_1": "A",
     "fill_2": "C",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_022_Sub3_SBY"
   },
   {
     "id": 17,
     "subtopic_id": 12,
-    "question": "Apa Bahasa surabaya “sekilonya berapaan ya pak?”",
+    "question": "Apa Bahasa surabaya “sekilonya berapaan ya Mbak?”",
     "option_a": "Piroan",
     "option_b": "Sekilone",
     "option_c": "Turu",
     "option_d": "Onok",
-    "self_chat_text": "________ ______ yo pak?",
+    "self_chat_text": "# # yo Mbak?",
     "fill_1": "B",
     "fill_2": "A",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_022_Sub3_SBY"
   },
   {
     "id": 18,
@@ -262,12 +262,12 @@
     "option_b": "Golek",
     "option_c": "Iwak",
     "option_d": "Kate",
-    "self_chat_text": "gak sekalian ____ ____ lele ne?",
+    "self_chat_text": "gak sekalian # # lele ne?",
     "fill_1": "A",
     "fill_2": "C",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_022_Sub3_SBY"
   },
   {
     "id": 19,
@@ -277,12 +277,12 @@
     "option_b": "Piro",
     "option_c": "Suwun",
     "option_d": "Opo",
-    "self_chat_text": "oh ____, kate tuku ____?",
+    "self_chat_text": "oh #, kate tuku #?",
     "fill_1": "A",
     "fill_2": "B",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_022_Sub3_SBY"
   },
   {
     "id": 20,
@@ -292,11 +292,11 @@
     "option_b": "Onok",
     "option_c": "Mangan",
     "option_d": "Limangewu",
-    "self_chat_text": "iki _____ e _________",
+    "self_chat_text": "iki #  #",
     "fill_1": "A",
     "fill_2": "D",
     "tips": "",
     "question_sound_filename": "Question_001_Sub3_SBY",
-    "clue_sound_filename": "Clue_001_Sub3_SBY"
+    "clue_sound_filename": "Clue_022_Sub3_SBY"
   }
 ]
