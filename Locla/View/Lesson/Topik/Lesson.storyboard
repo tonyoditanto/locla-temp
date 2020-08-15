@@ -170,6 +170,7 @@
                         <outlet property="titleLbl" destination="Cos-ps-UPA" id="fnh-zh-rFz"/>
                         <segue destination="dED-WS-8gC" kind="presentation" identifier="SubtopicToVocabChallenge" modalPresentationStyle="fullScreen" id="VU1-dW-eUC"/>
                         <segue destination="m9c-MA-xjP" kind="presentation" identifier="SubtopicToListeningChallenge" modalPresentationStyle="fullScreen" id="CPa-yL-97j"/>
+                        <segue destination="03Q-4O-lsD" kind="presentation" identifier="SubtopicToChatChallenge" id="jaF-gq-PCe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,10 +180,10 @@
         <!--Storyboard Reference-->
         <scene sceneID="Oov-s9-VXB">
             <objects>
-                <viewControllerPlaceholder id="03Q-4O-lsD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHD-CL-rY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder id="03Q-4O-lsD" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="2409" y="-233"/>
+            <point key="canvasLocation" x="2475" y="163"/>
         </scene>
         <!--Kosakata-->
         <scene sceneID="ptB-Pr-kT3">
@@ -219,7 +220,7 @@
                 <viewControllerPlaceholder storyboardName="Mendengarkan" id="m9c-MA-xjP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa4-qs-npl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="170"/>
+            <point key="canvasLocation" x="2474" y="76"/>
         </scene>
     </scenes>
     <resources>
