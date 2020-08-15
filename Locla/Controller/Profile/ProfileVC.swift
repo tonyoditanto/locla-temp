@@ -113,8 +113,5 @@ class ProfileVC: UIViewController {
             rewardCategoryVC.starGained = totalStar
         }
     }
-    
-    
-    
-    
+
 }

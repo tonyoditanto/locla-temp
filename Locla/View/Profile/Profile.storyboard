@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -235,7 +236,7 @@
                         <outlet property="profilIV" destination="G62-mb-y0E" id="avm-iV-Fs4"/>
                         <outlet property="totalStarLbl" destination="xx1-qL-vEj" id="MoX-0o-iwN"/>
                         <outlet property="userPV" destination="lR1-lF-sJV" id="Jmi-jE-8Cp"/>
-                        <segue destination="eQn-yQ-yjH" kind="show" identifier="ProfileToRewardCategory" id="m1V-1z-M4v"/>
+                        <segue destination="GVs-ua-eTa" kind="show" identifier="ProfileToRewardCategory" id="an9-kG-g8q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7Z-hR-md1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -243,92 +244,86 @@
             <point key="canvasLocation" x="892.75362318840587" y="75.669642857142847"/>
         </scene>
         <!--Hadiah-->
-        <scene sceneID="yZu-ke-ceb">
+        <scene sceneID="hQT-OI-7us">
             <objects>
-                <tableViewController id="eQn-yQ-yjH" customClass="RewardCategoryVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qoJ-sy-UPd">
+                <collectionViewController id="GVs-ua-eTa" customClass="RewardCategoryVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gIa-uq-a9M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardCategoryCell" id="UCQ-H9-MTa" customClass="RewardCategoryCell" customModule="Locla" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UCQ-H9-MTa" id="AaW-vc-GE3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6d0-0c-yRI">
+                            <size key="itemSize" width="374" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardCategoryCell" id="N5G-BI-IyK" customClass="RewardCategoryCollectionViewCell" customModule="Locla" customModuleProvider="target">
+                                <rect key="frame" x="20" y="0.0" width="374" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HfX-c6-kdb">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb3-WM-C4U">
-                                            <rect key="frame" x="20" y="10" width="374" height="80.5"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-Wl-cjl">
-                                                    <rect key="frame" x="20" y="10" width="60" height="60.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Reward Category Text]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="165.5" translatesAutoresizingMaskIntoConstraints="NO" id="SE0-Pv-9ls">
-                                                    <rect key="frame" x="90" y="19.5" width="165.5" height="41"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JCH-49-eUx">
-                                                    <rect key="frame" x="275.5" y="20" width="40" height="40.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxA-GH-eXt">
-                                                    <rect key="frame" x="320.5" y="30" width="33.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="hxA-GH-eXt" secondAttribute="trailing" constant="20" id="7V8-T7-YjO"/>
-                                                <constraint firstItem="JCH-49-eUx" firstAttribute="leading" secondItem="SE0-Pv-9ls" secondAttribute="trailing" constant="20" id="9Eu-C7-w6b"/>
-                                                <constraint firstItem="N3R-Wl-cjl" firstAttribute="leading" secondItem="jb3-WM-C4U" secondAttribute="leading" constant="20" id="Fxh-Um-LIV"/>
-                                                <constraint firstItem="N3R-Wl-cjl" firstAttribute="width" secondItem="jb3-WM-C4U" secondAttribute="width" multiplier="0.160428" id="HIM-Z7-X8m"/>
-                                                <constraint firstItem="JCH-49-eUx" firstAttribute="height" secondItem="jb3-WM-C4U" secondAttribute="height" multiplier="0.5" id="OjL-m3-jn3"/>
-                                                <constraint firstItem="SE0-Pv-9ls" firstAttribute="width" secondItem="jb3-WM-C4U" secondAttribute="width" multiplier="0.442513" id="P60-cH-fd3"/>
-                                                <constraint firstItem="N3R-Wl-cjl" firstAttribute="top" secondItem="jb3-WM-C4U" secondAttribute="top" constant="10" id="ZRP-ls-rkI"/>
-                                                <constraint firstItem="hxA-GH-eXt" firstAttribute="centerY" secondItem="JCH-49-eUx" secondAttribute="centerY" id="bk0-zx-cLh"/>
-                                                <constraint firstItem="SE0-Pv-9ls" firstAttribute="centerY" secondItem="N3R-Wl-cjl" secondAttribute="centerY" id="buj-55-dIA"/>
-                                                <constraint firstItem="hxA-GH-eXt" firstAttribute="leading" secondItem="JCH-49-eUx" secondAttribute="trailing" constant="5" id="czL-TE-uWJ"/>
-                                                <constraint firstItem="SE0-Pv-9ls" firstAttribute="leading" secondItem="N3R-Wl-cjl" secondAttribute="trailing" constant="10" id="eax-d2-iGx"/>
-                                                <constraint firstItem="JCH-49-eUx" firstAttribute="centerY" secondItem="jb3-WM-C4U" secondAttribute="centerY" id="ntl-7f-XIg"/>
-                                                <constraint firstItem="N3R-Wl-cjl" firstAttribute="height" secondItem="jb3-WM-C4U" secondAttribute="height" multiplier="0.75" id="rnc-Oq-sw7"/>
-                                                <constraint firstAttribute="bottom" secondItem="N3R-Wl-cjl" secondAttribute="bottom" constant="10" id="vqa-Iu-GOV"/>
-                                                <constraint firstItem="JCH-49-eUx" firstAttribute="width" secondItem="jb3-WM-C4U" secondAttribute="width" multiplier="0.106952" id="w7p-1k-dfO"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward" translatesAutoresizingMaskIntoConstraints="NO" id="5Ua-W9-qZm">
+                                            <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Zy1-uG-4u6">
+                                            <rect key="frame" x="280.5" y="22" width="40" height="36"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Us-Jw-rpk">
+                                            <rect key="frame" x="330.5" y="30" width="33.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Reward Category Text]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-9L-Qsh">
+                                            <rect key="frame" x="80" y="19.5" width="180.5" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="jb3-WM-C4U" secondAttribute="trailing" constant="20" id="I95-Zl-NCq"/>
-                                        <constraint firstAttribute="bottom" secondItem="jb3-WM-C4U" secondAttribute="bottom" constant="10" id="gzu-bc-hjP"/>
-                                        <constraint firstItem="jb3-WM-C4U" firstAttribute="top" secondItem="AaW-vc-GE3" secondAttribute="top" constant="10" id="hWM-Zx-pt4"/>
-                                        <constraint firstItem="jb3-WM-C4U" firstAttribute="leading" secondItem="AaW-vc-GE3" secondAttribute="leading" constant="20" id="qaG-Z4-b6m"/>
+                                        <constraint firstItem="Zy1-uG-4u6" firstAttribute="width" secondItem="HfX-c6-kdb" secondAttribute="width" multiplier="0.106952" id="1uJ-Pr-QNQ"/>
+                                        <constraint firstItem="3Us-Jw-rpk" firstAttribute="leading" secondItem="Zy1-uG-4u6" secondAttribute="trailing" constant="10" id="3yd-wR-b90"/>
+                                        <constraint firstItem="Zy1-uG-4u6" firstAttribute="height" secondItem="HfX-c6-kdb" secondAttribute="height" multiplier="0.45" id="8L7-B2-ayJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="5Ua-W9-qZm" secondAttribute="bottom" constant="10" id="8ZZ-ai-f8L"/>
+                                        <constraint firstItem="5Ua-W9-qZm" firstAttribute="width" secondItem="HfX-c6-kdb" secondAttribute="width" multiplier="0.160428" id="DeK-tV-pVd"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Us-Jw-rpk" secondAttribute="trailing" constant="10" id="Dih-4L-QLw"/>
+                                        <constraint firstItem="cvb-9L-Qsh" firstAttribute="centerY" secondItem="HfX-c6-kdb" secondAttribute="centerY" id="Rsh-Zi-2sg"/>
+                                        <constraint firstItem="3Us-Jw-rpk" firstAttribute="centerY" secondItem="Zy1-uG-4u6" secondAttribute="centerY" id="Vwd-cU-Ag6"/>
+                                        <constraint firstItem="5Ua-W9-qZm" firstAttribute="top" secondItem="HfX-c6-kdb" secondAttribute="top" constant="10" id="Ztz-fJ-v8O"/>
+                                        <constraint firstItem="cvb-9L-Qsh" firstAttribute="leading" secondItem="5Ua-W9-qZm" secondAttribute="trailing" constant="10" id="haO-Cj-dMR"/>
+                                        <constraint firstItem="5Ua-W9-qZm" firstAttribute="height" secondItem="HfX-c6-kdb" secondAttribute="height" multiplier="0.666667" constant="6.666640000000001" id="hct-NT-c3C"/>
+                                        <constraint firstItem="Zy1-uG-4u6" firstAttribute="leading" secondItem="cvb-9L-Qsh" secondAttribute="trailing" constant="20" id="ijb-r7-dQ7"/>
+                                        <constraint firstItem="Zy1-uG-4u6" firstAttribute="centerY" secondItem="HfX-c6-kdb" secondAttribute="centerY" id="oOq-f6-nFx"/>
+                                        <constraint firstItem="5Ua-W9-qZm" firstAttribute="leading" secondItem="HfX-c6-kdb" secondAttribute="leading" constant="10" id="pJl-IZ-gC4"/>
                                     </constraints>
-                                </tableViewCellContentView>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.62352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="customSize" width="374" height="80"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="container" destination="jb3-WM-C4U" id="nHR-fW-FFK"/>
-                                    <outlet property="rewardCategoryLbl" destination="SE0-Pv-9ls" id="fEf-eF-uLU"/>
-                                    <outlet property="starLbl" destination="hxA-GH-eXt" id="JaY-1M-nx5"/>
+                                    <outlet property="rewardCategoryLbl" destination="cvb-9L-Qsh" id="WGj-Xu-e4B"/>
+                                    <outlet property="starLbl" destination="3Us-Jw-rpk" id="vVE-bs-du3"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
+                            </collectionViewCell>
+                        </cells>
                         <connections>
-                            <outlet property="dataSource" destination="eQn-yQ-yjH" id="NB1-gc-M0Q"/>
-                            <outlet property="delegate" destination="eQn-yQ-yjH" id="76E-KO-5sH"/>
+                            <outlet property="dataSource" destination="GVs-ua-eTa" id="r11-Vr-RJD"/>
+                            <outlet property="delegate" destination="GVs-ua-eTa" id="foL-Xw-gck"/>
                         </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Hadiah" id="YEr-e2-3QC"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dmJ-1u-mu5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Hadiah" id="tYx-Tc-X7l"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPO-dy-XmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786.9565217391305" y="107.8125"/>
+            <point key="canvasLocation" x="1763.7681159420292" y="28.794642857142854"/>
         </scene>
         <!--Profil-->
         <scene sceneID="sA7-Zb-0nI">

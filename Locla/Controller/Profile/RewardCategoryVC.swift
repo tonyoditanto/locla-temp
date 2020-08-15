@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardCategoryVC: UITableViewController{
+class RewardCategoryVC: UICollectionViewController{
     
     var starGained : Int?
     var rewardCategories : [RewardCategory] = []
@@ -22,20 +22,21 @@ class RewardCategoryVC: UITableViewController{
         rewardCategories = DataLoader.getRewardCategories()
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return rewardCategories.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RewardCategoryCell", for: indexPath) as! RewardCategoryCell
-        cell.rewardCategoryLbl.text = rewardCategories[indexPath.row].name
-        cell.starLbl.text = "\(rewardCategories[indexPath.row].requiredStar)"
-        cell.container.backgroundColor = (rewardCategories[indexPath.row].requiredStar <= starGained ?? 0) ? .systemOrange : .systemGray
-        return cell
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         collectionView.deselectItem(at: indexPath, animated: false)
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RewardCategoryCell", for: indexPath) as! RewardCategoryCollectionViewCell
+        cell.rewardCategoryLbl.text = rewardCategories[indexPath.row].name
+        cell.starLbl.text = "\(rewardCategories[indexPath.row].requiredStar)"
+        cell.backgroundColor = (rewardCategories[indexPath.row].requiredStar <= starGained ?? 0) ? .systemOrange : .systemGray
+        return cell
     }
     
 }
