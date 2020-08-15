@@ -188,14 +188,13 @@ class DataLoader {
         return rewards
     }
     
-    static func getRewardCategories(locationID: Int) -> [RewardCategory] {
+    static func getRewardCategories() -> [RewardCategory] {
         var rewardCategories = [RewardCategory]()
         if let path = Bundle.main.url(forResource: rewardCategoryFilename, withExtension: fileExtension){
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
                 rewardCategories = try decoder.decode([RewardCategory].self, from: data)
-                rewardCategories = rewardCategories.filter{ $0.locationID == locationID}
             } catch {
                 print(error)
             }

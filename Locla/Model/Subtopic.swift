@@ -39,5 +39,6 @@ enum ChallengeType: String, Codable {
 enum Status: String, Codable {
     case locked = "Locked"
     case unlocked = "Unlocked"
+    case cleared = "Cleared"
 }
 
