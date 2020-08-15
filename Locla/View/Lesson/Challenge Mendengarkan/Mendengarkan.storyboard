@@ -348,7 +348,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RwA-kl-hV3" kind="show" identifier="showResult" id="kmx-R1-EOu"/>
+                                            <action selector="didTapSubmitButton:" destination="ide-IT-suo" eventType="touchUpInside" id="EUU-1S-AkU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZNW-wN-ZUN">
@@ -551,7 +551,7 @@ mendengarkan audio ini saat memulai tantangan.</string>
         <!--Listening ResultVC-->
         <scene sceneID="TQG-af-kac">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="RwA-kl-hV3" customClass="ListeningResultVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ListeningResultVC" storyboardIdentifier="ListeningResultVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="RwA-kl-hV3" customClass="ListeningResultVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJE-gM-iwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

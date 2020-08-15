@@ -25,7 +25,23 @@ class ChallengeListeningVC: UIViewController {
     @IBOutlet weak var keterangan2Label: UILabel!
     @IBOutlet weak var selfChatLabel: UILabel!
     
-    
+    var totalQuestion = 2
+    var currentQuestion = 1
+    var selfChatText = "# nggak # boso jowo ?"
+    var tempSelfChatText = ""
+    var choiceA = "iso"
+    var choiceB = "sak"
+    var choiceC = "kon"
+    var choiceD = "piro"
+    var answerFill1 = "kon"
+    var answerFill2 = "iso"
+    var userChoice = ""
+    var userChoice1 = "#"
+    var userChoice2 = "#"
+    var indexBlank1 = 0
+    var indexBlank2 = 0
+    var answer1 = 0
+    var answer2 = 0
     
     
     enum TotalBlank: Int {
@@ -44,6 +60,7 @@ class ChallengeListeningVC: UIViewController {
         configureAnswer()
         configureInputUser()
         checkIndexBlank()
+        tempSelfChatText = selfChatText
     }
     
     func configureKeterangan(){
@@ -119,38 +136,28 @@ class ChallengeListeningVC: UIViewController {
         return activeButton
     }
     
-
-    var selfChatText = "# nggak # boso jowo ?"
-    var tempSelfChatText = ""
-    var choiceA = "iso"
-    var choiceB = "sak"
-    var choiceC = "kon"
-    var choiceD = "mbah lanang"
-    var answerFill1 = "kon"
-    var answerFill2 = "iso"
-    var userChoice1 = ""
-    var userChoice2 = ""
-    var indexBlank1 = 0
-    var indexBlank2 = 0
-    var answer1 = 0
-    var answer2 = 0
-    
     func checkIndexBlank(){
         let arrays = selfChatText.components(separatedBy: " ")
-        //var temp = ""
         var totalNotFilled = 0
         
         for index in 1...arrays.count {
             if totalNotFilled == 0 && arrays[index-1] == "#"{
                 self.indexBlank1 = index-1
                 totalNotFilled += 1
-            }
+            }else
             if totalNotFilled == 1 && arrays[index-1] == "#"{
                 self.indexBlank2 = index-1
                 totalNotFilled += 1
             }
         }
-        
+    }
+    
+    func clickedButton(){
+        var tempSelfChatTextArray = tempSelfChatText.components(separatedBy: " ")
+        tempSelfChatTextArray[indexBlank1] = userChoice1
+        tempSelfChatTextArray[indexBlank2] = userChoice2
+        tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
+        selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
     }
     
     @IBAction func didTapOptionAButton(_ sender: Any) {
@@ -158,55 +165,58 @@ class ChallengeListeningVC: UIViewController {
             if activeFilledBlank() == 0{
                 self.buttonA.backgroundColor = UIColor.green
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: choiceA)
-                self.userChoice1 = choiceA
-            }else
+                self.userChoice = choiceA
+            }
             if (activeFilledBlank() == 1) && (self.buttonA.backgroundColor == UIColor.green){
                 self.buttonA.backgroundColor = colors[0]
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = ""
+                self.userChoice = ""
             }
         }
         
         if checkTotalBlank() == 2{
-            if activeFilledBlank() == 0{
-                self.buttonA.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = choiceA
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
+            if userChoice1 == "#" && userChoice2 == "#" {
                 self.userChoice1 = choiceA
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonA.backgroundColor != UIColor.green){
                 self.buttonA.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank2] = choiceA
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                self.userChoice2 = choiceA
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonA.backgroundColor == UIColor.green){
-                self.buttonA.backgroundColor = colors[0]
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = "#"
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = "___"
-            }else
-            if (activeFilledBlank() == 2) && (self.buttonA.backgroundColor == UIColor.green){
-                self.buttonA.backgroundColor = colors[0]
-                if choiceA == userChoice1 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank1] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice2)
-                    self.userChoice1 = "___"
+                clickedButton()
+            }
+            else
+            if userChoice1 != "#" && userChoice2 == "#" {
+                if userChoice1 == choiceA{
+                    self.userChoice1 = "#"
+                    self.buttonA.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice1 != choiceA{
+                    self.userChoice2 = choiceA
+                    self.buttonA.backgroundColor = UIColor.green
+                    clickedButton()
                 }
-                if choiceA == userChoice2 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank2] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                    self.userChoice2 = "___"
+            }
+            else
+            if userChoice1 == "#" && userChoice2 != "#" {
+                if userChoice2 == choiceA{
+                    self.userChoice2 = "#"
+                    self.buttonA.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice2 != choiceA{
+                    self.userChoice1 = choiceA
+                    self.buttonA.backgroundColor = UIColor.green
+                    clickedButton()
+                }
+            }
+            else
+            if userChoice1 != "#" && userChoice2 != "#" {
+                if userChoice1 == choiceA{
+                    self.userChoice1 = "#"
+                    self.buttonA.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice2 == choiceA{
+                    self.userChoice2 = "#"
+                    self.buttonA.backgroundColor = colors[0]
+                    clickedButton()
                 }
             }
         }
@@ -218,55 +228,60 @@ class ChallengeListeningVC: UIViewController {
             if activeFilledBlank() == 0{
                 self.buttonB.backgroundColor = UIColor.green
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: choiceB)
-                self.userChoice1 = choiceB
+                self.userChoice = choiceB
             }else
             if (activeFilledBlank() == 1) && (self.buttonB.backgroundColor == UIColor.green){
                 self.buttonB.backgroundColor = colors[0]
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = ""
+                self.userChoice = ""
             }
         }
         
         if checkTotalBlank() == 2{
-            if activeFilledBlank() == 0{
-                self.buttonB.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = choiceB
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
+            if userChoice1 == "#" && userChoice2 == "#" {
                 self.userChoice1 = choiceB
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonB.backgroundColor != UIColor.green){
                 self.buttonB.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank2] = choiceB
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                self.userChoice2 = choiceB
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonB.backgroundColor == UIColor.green){
-                self.buttonB.backgroundColor = colors[0]
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = "#"
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = "___"
-            }else
-            if (activeFilledBlank() == 2) && (self.buttonB.backgroundColor == UIColor.green){
-                self.buttonB.backgroundColor = colors[0]
-                if choiceB == userChoice1 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank1] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice2)
-                    self.userChoice1 = "___"
+                clickedButton()
+            }
+            else
+            if userChoice1 != "#" && userChoice2 == "#" {
+                if userChoice1 == choiceB{
+                    self.userChoice1 = "#"
+                    self.buttonB.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice1 != choiceB{
+                    self.userChoice2 = choiceB
+                    self.buttonB.backgroundColor = UIColor.green
+                    clickedButton()
                 }
-                if choiceB == userChoice2 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank2] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                    self.userChoice2 = "___"
+            }
+            else
+            if userChoice1 == "#" && userChoice2 != "#" {
+                if userChoice2 == choiceB{
+                    self.userChoice2 = "#"
+                    self.buttonB.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 != choiceB{
+                    self.userChoice1 = choiceB
+                    self.buttonB.backgroundColor = UIColor.green
+                    clickedButton()
+                }
+            }
+            else
+            if userChoice1 != "#" && userChoice2 != "#" {
+                if userChoice1 == choiceB{
+                    self.userChoice1 = "#"
+                    self.buttonB.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 == choiceB{
+                    self.userChoice2 = "#"
+                    self.buttonB.backgroundColor = colors[0]
+                    clickedButton()
                 }
             }
         }
@@ -277,55 +292,60 @@ class ChallengeListeningVC: UIViewController {
             if activeFilledBlank() == 0{
                 self.buttonC.backgroundColor = UIColor.green
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: choiceC)
-                self.answerFill1 = choiceC
+                self.userChoice = choiceC
             }else
             if (activeFilledBlank() == 1) && (self.buttonC.backgroundColor == UIColor.green){
                 self.buttonC.backgroundColor = colors[0]
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: "___")
-                self.answerFill1 = ""
+                self.userChoice = ""
             }
         }
         
         if checkTotalBlank() == 2{
-            if activeFilledBlank() == 0{
-                self.buttonC.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = choiceC
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
+            if userChoice1 == "#" && userChoice2 == "#" {
                 self.userChoice1 = choiceC
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonC.backgroundColor != UIColor.green){
                 self.buttonC.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank2] = choiceC
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                self.userChoice2 = choiceC
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonC.backgroundColor == UIColor.green){
-                self.buttonC.backgroundColor = colors[0]
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = "#"
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = "___"
-            }else
-            if (activeFilledBlank() == 2) && (self.buttonC.backgroundColor == UIColor.green){
-                self.buttonC.backgroundColor = colors[0]
-                if choiceC == userChoice1 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank1] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice2)
-                    self.userChoice1 = "___"
+                clickedButton()
+            }
+            else
+            if userChoice1 != "#" && userChoice2 == "#" {
+                if userChoice1 == choiceC{
+                    self.userChoice1 = "#"
+                    self.buttonC.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice1 != choiceC{
+                    self.userChoice2 = choiceC
+                    self.buttonC.backgroundColor = UIColor.green
+                    clickedButton()
                 }
-                if choiceC == userChoice2 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank2] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                    self.userChoice2 = "___"
+            }else
+            
+            if userChoice1 == "#" && userChoice2 != "#" {
+                if userChoice2 == choiceC{
+                    self.userChoice2 = "#"
+                    self.buttonC.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 != choiceC{
+                    self.userChoice1 = choiceC
+                    self.buttonC.backgroundColor = UIColor.green
+                    clickedButton()
+                }
+            }
+            else
+            if userChoice1 != "#" && userChoice2 != "#" {
+                if userChoice1 == choiceC{
+                    self.userChoice1 = "#"
+                    self.buttonC.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 == choiceC{
+                    self.userChoice2 = "#"
+                    self.buttonC.backgroundColor = colors[0]
+                    clickedButton()
                 }
             }
         }
@@ -336,62 +356,145 @@ class ChallengeListeningVC: UIViewController {
             if activeFilledBlank() == 0{
                 self.buttonD.backgroundColor = UIColor.green
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: choiceD)
-                self.answerFill1 = choiceD
+                self.userChoice = choiceD
             }else
             if (activeFilledBlank() == 1) && (self.buttonD.backgroundColor == UIColor.green){
                 self.buttonD.backgroundColor = colors[0]
                 selfChatLabel.text = selfChatText.replacingOccurrences(of: "#", with: "___")
-                self.answerFill1 = ""
+                self.userChoice = ""
             }
         }
         
         if checkTotalBlank() == 2{
-            if activeFilledBlank() == 0{
-                self.buttonD.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = choiceD
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
+            if userChoice1 == "#" && userChoice2 == "#" {
                 self.userChoice1 = choiceD
-            }else
-            if (activeFilledBlank() == 1) && (self.buttonD.backgroundColor != UIColor.green){
                 self.buttonD.backgroundColor = UIColor.green
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank2] = choiceD
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                self.userChoice2 = choiceD
+                clickedButton()
             }else
-            if (activeFilledBlank() == 1) && (self.buttonD.backgroundColor == UIColor.green){
-                self.buttonD.backgroundColor = colors[0]
-                var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                tempSelfChatTextArray[indexBlank1] = "#"
-                let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: "___")
-                self.userChoice1 = "___"
-            }else
-            if (activeFilledBlank() == 2) && (self.buttonD.backgroundColor == UIColor.green){
-                self.buttonD.backgroundColor = colors[0]
-                if choiceD == userChoice1 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank1] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice2)
-                    self.userChoice1 = "___"
+            
+            if userChoice1 != "#" && userChoice2 == "#" {
+                if userChoice1 == choiceD{
+                    self.userChoice1 = "#"
+                    self.buttonD.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                if userChoice1 != choiceD{
+                    self.userChoice2 = choiceD
+                    self.buttonD.backgroundColor = UIColor.green
+                    clickedButton()
                 }
-                if choiceD == userChoice2 {
-                    var tempSelfChatTextArray = selfChatText.components(separatedBy: " ")
-                    tempSelfChatTextArray[indexBlank2] = "#"
-                    let tempSelfChatText = tempSelfChatTextArray.joined(separator: " ")
-                    selfChatLabel.text = tempSelfChatText.replacingOccurrences(of: "#", with: self.userChoice1)
-                    self.userChoice2 = "___"
+            }else
+            
+            if userChoice1 == "#" && userChoice2 != "#" {
+                if userChoice2 == choiceD{
+                    self.userChoice2 = "#"
+                    self.buttonD.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 != choiceD{
+                    self.userChoice1 = choiceD
+                    self.buttonD.backgroundColor = UIColor.green
+                    clickedButton()
+                }
+            }
+            else
+            if userChoice1 != "#" && userChoice2 != "#" {
+                if userChoice1 == choiceD{
+                    self.userChoice1 = "#"
+                    self.buttonD.backgroundColor = colors[0]
+                    clickedButton()
+                }else
+                
+                if userChoice2 == choiceD{
+                    self.userChoice2 = "#"
+                    self.buttonD.backgroundColor = colors[0]
+                    clickedButton()
                 }
             }
         }
     }
     
-    func checkAnswer(){
+    func checkAnswer()->Bool{
+        var answer = false
+        if checkTotalBlank() == 1{
+            if self.userChoice == answerFill1{
+                answer = true
+            }
+        }else
+        if checkTotalBlank() == 2 {
+            if ((self.userChoice1 == answerFill1) && (self.userChoice2 == answerFill2)){
+                answer = true
+            }
+        }
+        return answer
+    }
+    
+    func rightAnswer(){
+        let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertStarVC") as! AlertStarVC
+        alertVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.addChild(alertVC)
+        self.view.addSubview(alertVC.view)
+        reloadChallenge()
+    }
+    
+    func wrongAnswer(){
+        self.keterangan1Label.isHidden = false
+        self.keterangan2Label.isHidden = false
+        if buttonA.backgroundColor == UIColor.green {
+            buttonA.backgroundColor = UIColor.red
+        }
+        if buttonB.backgroundColor == UIColor.green {
+            buttonB.backgroundColor = UIColor.red
+        }
+        if buttonC.backgroundColor == UIColor.green {
+            buttonC.backgroundColor = UIColor.red
+        }
+        if buttonD.backgroundColor == UIColor.green {
+            buttonD.backgroundColor = UIColor.red
+        }
+    }
+    
+    func reloadChallenge(){
+        self.currentQuestion += 1
+        if self.currentQuestion > self.totalQuestion{
+            toResultPage()
+        }
+        self.progressViewLabel.text = "\(currentQuestion)/\(totalQuestion)"
         
+        self.keterangan1Label.isHidden = true
+        self.keterangan2Label.isHidden = true
+        if self.buttonA.backgroundColor != colors[0] {
+            buttonA.backgroundColor = colors[0]
+        }
+        if buttonB.backgroundColor != colors[0] {
+            buttonB.backgroundColor = colors[0]
+        }
+        if buttonC.backgroundColor != colors[0] {
+            buttonC.backgroundColor = colors[0]
+        }
+        if buttonD.backgroundColor != colors[0] {
+            buttonD.backgroundColor = colors[0]
+        }
+    }
+    
+    func toResultPage(){
+        if self.currentQuestion > self.totalQuestion {
+            let storyboard = UIStoryboard(name: "Mendengarkan", bundle: nil)
+            let destination = storyboard.instantiateViewController(identifier: "ListeningResultVC") as! ListeningResultVC
+            destination.modalPresentationStyle = .fullScreen
+            destination.modalTransitionStyle = .crossDissolve
+            self.present(destination, animated: true, completion: nil)
+        }
+    }
+
+    
+    @IBAction func didTapSubmitButton(_ sender: Any) {
+        if checkAnswer() == true{
+            rightAnswer()
+        }else if checkAnswer() == false{
+            wrongAnswer()
+        }
     }
     
     @IBAction func didTapCloseButton(_ sender: Any) {
