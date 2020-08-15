@@ -35,7 +35,7 @@ extension VocabularyDetailVC: UITableViewDataSource, UITableViewDelegate,UIColle
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCategoryDetailsCell", for: indexPath) as! vocabCategoryDetailsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "vocabCategoryDetailsCell", for: indexPath) as! VocabCategoryDetailsCell
         cell.word.text = vocabularies[indexPath.row].word
         cell.meaning.text = vocabularies[indexPath.row].meaning
         //self.title = vocabularies[indexPath.row].word
