@@ -122,6 +122,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                         <size key="customSize" width="374" height="80"/>
+                                        <connections>
+                                            <segue destination="4mm-NR-6be" kind="presentation" identifier="SubtopicToChatChallenge" modalPresentationStyle="fullScreen" id="M80-EA-YzN"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -168,8 +171,6 @@
                         <outlet property="collectionView" destination="cOh-4W-ZCE" id="fvj-nm-AWP"/>
                         <outlet property="starLbl" destination="gRX-RT-mGv" id="MDg-vy-I4t"/>
                         <outlet property="titleLbl" destination="Cos-ps-UPA" id="fnh-zh-rFz"/>
-                        <segue destination="dED-WS-8gC" kind="presentation" identifier="SubtopicToVocabChallenge" modalPresentationStyle="fullScreen" id="VU1-dW-eUC"/>
-                        <segue destination="m9c-MA-xjP" kind="presentation" identifier="SubtopicToListeningChallenge" modalPresentationStyle="fullScreen" id="CPa-yL-97j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-wO-RSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,13 +214,23 @@
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="75.669642857142847"/>
         </scene>
+        <!--Obrolan-->
+        <scene sceneID="n3S-S2-XRP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Obrolan" id="4mm-NR-6be" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NaT-cI-w0S"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5l-dA-80g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475" y="151"/>
+        </scene>
         <!--Mendengarkan-->
         <scene sceneID="b2X-jV-q8g">
             <objects>
                 <viewControllerPlaceholder storyboardName="Mendengarkan" id="m9c-MA-xjP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa4-qs-npl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="170"/>
+            <point key="canvasLocation" x="2499" y="76"/>
         </scene>
     </scenes>
     <resources>
