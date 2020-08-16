@@ -75,6 +75,7 @@
 		85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5024E483360025E1AA /* ListKosakataVC.swift */; };
 		85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */; };
 		85C7CA5624E49A2E0025E1AA /* ListKosakataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */; };
+		E900543C24E9AE1D00C9CA13 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E900543B24E9AE1D00C9CA13 /* Location.storyboard */; };
 		E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardCategoryVC.swift */; };
 		E9782FB924E7A1D3009AF5A6 /* Ikan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */; };
 		E9782FBA24E7A1D3009AF5A6 /* Jualan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */; };
@@ -208,6 +209,7 @@
 		85C7CA5024E483360025E1AA /* ListKosakataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataVC.swift; sourceTree = "<group>"; };
 		85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataTableViewCell.swift; sourceTree = "<group>"; };
 		85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListKosakataTableViewCell.xib; sourceTree = "<group>"; };
+		E900543B24E9AE1D00C9CA13 /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
 		E92092BA24E191E7006D254A /* RewardCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryVC.swift; sourceTree = "<group>"; };
 		E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ikan_SBY.mp3; sourceTree = "<group>"; };
 		E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jualan_SBY.mp3; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		5A88368624D905CF0044F1EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E900543A24E9AE0700C9CA13 /* Location */,
 				5A4F4B3924E4319600874C0F /* Container */,
 				85C7CA4524E47E160025E1AA /* Challenge Kosakata */,
 				856E7FB524E2CBBD0044CB36 /* Challenge Mendengarkan */,
@@ -573,6 +576,14 @@
 				85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		E900543A24E9AE0700C9CA13 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E900543B24E9AE1D00C9CA13 /* Location.storyboard */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		E9782F7924E7A1D3009AF5A6 /* Vocabulary */ = {
@@ -802,6 +813,7 @@
 				E9782FCF24E7A1D3009AF5A6 /* Cari_SBY.mp3 in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
 				E9782FD324E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 in Resources */,
+				E900543C24E9AE1D00C9CA13 /* Location.storyboard in Resources */,
 				E9782FCD24E7A1D3009AF5A6 /* Nama_SBY.mp3 in Resources */,
 				85C7CA4124E4228B0025E1AA /* CustomAlert.storyboard in Resources */,
 				E9782FF324E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 in Resources */,
