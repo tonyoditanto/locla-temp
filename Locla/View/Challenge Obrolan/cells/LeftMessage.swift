@@ -9,10 +9,22 @@
 import UIKit
 
 class LeftMessage: UITableViewCell {
+    
+    @IBOutlet weak var backgorundLeftMessageView : UIView!
+    @IBOutlet weak var messageLeftLabel : UILabel!
+    @IBOutlet weak var messageLeftSecondaryLabel : UILabel!
+    @IBOutlet weak var speakerBTN : UIButton!
+    
+    static let cellID = "LeftMessage"
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        configureBackground()
+        backgorundLeftMessageView.backgroundColor = .white
+        
+        backgorundLeftMessageView.backgroundColor = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.8980392157, alpha: 1)
+        backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +32,14 @@ class LeftMessage: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configureBackground(){
+        self.backgorundLeftMessageView.layer.cornerRadius = 10
+        self.speakerBTN.layer.cornerRadius = 15.5
+    }
+    
+//    func configureCell(message: ChatChallenge) {
+//        messageLeftLabel.text = message.selfChatText
+//          }
     
 }

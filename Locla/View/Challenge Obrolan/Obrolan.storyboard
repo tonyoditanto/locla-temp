@@ -140,7 +140,7 @@
         <scene sceneID="CN3-Pv-jmy">
             <objects>
                 <viewController id="xre-o0-xq2" customClass="ChallengeObrolanVC" customModule="Locla" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HE6-4r-IO5">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="HE6-4r-IO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -176,26 +176,20 @@
                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ela-ab-SnJ">
-                                <rect key="frame" x="0.0" y="167" width="414" height="479"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ela-ab-SnJ">
+                                <rect key="frame" x="0.0" y="177" width="414" height="479"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="479" id="GBz-N3-JZU"/>
                                     <constraint firstAttribute="width" constant="414" id="WMS-MY-Wcu"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="2L9-aX-4ig">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2L9-aX-4ig" id="sX1-EF-SmN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xre-o0-xq2" id="q6Q-eE-MBe"/>
+                                    <outlet property="delegate" destination="xre-o0-xq2" id="dkT-zK-4en"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-tJ-Iid">
-                                <rect key="frame" x="0.0" y="646" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="656" width="414" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semangat ayo coba lagi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuy-5V-8mv">
                                         <rect key="frame" x="84.5" y="8" width="238.5" height="27"/>
@@ -347,7 +341,7 @@
                             <constraint firstItem="xWu-dm-HuG" firstAttribute="leading" secondItem="bvM-7h-OD1" secondAttribute="leading" constant="20" id="Mlz-Eu-bZO"/>
                             <constraint firstItem="L9E-tJ-Iid" firstAttribute="trailing" secondItem="bvM-7h-OD1" secondAttribute="trailing" id="MoO-yg-0Qy"/>
                             <constraint firstItem="xWu-dm-HuG" firstAttribute="top" secondItem="bvM-7h-OD1" secondAttribute="top" constant="40" id="PIF-gK-Wf8"/>
-                            <constraint firstItem="Ela-ab-SnJ" firstAttribute="top" secondItem="hPZ-yB-Q22" secondAttribute="bottom" id="Ub0-ax-OY9"/>
+                            <constraint firstItem="Ela-ab-SnJ" firstAttribute="top" secondItem="hPZ-yB-Q22" secondAttribute="bottom" constant="10" id="Ub0-ax-OY9"/>
                             <constraint firstItem="hPZ-yB-Q22" firstAttribute="top" secondItem="bvM-7h-OD1" secondAttribute="top" constant="117" id="agF-6d-Xrc"/>
                             <constraint firstItem="gdm-eT-oKt" firstAttribute="leading" secondItem="xWu-dm-HuG" secondAttribute="trailing" constant="15" id="d7i-6h-d1N"/>
                             <constraint firstItem="L9E-tJ-Iid" firstAttribute="top" secondItem="Ela-ab-SnJ" secondAttribute="bottom" id="lhP-t2-02t"/>
@@ -368,7 +362,7 @@
                         <outlet property="failedNotification1Lbl" destination="iuy-5V-8mv" id="7m9-KS-t5M"/>
                         <outlet property="failedNotification2Lbl" destination="TqV-ev-r2T" id="HhY-eJ-YYB"/>
                         <outlet property="identityProfilLbl" destination="gdm-eT-oKt" id="4oU-D4-nm4"/>
-                        <outlet property="listChatTableView" destination="Ela-ab-SnJ" id="g6H-SJ-bFt"/>
+                        <outlet property="messageTableView" destination="Ela-ab-SnJ" id="UuF-O2-jYh"/>
                         <outlet property="nameProfilLbl" destination="7pl-2A-3Gn" id="Dkj-CW-bif"/>
                         <outlet property="profilIV" destination="xWu-dm-HuG" id="bkZ-Fs-jks"/>
                         <outlet property="selfChatLbl" destination="iFJ-tn-a0u" id="M0F-yI-ilN"/>

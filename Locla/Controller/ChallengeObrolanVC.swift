@@ -10,12 +10,12 @@ import UIKit
 
 class ChallengeObrolanVC: UIViewController {
     
+    @IBOutlet weak var messageTableView: UITableView!
     
     @IBOutlet weak var profilIV: UIImageView!
     @IBOutlet weak var nameProfilLbl: UILabel!
     @IBOutlet weak var identityProfilLbl: UILabel!
     
-    @IBOutlet weak var listChatTableView: UITableView!
     @IBOutlet weak var viewInputUser: UIView!
     @IBOutlet weak var failedNotification1Lbl: UILabel!
     @IBOutlet weak var failedNotification2Lbl: UILabel!
@@ -27,6 +27,9 @@ class ChallengeObrolanVC: UIViewController {
     @IBOutlet weak var answerBBtn: UIButton!
     @IBOutlet weak var answerCBtn: UIButton!
     @IBOutlet weak var answerDBtn: UIButton!
+    
+    var subtopicID : Int?
+    var chatChallenges : [ChatChallenge] = []
     
     var colors : [UIColor] = [#colorLiteral(red: 0.9764705882, green: 0.6156862745, blue: 0.01176470588, alpha: 1),#colorLiteral(red: 0.3098039216, green: 0.4196078431, blue: 0.862745098, alpha: 1),#colorLiteral(red: 0.5215686275, green: 0.368627451, blue: 0.8470588235, alpha: 1),#colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1),#colorLiteral(red: 0.5568627451, green: 0.7490196078, blue: 0.4039215686, alpha: 1),#colorLiteral(red: 0.4901960784, green: 0.1411764706, blue: 0.2274509804, alpha: 1)]
     var totalQuestion = 2
@@ -47,8 +50,23 @@ class ChallengeObrolanVC: UIViewController {
     var answer1 = 0
     var answer2 = 0
     
+     //et rightMessageCellIdentifier: String = "RightMessage"
+     //let leftMessageCellIdentifier: String = "LeftMessage"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fetchChatCallenge()
+        
+        //messageTableView.rowHeight = UITableView.automaticDimension
+        messageTableView.dataSource = self
+        messageTableView.delegate = self
+            //messageTableView.backgroundColor = UIColor(hexString: "E4DDD6")
+       
+        
+        
+        setupTableView()
+        
 
         // Do any additional setup after loading the view.
         self.tempSelfChatText = self.selfChatText
@@ -62,8 +80,28 @@ class ChallengeObrolanVC: UIViewController {
         tempSelfChatText = selfChatText
     }
     
+    func fetchChatCallenge() {
+        chatChallenges = DataLoader.getChatChallenges(subtopicID: subtopicID ?? 2)
+    }
+    
+    func setupTableView()
+    {
+        rightMessageRegister()
+        leftMessageRegister()
+    }
+    
+    func rightMessageRegister() {
+        let nib = UINib(nibName: RightMessage.cellID, bundle: Bundle.main)
+        self.messageTableView.register(nib, forCellReuseIdentifier: RightMessage.cellID)
+    }
+    
+    func leftMessageRegister() {
+           let nib = UINib(nibName: LeftMessage.cellID, bundle: Bundle.main)
+           self.messageTableView.register(nib, forCellReuseIdentifier: LeftMessage.cellID)
+       }
+    
 
-   func configureFailedNotif(){
+    func configureFailedNotif(){
           self.failedNotification1Lbl.isHidden = true
           self.failedNotification2Lbl.isHidden = true
       }
@@ -480,4 +518,43 @@ class ChallengeObrolanVC: UIViewController {
     }
     
 
+}
+
+extension ChallengeObrolanVC: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chatChallenges.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = chatChallenges[indexPath.row]
+        if (indexPath.row % 2 == 0) {
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: LeftMessage.cellID) as! LeftMessage
+            cell2.messageLeftLabel.text = message.selfChatText
+            cell2.messageLeftSecondaryLabel.text = message.selfChatTextIndo
+            //cell2.messageLeftLabel.text = message.selfChatTextIndo
+            return cell2
+        } else {
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: RightMessage.cellID) as! RightMessage
+            cell1.messageRightLabel.text = message.opponentChatText
+            cell1.messageRightSecondaryLabrl.text = message.opponentChatTextIndo
+            return cell1
+        }
+
+    }
+    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        if indexPath.row == chatChallenges.count {
+//            let message = chatChallenges[indexPath.row]
+//            let aCell = tableView.dequeueReusableCell(withIdentifier: RightMessage.cellID, for: indexPath) as! RightMessage
+//            aCell.messageRightLabel.text = message.opponentChatText
+//            return aCell
+//        }
+//
+//        let  bCell = tableView.dequeueReusableCell(withIdentifier: LeftMessage.cellID, for: indexPath) as! LeftMessage
+//        bCell.messageLeftLabel.text = chatChallenges[indexPath.row].selfChatTextIndo
+//        return bCell
+//    }
+    
+    
 }
