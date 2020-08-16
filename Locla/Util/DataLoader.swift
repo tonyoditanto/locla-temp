@@ -97,19 +97,19 @@ class DataLoader {
         return listeningChallenges
     }
     
-    static func getVocabularyChallenges(subtopicID: Int) -> [ListeningChallenge] {
-        var listeningChallenges = [ListeningChallenge]()
+    static func getVocabularyChallenges(subtopicID: Int) -> [VocabularyChallenge] {
+        var vocabularyChallenges = [VocabularyChallenge]()
         if let path = Bundle.main.url(forResource: vocabularyChallengeFilename, withExtension: fileExtension) {
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
-                listeningChallenges = try decoder.decode([ListeningChallenge].self, from: data)
-                listeningChallenges = listeningChallenges.filter{ $0.subtopicID == subtopicID}
+                vocabularyChallenges = try decoder.decode([VocabularyChallenge].self, from: data)
+                vocabularyChallenges = vocabularyChallenges.filter{ $0.subtopicID == subtopicID}
             } catch {
                 print(error)
             }
         }
-        return listeningChallenges
+        return vocabularyChallenges
     }
     
     static func getVocabularyCategories(locationID: Int) -> [VocabularyCategory] {
