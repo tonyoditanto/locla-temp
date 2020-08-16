@@ -13,6 +13,8 @@
 		0F3B31A824E2E5E900891C1B /* VocabularyCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B31A524E2E5E900891C1B /* VocabularyCategoryCell.xib */; };
 		0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000624E425E70070CA25 /* SearchBarVC.swift */; };
 		0F4B000924E426890070CA25 /* SearchBarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B000824E426890070CA25 /* SearchBarResultCell.swift */; };
+		5A0D2BAC24E8205F00FAE3EF /* RewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */; };
+		5A0D2BAE24E8207F00FAE3EF /* RewardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */; };
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
 		5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873D24E3844200FC55E2 /* UIColor.swift */; };
@@ -142,6 +144,8 @@
 		0F3B31A524E2E5E900891C1B /* VocabularyCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabularyCategoryCell.xib; sourceTree = "<group>"; };
 		0F4B000624E425E70070CA25 /* SearchBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarVC.swift; sourceTree = "<group>"; };
 		0F4B000824E426890070CA25 /* SearchBarResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarResultCell.swift; sourceTree = "<group>"; };
+		5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardVC.swift; sourceTree = "<group>"; };
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
 		5A34873D24E3844200FC55E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 				5A88369824D90D3F0044F1EA /* ProfileVC.swift */,
 				E92092BA24E191E7006D254A /* RewardCategoryVC.swift */,
 				5AA5714A24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift */,
+				5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */,
+				5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -829,6 +835,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
+				5A0D2BAC24E8205F00FAE3EF /* RewardCollectionViewCell.swift in Sources */,
 				85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */,
 				85C7CA3E24E421C50025E1AA /* AlertStarVC.swift in Sources */,
 				85C7CA4924E482900025E1AA /* IntroKosakataVC.swift in Sources */,
@@ -866,6 +873,7 @@
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
 				856E7FC224E3176F0044CB36 /* DialogListeningVC.swift in Sources */,
+				5A0D2BAE24E8207F00FAE3EF /* RewardVC.swift in Sources */,
 				85C7CA4D24E482C90025E1AA /* KosakataResultVC.swift in Sources */,
 				856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */,
 				5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */,

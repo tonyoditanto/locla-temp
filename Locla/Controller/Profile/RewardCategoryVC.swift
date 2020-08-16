@@ -28,6 +28,7 @@ class RewardCategoryVC: UICollectionViewController{
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          collectionView.deselectItem(at: indexPath, animated: false)
+        performSegue(withIdentifier: "RewardCategoryToReward", sender: indexPath.row)
     }
     
     
@@ -39,4 +40,12 @@ class RewardCategoryVC: UICollectionViewController{
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "RewardCategoryToReward" {
+            guard let rewardVC = segue.destination as? RewardVC,
+                let index = sender as? Int else { return }
+            rewardVC.categoryId = rewardCategories[index].id
+            rewardVC.title = rewardCategories[index].name
+        }
+    }
 }

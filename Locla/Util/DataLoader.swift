@@ -173,14 +173,14 @@ class DataLoader {
         return tip
     }
     
-    static func getRewards(categoryID: Int) -> [Reward] {
+    static func getRewards(locationID: Int, categoryID: Int) -> [Reward] {
         var rewards = [Reward]()
         if let path = Bundle.main.url(forResource: rewardFilename, withExtension: fileExtension){
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
                 rewards = try decoder.decode([Reward].self, from: data)
-                rewards = rewards.filter{ $0.categoryID == categoryID}
+                rewards = rewards.filter{ ($0.categoryID == categoryID) && ($0.locationID == locationID)}
             } catch {
                 print(error)
             }
