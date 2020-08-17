@@ -28,7 +28,7 @@ class ChallengeKosakataVC: UIViewController {
     var challenge2 = [Subtopic]()
     var totalQuestion : Int = 0
     var currentQuestion : Int = 1
-    var answer = ""
+    var answer = "A"
     var pertanyaan = ""
     var choiceA = ""
     var choiceB = ""
