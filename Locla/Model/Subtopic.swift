@@ -12,9 +12,8 @@ struct Subtopic: Codable {
     let id, topicID: Int
     let name: String?
     let challengeType: ChallengeType?
-    var status: Status?
-    var starGained: Int
-    let totalStar: Int
+    let status: Status?
+    let starGained, totalStar: Int
     let subtopicDescription, mission, listeningFilename: String?
 
     enum CodingKeys: String, CodingKey {
