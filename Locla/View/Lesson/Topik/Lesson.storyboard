@@ -27,6 +27,9 @@
                                 <state key="normal" title="Surabaya">
                                     <color key="titleColor" red="0.92941176470588238" green="0.62352941176470589" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="03Q-4O-lsD" kind="push" id="beh-s0-4iO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9K-8t-2hE">
                                 <rect key="frame" x="231" y="150" width="0.0" height="0.0"/>
@@ -176,10 +179,12 @@
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="75.669642857142847"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Location-->
         <scene sceneID="Oov-s9-VXB">
             <objects>
-                <viewControllerPlaceholder id="03Q-4O-lsD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Location" id="03Q-4O-lsD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="y0c-Vs-pFd"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHD-CL-rY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2409" y="-233"/>
