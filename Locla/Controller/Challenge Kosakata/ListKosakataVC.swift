@@ -26,7 +26,7 @@ class ListKosakataVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func fetchListKosakata(){
-        self.vocabularies = DataLoader.getVocabularies(subtopicID: subtopik?.id ?? 4)
+        self.vocabularies = DataLoader.getVocabularies(subtopicID: subtopik?.id ?? 1)
         //self.vocabularies = DataLoader.getVocabularies(subtopicID: subtopikId ?? 1)
         //self.subtopik = DataLoader.getSubtopic(subtopicID: subtopikId)
     }
@@ -68,7 +68,7 @@ class ListKosakataVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                 else {
                     return
             }
-            IntroKosakataVC.subtopik = DataLoader.getSubtopic(subtopicID: subtopikId ?? 1)
+            IntroKosakataVC.subtopik = DataLoader.getSubtopic(subtopicID: subtopik?.id ?? 1)
         }
     }
         

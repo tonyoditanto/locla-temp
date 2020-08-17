@@ -75,6 +75,7 @@
 		85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5024E483360025E1AA /* ListKosakataVC.swift */; };
 		85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */; };
 		85C7CA5624E49A2E0025E1AA /* ListKosakataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */; };
+		85FDE82024EA1FE300D0B753 /* Petunjuk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE81F24EA1FE300D0B753 /* Petunjuk.swift */; };
 		E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardCategoryVC.swift */; };
 		E9782FB924E7A1D3009AF5A6 /* Ikan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */; };
 		E9782FBA24E7A1D3009AF5A6 /* Jualan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */; };
@@ -208,6 +209,7 @@
 		85C7CA5024E483360025E1AA /* ListKosakataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataVC.swift; sourceTree = "<group>"; };
 		85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataTableViewCell.swift; sourceTree = "<group>"; };
 		85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListKosakataTableViewCell.xib; sourceTree = "<group>"; };
+		85FDE81F24EA1FE300D0B753 /* Petunjuk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petunjuk.swift; sourceTree = "<group>"; };
 		E92092BA24E191E7006D254A /* RewardCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryVC.swift; sourceTree = "<group>"; };
 		E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ikan_SBY.mp3; sourceTree = "<group>"; };
 		E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jualan_SBY.mp3; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				856E7FB924E315700044CB36 /* Challenge Kosakata */,
 				856E7FB824E315630044CB36 /* Challenge Mendengarkan */,
 				85C7CA4224E465200025E1AA /* Custom Alert */,
+				85FDE81F24EA1FE300D0B753 /* Petunjuk.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -857,6 +860,7 @@
 				0F3B31A724E2E5E900891C1B /* VocabularyCategoryCell.swift in Sources */,
 				0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
+				85FDE82024EA1FE300D0B753 /* Petunjuk.swift in Sources */,
 				0F3B31A224E2E5DA00891C1B /* VocabularyDetailVC.swift in Sources */,
 				856E7FB424E2B93B0044CB36 /* TopikCollectionViewCell.swift in Sources */,
 				856E7FB224E2B93B0044CB36 /* SubtopikCollectionViewCell.swift in Sources */,
@@ -1023,7 +1027,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38BCD2JQ3H;
+				DEVELOPMENT_TEAM = 73D6FXNB5K;
 				INFOPLIST_FILE = Locla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1043,7 +1047,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38BCD2JQ3H;
+				DEVELOPMENT_TEAM = 73D6FXNB5K;
 				INFOPLIST_FILE = Locla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
