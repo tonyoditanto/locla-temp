@@ -53,16 +53,24 @@ class DataLoader {
     }
     
     static func getSubtopics(topicID: Int) -> [Subtopic] {
-        var subtopics = [Subtopic]()
-        if let path = Bundle.main.url(forResource: subtopicFilename, withExtension: fileExtension) {
-            do {
-                let data = try Data(contentsOf: path)
-                let decoder = JSONDecoder()
-                subtopics = try decoder.decode([Subtopic].self, from: data)
-                subtopics = subtopics.filter{ $0.topicID == topicID}
-            } catch {
-                print(error)
+        var subtopics : [Subtopic] = []
+        let fm = FileManager.default
+        do {
+            let documentDirectory = try fm.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            let subUrl = documentDirectory.appendingPathComponent("\(subtopicFilename).\(fileExtension)")
+            var path : URL
+            if fm.fileExists(atPath: subUrl.path) {
+                path = subUrl
+            } else {
+                path = Bundle.main.url(forResource: subtopicFilename, withExtension: fileExtension)!
             }
+            let data = try Data(contentsOf: path)
+            let decoder = JSONDecoder()
+            subtopics = try decoder.decode([Subtopic].self, from: data)
+            subtopics = subtopics.filter{ $0.topicID == topicID}
+            
+        } catch {
+            print(error)
         }
         return subtopics
     }
@@ -201,4 +209,48 @@ class DataLoader {
         }
         return rewardCategories
     }
+    
+    static func updateSubtopic(subtopicId: Int, star: Int){
+        var subtopics : [Subtopic] = []
+        let fm = FileManager.default
+        do {
+            let documentDirectory = try fm.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            let subUrl = documentDirectory.appendingPathComponent("\(subtopicFilename).\(fileExtension)")
+            var path : URL
+            if fm.fileExists(atPath: subUrl.path) {
+                path = subUrl
+            } else {
+                path = Bundle.main.url(forResource: subtopicFilename, withExtension: fileExtension)!
+            }
+            let data = try Data(contentsOf: path)
+            let decoder = JSONDecoder()
+            subtopics = try decoder.decode([Subtopic].self, from: data)
+            
+            var subtopic : Subtopic?
+            var index = 0
+            var changedIndex = 0
+            for sub in subtopics{
+                if sub.id == subtopicId {
+                    subtopic = sub
+                    subtopic?.starGained = star
+                    subtopic?.status = Status.cleared
+                    changedIndex = index
+                }
+                index += 1
+            }
+            subtopics.remove(at: changedIndex)
+            subtopics.insert(subtopic!, at: changedIndex)
+            
+            if subtopics.indices.contains(changedIndex + 1) {
+                subtopics[changedIndex + 1].status = Status.unlocked
+            }
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
+            let JsonData = try encoder.encode(subtopics)
+            try JsonData.write(to: subUrl)
+        } catch {
+            print(error)
+        }
+    }
+    
 }

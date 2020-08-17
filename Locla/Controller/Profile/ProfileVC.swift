@@ -32,7 +32,6 @@ class ProfileVC: UIViewController {
         setupView()
          fetchTopics()
         setProgressLearning()
-       
         getStar()
     }
     
