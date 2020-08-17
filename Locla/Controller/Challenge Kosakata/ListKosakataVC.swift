@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ListKosakataVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var subtopikId : Int?
     var subtopik : Subtopic?
     var vocabularies : [Vocabulary] = []
+    var player : AVAudioPlayer?
+    var petunjuk : String?
  
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mulaiButton: UIButton!
@@ -60,6 +63,14 @@ class ListKosakataVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        petunjuk = self.vocabularies[indexPath.row].soundFilename ?? "Kau_SBY"
+        let petunjukURL = Bundle.main.url(forResource: petunjuk, withExtension: "mp3")
+        do {
+            try player = AVAudioPlayer(contentsOf: petunjukURL!)
+        } catch {
+            print(error)
+        }
+        player?.play()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
