@@ -9,7 +9,8 @@
 import UIKit
 
 class ChallengeKosakataVC: UIViewController {
-
+    
+    
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var progressViewLabel: UILabel!
     @IBOutlet weak var pertanyaanLabel: UILabel!
@@ -22,12 +23,21 @@ class ChallengeKosakataVC: UIViewController {
     @IBOutlet weak var buttonD: UIButton!
     @IBOutlet weak var viewInputUser: UIView!
     
-    var answer : String = "konco"
-    var totalQuestion : Int = 2
+    var subtopik : Subtopic!
+    var challenge = [VocabularyChallenge]()
+    var challenge2 = [Subtopic]()
+    var totalQuestion : Int = 0
     var currentQuestion : Int = 1
+    var answer = ""
+    var pertanyaan = ""
+    var choiceA = ""
+    var choiceB = ""
+    var choiceC = ""
+    var choiceD = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchChallenge()
         configureButton()
         configureLabel()
         configureAnswer()
@@ -36,6 +46,50 @@ class ChallengeKosakataVC: UIViewController {
         checkAnswer()
         // Do any additional setup after loading the view.
     }
+    
+    func fetchChallenge(){
+        self.challenge = DataLoader.getVocabularyChallenges(subtopicID: 1)
+        self.challenge2 = DataLoader.getSubtopics(topicID: 1)
+        self.totalQuestion = challenge.count
+        print(challenge.count)
+//        self.answer = (self.challenge[currentQuestion-1].answer ?? Answer(rawValue: ""))!.rawValue
+//        self.pertanyaan = self.challenge[currentQuestion].question ?? ""
+//        self.choiceA = self.challenge[currentQuestion].optionA ?? ""
+//        self.choiceB = self.challenge[currentQuestion].optionB ?? ""
+//        self.choiceC = self.challenge[currentQuestion].optionC ?? ""
+//        self.choiceD = self.challenge[currentQuestion].optionD ?? ""
+        
+    }
+    
+    func reloadChallenge(){
+        configureButton()
+        configureLabel()
+        configureAnswer()
+        configureProgressView()
+        configureViewInputUser()
+        checkAnswer()
+    }
+    
+//    func reloadChallenge(){
+//        if self.currentQuestion <= self.totalQuestion {
+//            self.currentQuestion += 1
+//            self.progressViewLabel.text = "\(currentQuestion)/\(totalQuestion)"
+//            self.pertanyaanLabel.text = "Apa bahasa surabaya dari “Teman”?"
+//            self.buttonA.setTitle("konci", for: .normal)
+//            self.buttonB.setTitle("konco", for: .normal)
+//            self.buttonC.setTitle("konca", for: .normal)
+//            self.buttonD.setTitle("koncu", for: .normal)
+//        }
+//
+//        if self.currentQuestion > self.totalQuestion {
+//            let storyboard = UIStoryboard(name: "Kosakata", bundle: nil)
+//            let destination = storyboard.instantiateViewController(identifier: "KosakataResultVC") as! KosakataResultVC
+//            destination.modalPresentationStyle = .fullScreen
+//            destination.modalTransitionStyle = .crossDissolve
+//            self.present(destination, animated: true, completion: nil)
+//        }
+//    }
+
     
     func configureButton(){
         self.petunjukButton.layer.cornerRadius = 30.0
@@ -52,17 +106,17 @@ class ChallengeKosakataVC: UIViewController {
     }
     
     func configureAnswer(){
-        self.buttonA.setTitle("konci", for: .normal)
-        self.buttonB.setTitle("konco", for: .normal)
-        self.buttonC.setTitle("konca", for: .normal)
-        self.buttonD.setTitle("koncu", for: .normal)
+        self.buttonA.setTitle(self.choiceA, for: .normal)
+        self.buttonB.setTitle(self.choiceB, for: .normal)
+        self.buttonC.setTitle(self.choiceC, for: .normal)
+        self.buttonD.setTitle(self.choiceD, for: .normal)
     }
     
     func configureProgressView(){
         self.progressView.layer.cornerRadius = 10.0
         self.progressView.layer.masksToBounds = true
         self.progressViewLabel.text = "\(currentQuestion)/\(totalQuestion)"
-        //self.progressViewLabel.text = "01/10"
+        self.progressView.progress = Float(currentQuestion)
     }
     
     func configureViewInputUser(){
@@ -74,42 +128,42 @@ class ChallengeKosakataVC: UIViewController {
     }
     
     @IBAction func didTapButtonA(_ sender: Any) {
-        if buttonA.titleLabel?.text == answer{
+        if "A" == answer{
             rightAnswer()
         }
         
-        if buttonA.titleLabel?.text != answer{
+        if "A" != answer{
             wrongAnswer()
         }
     }
     
     
     @IBAction func didTapButtonB(_ sender: Any) {
-        if buttonB.titleLabel?.text == answer{
+        if "B" == answer{
             rightAnswer()
         }
         
-        if buttonB.titleLabel?.text != answer{
+        if "B" != answer{
             wrongAnswer()
         }
     }
     
     @IBAction func didTapButtonC(_ sender: Any) {
-        if buttonC.titleLabel?.text == answer{
+        if "C" == answer{
             rightAnswer()
         }
         
-        if buttonC.titleLabel?.text != answer{
+        if "C" != answer{
             wrongAnswer()
         }
     }
     
     @IBAction func didTapButtonD(_ sender: Any) {
-        if buttonD.titleLabel?.text == answer{
+        if "D" == answer{
             rightAnswer()
         }
         
-        if buttonD.titleLabel?.text != answer{
+        if "D" != answer{
             wrongAnswer()
         }
     }
@@ -127,25 +181,10 @@ class ChallengeKosakataVC: UIViewController {
         self.keterangan2Label.isHidden = false
     }
     
-    func reloadChallenge(){
-        if self.currentQuestion <= self.totalQuestion {
-            self.currentQuestion += 1
-            self.progressViewLabel.text = "\(currentQuestion)/\(totalQuestion)"
-            self.pertanyaanLabel.text = "Apa bahasa surabaya dari “Teman”?"
-            self.buttonA.setTitle("konci", for: .normal)
-            self.buttonB.setTitle("konco", for: .normal)
-            self.buttonC.setTitle("konca", for: .normal)
-            self.buttonD.setTitle("koncu", for: .normal)
-        }
+    @IBAction func didTapPetunjukButton(_ sender: Any) {
         
-        if self.currentQuestion > self.totalQuestion {
-            let storyboard = UIStoryboard(name: "Kosakata", bundle: nil)
-            let destination = storyboard.instantiateViewController(identifier: "KosakataResultVC") as! KosakataResultVC
-            destination.modalPresentationStyle = .fullScreen
-            destination.modalTransitionStyle = .crossDissolve
-            self.present(destination, animated: true, completion: nil)
-        }
     }
+    
     
     @IBAction func didTapCloseButton(_ sender: Any) {
         let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC

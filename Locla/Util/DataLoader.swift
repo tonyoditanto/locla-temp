@@ -67,6 +67,21 @@ class DataLoader {
         return subtopics
     }
     
+    static func getSubtopic(subtopicID: Int) -> Subtopic {
+        var subtopics = [Subtopic]()
+        if let path = Bundle.main.url(forResource: subtopicFilename, withExtension: fileExtension) {
+            do {
+                let data = try Data(contentsOf: path)
+                let decoder = JSONDecoder()
+                subtopics = try decoder.decode([Subtopic].self, from: data)
+                subtopics = subtopics.filter{ $0.id == subtopicID}
+            } catch {
+                print(error)
+            }
+        }
+        return subtopics[0]
+    }
+    
     static func getChatChallenges(subtopicID: Int) -> [ChatChallenge] {
         var chatChallenges = [ChatChallenge]()
         if let path = Bundle.main.url(forResource: chatChallengeFilename, withExtension: fileExtension) {

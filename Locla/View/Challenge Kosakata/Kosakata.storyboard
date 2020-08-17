@@ -98,7 +98,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="q87-qm-FbX" kind="show" id="HmY-Pi-7xz"/>
+                                    <segue destination="q87-qm-FbX" kind="show" identifier="IntroToChallengeVocab" id="HmY-Pi-7xz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Misi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPY-hZ-KQh">
@@ -336,6 +336,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="didTapPetunjukButton:" destination="q87-qm-FbX" eventType="touchUpInside" id="t2X-99-Red"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -662,7 +665,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9ty-pc-DQo" kind="show" id="V0a-Qq-5mB"/>
+                                    <segue destination="9ty-pc-DQo" kind="show" identifier="ListToIntroChallengeVocab" id="V0a-Qq-5mB"/>
                                 </connections>
                             </button>
                         </subviews>
