@@ -13,7 +13,6 @@ class RightMessage: UITableViewCell {
     @IBOutlet weak var backgroundRightMessageView : UIView!
     @IBOutlet weak var messageRightLabel : UILabel!
     @IBOutlet weak var messageRightSecondaryLabrl : UILabel!
-    @IBOutlet weak var speakerBtn: UIButton!
     
     static let cellID = "RightMessage"
 
@@ -35,7 +34,7 @@ class RightMessage: UITableViewCell {
     
     func configureBackground(){
         self.backgroundRightMessageView.layer.cornerRadius = 10
-        self.speakerBtn.layer.cornerRadius = 15.5    }
+        }
     
 //    func configureCell(message: ChatChallenge) {
 //        messageRightLabel.text = message.opponentChatText

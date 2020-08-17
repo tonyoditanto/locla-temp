@@ -34,14 +34,14 @@ class ChallengeObrolanVC: UIViewController {
     var colors : [UIColor] = [#colorLiteral(red: 0.9764705882, green: 0.6156862745, blue: 0.01176470588, alpha: 1),#colorLiteral(red: 0.3098039216, green: 0.4196078431, blue: 0.862745098, alpha: 1),#colorLiteral(red: 0.5215686275, green: 0.368627451, blue: 0.8470588235, alpha: 1),#colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1),#colorLiteral(red: 0.5568627451, green: 0.7490196078, blue: 0.4039215686, alpha: 1),#colorLiteral(red: 0.4901960784, green: 0.1411764706, blue: 0.2274509804, alpha: 1)]
     var totalQuestion = 2
     var currentQuestion = 1
-    var selfChatText = "# nggak # boso jowo ?"
+    var selfChatText = "# Joki # !"
     var tempSelfChatText = ""
-    var choiceA = "iso"
-    var choiceB = "sak"
+    var choiceA = "Jenengku"
+    var choiceB = "Ning"
     var choiceC = "kon"
-    var choiceD = "piro"
-    var answerFill1 = "kon"
-    var answerFill2 = "iso"
+    var choiceD = "Cak"
+    var answerFill1 = "Jenengku"
+    var answerFill2 = "Cak"
     var userChoice = ""
     var userChoice1 = "#"
     var userChoice2 = "#"
@@ -124,10 +124,10 @@ class ChallengeObrolanVC: UIViewController {
     }
     
     func configureAnswer(){
-        self.answerABtn.setTitle("iso", for: .normal)
-        self.answerBBtn.setTitle("sak", for: .normal)
-        self.answerCBtn.setTitle("kon", for: .normal)
-        self.answerDBtn.setTitle("pirosasasas", for: .normal)
+        self.answerABtn.setTitle("Jenengku", for: .normal)
+        self.answerBBtn.setTitle("Ning", for: .normal)
+        self.answerCBtn.setTitle("Kon", for: .normal)
+        self.answerDBtn.setTitle("Cak", for: .normal)
 
     }
     
@@ -497,9 +497,24 @@ class ChallengeObrolanVC: UIViewController {
         print("Salah")
     }
     
+    func insertAnswerToChat() {
+          
+
+          let indexPath = IndexPath(row: chatChallenges.count + 1, section: 1)
+        
+          messageTableView.beginUpdates()
+          messageTableView.insertRows(at: [indexPath], with: .automatic)
+          messageTableView.endUpdates()
+
+          selfChatLbl.text = ""
+          view.endEditing(true)
+      }
+    
     @IBAction func didTapSubmitButton(_ sender: Any) {
            if checkAnswer() == true{
                rightAnswer()
+               //insertAnswerToChat()
+                
            }else if checkAnswer() == false{
                wrongAnswer()
            }
@@ -521,25 +536,32 @@ class ChallengeObrolanVC: UIViewController {
 }
 
 extension ChallengeObrolanVC: UITableViewDataSource, UITableViewDelegate{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+           return 1
+       }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chatChallenges.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let message = chatChallenges[indexPath.row]
-        if (indexPath.row % 2 == 0) {
+       
+        if (indexPath.row % 2 == 0){
+            let message = chatChallenges[indexPath.row]
             let cell2 = tableView.dequeueReusableCell(withIdentifier: LeftMessage.cellID) as! LeftMessage
-            cell2.messageLeftLabel.text = message.selfChatText
-            cell2.messageLeftSecondaryLabel.text = message.selfChatTextIndo
-            //cell2.messageLeftLabel.text = message.selfChatTextIndo
+            cell2.messageLeftLabel.text = message.opponentChatText
+            cell2.messageLeftSecondaryLabel.text = message.opponentChatTextIndo
+            
             return cell2
+            //cell2.messageLeftLabel.text = message.selfChatTextIndo
         } else {
+            let message = chatChallenges[indexPath.row - 1]
             let cell1 = tableView.dequeueReusableCell(withIdentifier: RightMessage.cellID) as! RightMessage
-            cell1.messageRightLabel.text = message.opponentChatText
-            cell1.messageRightSecondaryLabrl.text = message.opponentChatTextIndo
+            cell1.messageRightLabel.text = message.selfChatTextIndo
+            cell1.messageRightSecondaryLabrl.text = message.selfChatTextIndo
             return cell1
         }
-
     }
     
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -555,6 +577,8 @@ extension ChallengeObrolanVC: UITableViewDataSource, UITableViewDelegate{
 //        bCell.messageLeftLabel.text = chatChallenges[indexPath.row].selfChatTextIndo
 //        return bCell
 //    }
+    
+    
     
     
 }

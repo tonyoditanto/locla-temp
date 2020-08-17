@@ -43,22 +43,9 @@
                             <constraint firstItem="NqI-JZ-6u7" firstAttribute="leading" secondItem="3Ny-rE-Cab" secondAttribute="leading" constant="8" id="kSC-Mq-Vwz"/>
                         </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-sf-a5A">
-                        <rect key="frame" x="295" y="16" width="33" height="33"/>
-                        <color key="backgroundColor" red="0.92941176469999998" green="0.62352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="33" id="Xzm-EI-1Fb"/>
-                            <constraint firstAttribute="width" constant="33" id="ro7-AW-TTI"/>
-                        </constraints>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="speaker.2.fill" catalog="system"/>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="JzF-sf-a5A" secondAttribute="bottom" constant="16" id="7fL-Dn-EtJ"/>
-                    <constraint firstItem="3Ny-rE-Cab" firstAttribute="leading" secondItem="JzF-sf-a5A" secondAttribute="trailing" constant="8" id="GOo-Sv-HLh"/>
                     <constraint firstAttribute="bottom" secondItem="3Ny-rE-Cab" secondAttribute="bottom" constant="4" id="H3G-T6-W89"/>
-                    <constraint firstItem="JzF-sf-a5A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="IhH-wv-8KN"/>
                     <constraint firstAttribute="trailing" secondItem="3Ny-rE-Cab" secondAttribute="trailing" constant="16" id="nEr-0D-OQM"/>
                     <constraint firstItem="3Ny-rE-Cab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="weE-zl-7jQ"/>
                 </constraints>
@@ -68,12 +55,8 @@
                 <outlet property="backgroundRightMessageView" destination="3Ny-rE-Cab" id="mK7-5p-iTD"/>
                 <outlet property="messageRightLabel" destination="NqI-JZ-6u7" id="imi-5G-2k1"/>
                 <outlet property="messageRightSecondaryLabrl" destination="bL2-uO-uhj" id="feB-wU-HNI"/>
-                <outlet property="speakerBtn" destination="JzF-sf-a5A" id="JjL-nl-osA"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="127.56696428571428"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="speaker.2.fill" catalog="system" width="128" height="97"/>
-    </resources>
 </document>

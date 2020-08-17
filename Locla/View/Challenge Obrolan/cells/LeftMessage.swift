@@ -13,7 +13,6 @@ class LeftMessage: UITableViewCell {
     @IBOutlet weak var backgorundLeftMessageView : UIView!
     @IBOutlet weak var messageLeftLabel : UILabel!
     @IBOutlet weak var messageLeftSecondaryLabel : UILabel!
-    @IBOutlet weak var speakerBTN : UIButton!
     
     static let cellID = "LeftMessage"
 
@@ -35,7 +34,7 @@ class LeftMessage: UITableViewCell {
     
     func configureBackground(){
         self.backgorundLeftMessageView.layer.cornerRadius = 10
-        self.speakerBTN.layer.cornerRadius = 15.5
+       
     }
     
 //    func configureCell(message: ChatChallenge) {
