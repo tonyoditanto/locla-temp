@@ -97,19 +97,19 @@ class DataLoader {
         return listeningChallenges
     }
     
-    static func getVocabularyChallenges(subtopicID: Int) -> [ListeningChallenge] {
-        var listeningChallenges = [ListeningChallenge]()
+    static func getVocabularyChallenges(subtopicID: Int) -> [VocabularyChallenge] {
+        var vocabularyChallenges = [VocabularyChallenge]()
         if let path = Bundle.main.url(forResource: vocabularyChallengeFilename, withExtension: fileExtension) {
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
-                listeningChallenges = try decoder.decode([ListeningChallenge].self, from: data)
-                listeningChallenges = listeningChallenges.filter{ $0.subtopicID == subtopicID}
+                vocabularyChallenges = try decoder.decode([VocabularyChallenge].self, from: data)
+                vocabularyChallenges = vocabularyChallenges.filter{ $0.subtopicID == subtopicID}
             } catch {
                 print(error)
             }
         }
-        return listeningChallenges
+        return vocabularyChallenges
     }
     
     static func getVocabularyCategories(locationID: Int) -> [VocabularyCategory] {
@@ -173,14 +173,14 @@ class DataLoader {
         return tip
     }
     
-    static func getRewards(categoryID: Int) -> [Reward] {
+    static func getRewards(locationID: Int, categoryID: Int) -> [Reward] {
         var rewards = [Reward]()
         if let path = Bundle.main.url(forResource: rewardFilename, withExtension: fileExtension){
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
                 rewards = try decoder.decode([Reward].self, from: data)
-                rewards = rewards.filter{ $0.categoryID == categoryID}
+                rewards = rewards.filter{ ($0.categoryID == categoryID) && ($0.locationID == locationID)}
             } catch {
                 print(error)
             }
@@ -188,14 +188,13 @@ class DataLoader {
         return rewards
     }
     
-    static func getRewardCategories(locationID: Int) -> [RewardCategory] {
+    static func getRewardCategories() -> [RewardCategory] {
         var rewardCategories = [RewardCategory]()
         if let path = Bundle.main.url(forResource: rewardCategoryFilename, withExtension: fileExtension){
             do {
                 let data = try Data(contentsOf: path)
                 let decoder = JSONDecoder()
                 rewardCategories = try decoder.decode([RewardCategory].self, from: data)
-                rewardCategories = rewardCategories.filter{ $0.locationID == locationID}
             } catch {
                 print(error)
             }

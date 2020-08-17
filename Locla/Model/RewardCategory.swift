@@ -10,12 +10,11 @@ import Foundation
 
 // MARK: - RewardCategoryElement
 struct RewardCategory: Codable {
-    let id, locationID, requiredStar: Int
+    let id, requiredStar: Int
     let name: String?
 
     enum CodingKeys: String, CodingKey {
         case id
-        case locationID = "location_id"
         case requiredStar = "required_star"
         case name
     }

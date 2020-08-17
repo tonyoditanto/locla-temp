@@ -20,9 +20,12 @@
 		0F9D7D1324E833E100EB6C43 /* LeftMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D7D1124E833E100EB6C43 /* LeftMessage.swift */; };
 		0F9D7D1424E833E100EB6C43 /* LeftMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9D7D1224E833E100EB6C43 /* LeftMessage.xib */; };
 		0FECA58324E4E1C3006FE47C /* Obrolan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECA58224E4E1C3006FE47C /* Obrolan.storyboard */; };
+		5A0D2BAC24E8205F00FAE3EF /* RewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */; };
+		5A0D2BAE24E8207F00FAE3EF /* RewardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */; };
 		5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873924E379AA00FC55E2 /* RewardCategory.swift */; };
 		5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A34873B24E37BEE00FC55E2 /* RewardCategory.json */; };
 		5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34873D24E3844200FC55E2 /* UIColor.swift */; };
+		5A4F4B3B24E431D000874C0F /* FillInTheBlank.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */; };
 		5A88367124D905550044F1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367024D905550044F1EA /* AppDelegate.swift */; };
 		5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88367224D905550044F1EA /* SceneDelegate.swift */; };
 		5A88367824D905550044F1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A88367624D905550044F1EA /* Main.storyboard */; };
@@ -53,7 +56,9 @@
 		5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ED9FF24E1044900BE1200 /* Vocabulary.json */; };
 		5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0024E1044900BE1200 /* Reward.json */; };
 		5A9EDA0D24E105C700BE1200 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDA0C24E105C700BE1200 /* DataLoader.swift */; };
+		5AA5714B24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5714A24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift */; };
 		5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE13E0524E280A4003A077E /* LessonVC.swift */; };
+		850BF72224E4DDAB00B5DE88 /* FillTheBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */; };
 		856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */; };
 		856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */; };
 		856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */; };
@@ -77,12 +82,66 @@
 		85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5024E483360025E1AA /* ListKosakataVC.swift */; };
 		85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */; };
 		85C7CA5624E49A2E0025E1AA /* ListKosakataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */; };
-		E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardViewController.swift */; };
-		E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */; };
-		E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92092BE24E1A32E006D254A /* Reward.storyboard */; };
-		E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C024E1BD62006D254A /* RewardListViewController.swift */; };
-		E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */; };
-		E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092C424E1D863006D254A /* DetailRewardViewController.swift */; };
+		E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92092BA24E191E7006D254A /* RewardCategoryVC.swift */; };
+		E9782FB924E7A1D3009AF5A6 /* Ikan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */; };
+		E9782FBA24E7A1D3009AF5A6 /* Jualan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */; };
+		E9782FBB24E7A1D3009AF5A6 /* Apa_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7C24E7A1D3009AF5A6 /* Apa_SBY.mp3 */; };
+		E9782FBC24E7A1D3009AF5A6 /* Kita_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7D24E7A1D3009AF5A6 /* Kita_SBY.mp3 */; };
+		E9782FBD24E7A1D3009AF5A6 /* Makan_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7E24E7A1D3009AF5A6 /* Makan_SBY.mp3 */; };
+		E9782FBE24E7A1D3009AF5A6 /* Satu_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F7F24E7A1D3009AF5A6 /* Satu_SBY.mp3 */; };
+		E9782FBF24E7A1D3009AF5A6 /* Teman_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8024E7A1D3009AF5A6 /* Teman_SBY.mp3 */; };
+		E9782FC024E7A1D3009AF5A6 /* Dari_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8124E7A1D3009AF5A6 /* Dari_SBY.mp3 */; };
+		E9782FC124E7A1D3009AF5A6 /* Mana_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8224E7A1D3009AF5A6 /* Mana_SBY.mp3 */; };
+		E9782FC224E7A1D3009AF5A6 /* Di_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8324E7A1D3009AF5A6 /* Di_SBY.mp3 */; };
+		E9782FC324E7A1D3009AF5A6 /* Berapa_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8424E7A1D3009AF5A6 /* Berapa_SBY.mp3 */; };
+		E9782FC424E7A1D3009AF5A6 /* Beli_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8524E7A1D3009AF5A6 /* Beli_SBY.mp3 */; };
+		E9782FC524E7A1D3009AF5A6 /* Harga_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8624E7A1D3009AF5A6 /* Harga_SBY.mp3 */; };
+		E9782FC624E7A1D3009AF5A6 /* Siapa_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8724E7A1D3009AF5A6 /* Siapa_SBY.mp3 */; };
+		E9782FC724E7A1D3009AF5A6 /* Mau_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8824E7A1D3009AF5A6 /* Mau_SBY.mp3 */; };
+		E9782FC824E7A1D3009AF5A6 /* Cuman_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8924E7A1D3009AF5A6 /* Cuman_SBY.mp3 */; };
+		E9782FC924E7A1D3009AF5A6 /* Kembalian_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8A24E7A1D3009AF5A6 /* Kembalian_SBY.mp3 */; };
+		E9782FCA24E7A1D3009AF5A6 /* Nasi_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8B24E7A1D3009AF5A6 /* Nasi_SBY.mp3 */; };
+		E9782FCB24E7A1D3009AF5A6 /* Belanja_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8C24E7A1D3009AF5A6 /* Belanja_SBY.mp3 */; };
+		E9782FCC24E7A1D3009AF5A6 /* Kamu_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8D24E7A1D3009AF5A6 /* Kamu_SBY.mp3 */; };
+		E9782FCD24E7A1D3009AF5A6 /* Nama_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8E24E7A1D3009AF5A6 /* Nama_SBY.mp3 */; };
+		E9782FCE24E7A1D3009AF5A6 /* Ngapain_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F8F24E7A1D3009AF5A6 /* Ngapain_SBY.mp3 */; };
+		E9782FCF24E7A1D3009AF5A6 /* Cari_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9024E7A1D3009AF5A6 /* Cari_SBY.mp3 */; };
+		E9782FD024E7A1D3009AF5A6 /* Kau_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9124E7A1D3009AF5A6 /* Kau_SBY.mp3 */; };
+		E9782FD124E7A1D3009AF5A6 /* Self_018_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9324E7A1D3009AF5A6 /* Self_018_Sub2_SBY.mp3 */; };
+		E9782FD224E7A1D3009AF5A6 /* Self_019_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9424E7A1D3009AF5A6 /* Self_019_Sub2_SBY.mp3 */; };
+		E9782FD324E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9524E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 */; };
+		E9782FD424E7A1D3009AF5A6 /* Opponent_017_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9624E7A1D3009AF5A6 /* Opponent_017_Sub2_SBY.mp3 */; };
+		E9782FD524E7A1D3009AF5A6 /* Opponent_021_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9724E7A1D3009AF5A6 /* Opponent_021_Sub2_SBY.mp3 */; };
+		E9782FD624E7A1D3009AF5A6 /* Self_021_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9824E7A1D3009AF5A6 /* Self_021_Sub2_SBY.mp3 */; };
+		E9782FD724E7A1D3009AF5A6 /* Self_017_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9924E7A1D3009AF5A6 /* Self_017_Sub2_SBY.mp3 */; };
+		E9782FD824E7A1D3009AF5A6 /* Self_020_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9A24E7A1D3009AF5A6 /* Self_020_Sub2_SBY.mp3 */; };
+		E9782FD924E7A1D3009AF5A6 /* Opponent_019_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9B24E7A1D3009AF5A6 /* Opponent_019_Sub2_SBY.mp3 */; };
+		E9782FDA24E7A1D3009AF5A6 /* Opponent_018_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9C24E7A1D3009AF5A6 /* Opponent_018_Sub2_SBY.mp3 */; };
+		E9782FDB24E7A1D3009AF5A6 /* Opponent_004_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9E24E7A1D3009AF5A6 /* Opponent_004_Sub2_SBY.mp3 */; };
+		E9782FDC24E7A1D3009AF5A6 /* Opponent_003_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782F9F24E7A1D3009AF5A6 /* Opponent_003_Sub2_SBY.mp3 */; };
+		E9782FDD24E7A1D3009AF5A6 /* Self_006_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA024E7A1D3009AF5A6 /* Self_006_Sub2_SBY.mp3 */; };
+		E9782FDE24E7A1D3009AF5A6 /* Self_001_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA124E7A1D3009AF5A6 /* Self_001_Sub2_SBY.mp3 */; };
+		E9782FDF24E7A1D3009AF5A6 /* Opponent_002_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA224E7A1D3009AF5A6 /* Opponent_002_Sub2_SBY.mp3 */; };
+		E9782FE024E7A1D3009AF5A6 /* Opponent_005_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA324E7A1D3009AF5A6 /* Opponent_005_Sub2_SBY.mp3 */; };
+		E9782FE124E7A1D3009AF5A6 /* Self_005_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA424E7A1D3009AF5A6 /* Self_005_Sub2_SBY.mp3 */; };
+		E9782FE224E7A1D3009AF5A6 /* Self_002_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA524E7A1D3009AF5A6 /* Self_002_Sub2_SBY.mp3 */; };
+		E9782FE324E7A1D3009AF5A6 /* Opponent_001_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA624E7A1D3009AF5A6 /* Opponent_001_Sub2_SBY.mp3 */; };
+		E9782FE424E7A1D3009AF5A6 /* Opponent_006_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA724E7A1D3009AF5A6 /* Opponent_006_Sub2_SBY.mp3 */; };
+		E9782FE524E7A1D3009AF5A6 /* Self_003_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA824E7A1D3009AF5A6 /* Self_003_Sub2_SBY.mp3 */; };
+		E9782FE624E7A1D3009AF5A6 /* Self_004_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FA924E7A1D3009AF5A6 /* Self_004_Sub2_SBY.mp3 */; };
+		E9782FE724E7A1D3009AF5A6 /* Opponent_016_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FAB24E7A1D3009AF5A6 /* Opponent_016_Sub2_SBY.mp3 */; };
+		E9782FE824E7A1D3009AF5A6 /* Self_014_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FAC24E7A1D3009AF5A6 /* Self_014_Sub2_SBY.mp3 */; };
+		E9782FE924E7A1D3009AF5A6 /* Self_013_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FAD24E7A1D3009AF5A6 /* Self_013_Sub2_SBY.mp3 */; };
+		E9782FEA24E7A1D3009AF5A6 /* Self_012_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FAE24E7A1D3009AF5A6 /* Self_012_Sub2_SBY.mp3 */; };
+		E9782FEB24E7A1D3009AF5A6 /* Self_015_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FAF24E7A1D3009AF5A6 /* Self_015_Sub2_SBY.mp3 */; };
+		E9782FEC24E7A1D3009AF5A6 /* Opponent_015_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB024E7A1D3009AF5A6 /* Opponent_015_Sub2_SBY.mp3 */; };
+		E9782FED24E7A1D3009AF5A6 /* Opponent_012_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB124E7A1D3009AF5A6 /* Opponent_012_Sub2_SBY.mp3 */; };
+		E9782FEE24E7A1D3009AF5A6 /* Opponent_013_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB224E7A1D3009AF5A6 /* Opponent_013_Sub2_SBY.mp3 */; };
+		E9782FEF24E7A1D3009AF5A6 /* Opponent_014_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB324E7A1D3009AF5A6 /* Opponent_014_Sub2_SBY.mp3 */; };
+		E9782FF024E7A1D3009AF5A6 /* Self_016_Sub2_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB424E7A1D3009AF5A6 /* Self_016_Sub2_SBY.mp3 */; };
+		E9782FF124E7A1D3009AF5A6 /* Clue_001_Sub3_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB624E7A1D3009AF5A6 /* Clue_001_Sub3_SBY.mp3 */; };
+		E9782FF224E7A1D3009AF5A6 /* Clue_022_Sub3_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB724E7A1D3009AF5A6 /* Clue_022_Sub3_SBY.mp3 */; };
+		E9782FF324E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9782FB824E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,9 +158,12 @@
 		0F9D7D1124E833E100EB6C43 /* LeftMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMessage.swift; sourceTree = "<group>"; };
 		0F9D7D1224E833E100EB6C43 /* LeftMessage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMessage.xib; sourceTree = "<group>"; };
 		0FECA58224E4E1C3006FE47C /* Obrolan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Obrolan.storyboard; sourceTree = "<group>"; };
+		5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardVC.swift; sourceTree = "<group>"; };
 		5A34873924E379AA00FC55E2 /* RewardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategory.swift; sourceTree = "<group>"; };
 		5A34873B24E37BEE00FC55E2 /* RewardCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RewardCategory.json; sourceTree = "<group>"; };
 		5A34873D24E3844200FC55E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillInTheBlank.xib; sourceTree = "<group>"; };
 		5A88366D24D905550044F1EA /* Locla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A88367024D905550044F1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A88367224D905550044F1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,7 +196,9 @@
 		5A9ED9FF24E1044900BE1200 /* Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
 		5A9EDA0024E1044900BE1200 /* Reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reward.json; sourceTree = "<group>"; };
 		5A9EDA0C24E105C700BE1200 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		5AA5714A24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AE13E0524E280A4003A077E /* LessonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonVC.swift; sourceTree = "<group>"; };
+		850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTheBlank.swift; sourceTree = "<group>"; };
 		856E7FA824E2B8FE0044CB36 /* SubtopikVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtopikVC.swift; sourceTree = "<group>"; };
 		856E7FAA24E2B91F0044CB36 /* Lesson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Lesson.storyboard; path = Topik/Lesson.storyboard; sourceTree = "<group>"; };
 		856E7FAD24E2B93B0044CB36 /* TopikCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopikCollectionViewCell.xib; path = Locla/View/Lesson/Topik/cells/TopikCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -158,12 +222,66 @@
 		85C7CA5024E483360025E1AA /* ListKosakataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataVC.swift; sourceTree = "<group>"; };
 		85C7CA5324E49A2E0025E1AA /* ListKosakataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKosakataTableViewCell.swift; sourceTree = "<group>"; };
 		85C7CA5424E49A2E0025E1AA /* ListKosakataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListKosakataTableViewCell.xib; sourceTree = "<group>"; };
-		E92092BA24E191E7006D254A /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
-		E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
-		E92092BE24E1A32E006D254A /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
-		E92092C024E1BD62006D254A /* RewardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewController.swift; sourceTree = "<group>"; };
-		E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListTableViewCell.swift; sourceTree = "<group>"; };
-		E92092C424E1D863006D254A /* DetailRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardViewController.swift; sourceTree = "<group>"; };
+		E92092BA24E191E7006D254A /* RewardCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCategoryVC.swift; sourceTree = "<group>"; };
+		E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ikan_SBY.mp3; sourceTree = "<group>"; };
+		E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jualan_SBY.mp3; sourceTree = "<group>"; };
+		E9782F7C24E7A1D3009AF5A6 /* Apa_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Apa_SBY.mp3; sourceTree = "<group>"; };
+		E9782F7D24E7A1D3009AF5A6 /* Kita_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kita_SBY.mp3; sourceTree = "<group>"; };
+		E9782F7E24E7A1D3009AF5A6 /* Makan_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Makan_SBY.mp3; sourceTree = "<group>"; };
+		E9782F7F24E7A1D3009AF5A6 /* Satu_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Satu_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8024E7A1D3009AF5A6 /* Teman_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Teman_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8124E7A1D3009AF5A6 /* Dari_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dari_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8224E7A1D3009AF5A6 /* Mana_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mana_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8324E7A1D3009AF5A6 /* Di_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Di_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8424E7A1D3009AF5A6 /* Berapa_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Berapa_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8524E7A1D3009AF5A6 /* Beli_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beli_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8624E7A1D3009AF5A6 /* Harga_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Harga_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8724E7A1D3009AF5A6 /* Siapa_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siapa_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8824E7A1D3009AF5A6 /* Mau_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mau_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8924E7A1D3009AF5A6 /* Cuman_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cuman_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8A24E7A1D3009AF5A6 /* Kembalian_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kembalian_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8B24E7A1D3009AF5A6 /* Nasi_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nasi_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8C24E7A1D3009AF5A6 /* Belanja_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Belanja_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8D24E7A1D3009AF5A6 /* Kamu_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kamu_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8E24E7A1D3009AF5A6 /* Nama_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nama_SBY.mp3; sourceTree = "<group>"; };
+		E9782F8F24E7A1D3009AF5A6 /* Ngapain_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ngapain_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9024E7A1D3009AF5A6 /* Cari_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cari_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9124E7A1D3009AF5A6 /* Kau_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kau_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9324E7A1D3009AF5A6 /* Self_018_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_018_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9424E7A1D3009AF5A6 /* Self_019_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_019_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9524E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_020_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9624E7A1D3009AF5A6 /* Opponent_017_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_017_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9724E7A1D3009AF5A6 /* Opponent_021_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_021_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9824E7A1D3009AF5A6 /* Self_021_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_021_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9924E7A1D3009AF5A6 /* Self_017_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_017_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9A24E7A1D3009AF5A6 /* Self_020_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_020_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9B24E7A1D3009AF5A6 /* Opponent_019_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_019_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9C24E7A1D3009AF5A6 /* Opponent_018_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_018_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9E24E7A1D3009AF5A6 /* Opponent_004_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_004_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782F9F24E7A1D3009AF5A6 /* Opponent_003_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_003_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA024E7A1D3009AF5A6 /* Self_006_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_006_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA124E7A1D3009AF5A6 /* Self_001_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_001_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA224E7A1D3009AF5A6 /* Opponent_002_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_002_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA324E7A1D3009AF5A6 /* Opponent_005_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_005_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA424E7A1D3009AF5A6 /* Self_005_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_005_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA524E7A1D3009AF5A6 /* Self_002_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_002_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA624E7A1D3009AF5A6 /* Opponent_001_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_001_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA724E7A1D3009AF5A6 /* Opponent_006_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_006_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA824E7A1D3009AF5A6 /* Self_003_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_003_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FA924E7A1D3009AF5A6 /* Self_004_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_004_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FAB24E7A1D3009AF5A6 /* Opponent_016_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_016_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FAC24E7A1D3009AF5A6 /* Self_014_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_014_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FAD24E7A1D3009AF5A6 /* Self_013_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_013_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FAE24E7A1D3009AF5A6 /* Self_012_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_012_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FAF24E7A1D3009AF5A6 /* Self_015_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_015_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB024E7A1D3009AF5A6 /* Opponent_015_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_015_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB124E7A1D3009AF5A6 /* Opponent_012_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_012_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB224E7A1D3009AF5A6 /* Opponent_013_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_013_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB324E7A1D3009AF5A6 /* Opponent_014_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opponent_014_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB424E7A1D3009AF5A6 /* Self_016_Sub2_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Self_016_Sub2_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB624E7A1D3009AF5A6 /* Clue_001_Sub3_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clue_001_Sub3_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB724E7A1D3009AF5A6 /* Clue_022_Sub3_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clue_022_Sub3_SBY.mp3; sourceTree = "<group>"; };
+		E9782FB824E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clue_021_Sub3_SBY.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +323,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5A4F4B3924E4319600874C0F /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				5A4F4B3A24E431D000874C0F /* FillInTheBlank.xib */,
+				850BF72124E4DDAB00B5DE88 /* FillTheBlank.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		5A88366424D905550044F1EA = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +351,7 @@
 		5A88366F24D905550044F1EA /* Locla */ = {
 			isa = PBXGroup;
 			children = (
+				E9782FF424E7A1D8009AF5A6 /* Assets */,
 				5A9EDA0B24E1055000BE1200 /* Util */,
 				5A9ED9C824E0ED3B00BE1200 /* JSON */,
 				5A88368724D905DF0044F1EA /* Controller */,
@@ -259,6 +387,7 @@
 		5A88368624D905CF0044F1EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A4F4B3924E4319600874C0F /* Container */,
 				85C7CA4524E47E160025E1AA /* Challenge Kosakata */,
 				856E7FB524E2CBBD0044CB36 /* Challenge Mendengarkan */,
 				0FECA58024E4E124006FE47C /* Challenge Obrolan */,
@@ -312,7 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				5A88368F24D908D50044F1EA /* Profile.storyboard */,
-				E92092BE24E1A32E006D254A /* Reward.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -321,11 +449,10 @@
 			isa = PBXGroup;
 			children = (
 				5A88369824D90D3F0044F1EA /* ProfileVC.swift */,
-				E92092BA24E191E7006D254A /* RewardViewController.swift */,
-				E92092BC24E1A1C7006D254A /* RewardTableViewCell.swift */,
-				E92092C024E1BD62006D254A /* RewardListViewController.swift */,
-				E92092C224E1BE8A006D254A /* RewardListTableViewCell.swift */,
-				E92092C424E1D863006D254A /* DetailRewardViewController.swift */,
+				E92092BA24E191E7006D254A /* RewardCategoryVC.swift */,
+				5AA5714A24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift */,
+				5A0D2BAB24E8205F00FAE3EF /* RewardCollectionViewCell.swift */,
+				5A0D2BAD24E8207F00FAE3EF /* RewardVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -485,6 +612,112 @@
 			path = cells;
 			sourceTree = "<group>";
 		};
+		E9782F7924E7A1D3009AF5A6 /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				E9782F7A24E7A1D3009AF5A6 /* Ikan_SBY.mp3 */,
+				E9782F7B24E7A1D3009AF5A6 /* Jualan_SBY.mp3 */,
+				E9782F7C24E7A1D3009AF5A6 /* Apa_SBY.mp3 */,
+				E9782F7D24E7A1D3009AF5A6 /* Kita_SBY.mp3 */,
+				E9782F7E24E7A1D3009AF5A6 /* Makan_SBY.mp3 */,
+				E9782F7F24E7A1D3009AF5A6 /* Satu_SBY.mp3 */,
+				E9782F8024E7A1D3009AF5A6 /* Teman_SBY.mp3 */,
+				E9782F8124E7A1D3009AF5A6 /* Dari_SBY.mp3 */,
+				E9782F8224E7A1D3009AF5A6 /* Mana_SBY.mp3 */,
+				E9782F8324E7A1D3009AF5A6 /* Di_SBY.mp3 */,
+				E9782F8424E7A1D3009AF5A6 /* Berapa_SBY.mp3 */,
+				E9782F8524E7A1D3009AF5A6 /* Beli_SBY.mp3 */,
+				E9782F8624E7A1D3009AF5A6 /* Harga_SBY.mp3 */,
+				E9782F8724E7A1D3009AF5A6 /* Siapa_SBY.mp3 */,
+				E9782F8824E7A1D3009AF5A6 /* Mau_SBY.mp3 */,
+				E9782F8924E7A1D3009AF5A6 /* Cuman_SBY.mp3 */,
+				E9782F8A24E7A1D3009AF5A6 /* Kembalian_SBY.mp3 */,
+				E9782F8B24E7A1D3009AF5A6 /* Nasi_SBY.mp3 */,
+				E9782F8C24E7A1D3009AF5A6 /* Belanja_SBY.mp3 */,
+				E9782F8D24E7A1D3009AF5A6 /* Kamu_SBY.mp3 */,
+				E9782F8E24E7A1D3009AF5A6 /* Nama_SBY.mp3 */,
+				E9782F8F24E7A1D3009AF5A6 /* Ngapain_SBY.mp3 */,
+				E9782F9024E7A1D3009AF5A6 /* Cari_SBY.mp3 */,
+				E9782F9124E7A1D3009AF5A6 /* Kau_SBY.mp3 */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		E9782F9224E7A1D3009AF5A6 /* ChallengeChat2.2 */ = {
+			isa = PBXGroup;
+			children = (
+				E9782F9324E7A1D3009AF5A6 /* Self_018_Sub2_SBY.mp3 */,
+				E9782F9424E7A1D3009AF5A6 /* Self_019_Sub2_SBY.mp3 */,
+				E9782F9524E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 */,
+				E9782F9624E7A1D3009AF5A6 /* Opponent_017_Sub2_SBY.mp3 */,
+				E9782F9724E7A1D3009AF5A6 /* Opponent_021_Sub2_SBY.mp3 */,
+				E9782F9824E7A1D3009AF5A6 /* Self_021_Sub2_SBY.mp3 */,
+				E9782F9924E7A1D3009AF5A6 /* Self_017_Sub2_SBY.mp3 */,
+				E9782F9A24E7A1D3009AF5A6 /* Self_020_Sub2_SBY.mp3 */,
+				E9782F9B24E7A1D3009AF5A6 /* Opponent_019_Sub2_SBY.mp3 */,
+				E9782F9C24E7A1D3009AF5A6 /* Opponent_018_Sub2_SBY.mp3 */,
+			);
+			path = ChallengeChat2.2;
+			sourceTree = "<group>";
+		};
+		E9782F9D24E7A1D3009AF5A6 /* ChallengeChat1 */ = {
+			isa = PBXGroup;
+			children = (
+				E9782F9E24E7A1D3009AF5A6 /* Opponent_004_Sub2_SBY.mp3 */,
+				E9782F9F24E7A1D3009AF5A6 /* Opponent_003_Sub2_SBY.mp3 */,
+				E9782FA024E7A1D3009AF5A6 /* Self_006_Sub2_SBY.mp3 */,
+				E9782FA124E7A1D3009AF5A6 /* Self_001_Sub2_SBY.mp3 */,
+				E9782FA224E7A1D3009AF5A6 /* Opponent_002_Sub2_SBY.mp3 */,
+				E9782FA324E7A1D3009AF5A6 /* Opponent_005_Sub2_SBY.mp3 */,
+				E9782FA424E7A1D3009AF5A6 /* Self_005_Sub2_SBY.mp3 */,
+				E9782FA524E7A1D3009AF5A6 /* Self_002_Sub2_SBY.mp3 */,
+				E9782FA624E7A1D3009AF5A6 /* Opponent_001_Sub2_SBY.mp3 */,
+				E9782FA724E7A1D3009AF5A6 /* Opponent_006_Sub2_SBY.mp3 */,
+				E9782FA824E7A1D3009AF5A6 /* Self_003_Sub2_SBY.mp3 */,
+				E9782FA924E7A1D3009AF5A6 /* Self_004_Sub2_SBY.mp3 */,
+			);
+			path = ChallengeChat1;
+			sourceTree = "<group>";
+		};
+		E9782FAA24E7A1D3009AF5A6 /* ChallengeChat2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				E9782FAB24E7A1D3009AF5A6 /* Opponent_016_Sub2_SBY.mp3 */,
+				E9782FAC24E7A1D3009AF5A6 /* Self_014_Sub2_SBY.mp3 */,
+				E9782FAD24E7A1D3009AF5A6 /* Self_013_Sub2_SBY.mp3 */,
+				E9782FAE24E7A1D3009AF5A6 /* Self_012_Sub2_SBY.mp3 */,
+				E9782FAF24E7A1D3009AF5A6 /* Self_015_Sub2_SBY.mp3 */,
+				E9782FB024E7A1D3009AF5A6 /* Opponent_015_Sub2_SBY.mp3 */,
+				E9782FB124E7A1D3009AF5A6 /* Opponent_012_Sub2_SBY.mp3 */,
+				E9782FB224E7A1D3009AF5A6 /* Opponent_013_Sub2_SBY.mp3 */,
+				E9782FB324E7A1D3009AF5A6 /* Opponent_014_Sub2_SBY.mp3 */,
+				E9782FB424E7A1D3009AF5A6 /* Self_016_Sub2_SBY.mp3 */,
+			);
+			path = ChallengeChat2.1;
+			sourceTree = "<group>";
+		};
+		E9782FB524E7A1D3009AF5A6 /* ChallengeListen */ = {
+			isa = PBXGroup;
+			children = (
+				E9782FB624E7A1D3009AF5A6 /* Clue_001_Sub3_SBY.mp3 */,
+				E9782FB724E7A1D3009AF5A6 /* Clue_022_Sub3_SBY.mp3 */,
+				E9782FB824E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 */,
+			);
+			path = ChallengeListen;
+			sourceTree = "<group>";
+		};
+		E9782FF424E7A1D8009AF5A6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E9782F9D24E7A1D3009AF5A6 /* ChallengeChat1 */,
+				E9782FAA24E7A1D3009AF5A6 /* ChallengeChat2.1 */,
+				E9782F9224E7A1D3009AF5A6 /* ChallengeChat2.2 */,
+				E9782FB524E7A1D3009AF5A6 /* ChallengeListen */,
+				E9782F7924E7A1D3009AF5A6 /* Vocabulary */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -544,34 +777,93 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F9D7D1424E833E100EB6C43 /* LeftMessage.xib in Resources */,
+				E9782FE724E7A1D3009AF5A6 /* Opponent_016_Sub2_SBY.mp3 in Resources */,
+				E9782FBD24E7A1D3009AF5A6 /* Makan_SBY.mp3 in Resources */,
+				E9782FBC24E7A1D3009AF5A6 /* Kita_SBY.mp3 in Resources */,
 				5A9EDA0224E1044900BE1200 /* RandomTip.json in Resources */,
+				E9782FC524E7A1D3009AF5A6 /* Harga_SBY.mp3 in Resources */,
 				0F3B31A824E2E5E900891C1B /* VocabularyCategoryCell.xib in Resources */,
+				E9782FC024E7A1D3009AF5A6 /* Dari_SBY.mp3 in Resources */,
+				E9782FE324E7A1D3009AF5A6 /* Opponent_001_Sub2_SBY.mp3 in Resources */,
+				E9782FB924E7A1D3009AF5A6 /* Ikan_SBY.mp3 in Resources */,
+				E9782FD924E7A1D3009AF5A6 /* Opponent_019_Sub2_SBY.mp3 in Resources */,
+				E9782FC724E7A1D3009AF5A6 /* Mau_SBY.mp3 in Resources */,
+				E9782FE124E7A1D3009AF5A6 /* Self_005_Sub2_SBY.mp3 in Resources */,
+				E9782FC324E7A1D3009AF5A6 /* Berapa_SBY.mp3 in Resources */,
+				E9782FD024E7A1D3009AF5A6 /* Kau_SBY.mp3 in Resources */,
+				E9782FEC24E7A1D3009AF5A6 /* Opponent_015_Sub2_SBY.mp3 in Resources */,
+				E9782FDE24E7A1D3009AF5A6 /* Self_001_Sub2_SBY.mp3 in Resources */,
 				5A88369024D908D50044F1EA /* Profile.storyboard in Resources */,
 				5A9EDA0724E1044900BE1200 /* Topic.json in Resources */,
+				E9782FE824E7A1D3009AF5A6 /* Self_014_Sub2_SBY.mp3 in Resources */,
 				5A9EDA0624E1044900BE1200 /* Location.json in Resources */,
 				85C7CA5624E49A2E0025E1AA /* ListKosakataTableViewCell.xib in Resources */,
+				E9782FDB24E7A1D3009AF5A6 /* Opponent_004_Sub2_SBY.mp3 in Resources */,
+				E9782FDC24E7A1D3009AF5A6 /* Opponent_003_Sub2_SBY.mp3 in Resources */,
+				E9782FBE24E7A1D3009AF5A6 /* Satu_SBY.mp3 in Resources */,
+				E9782FEF24E7A1D3009AF5A6 /* Opponent_014_Sub2_SBY.mp3 in Resources */,
 				856E7FCB24E3AA270044CB36 /* NewWordsCollectionViewCell.xib in Resources */,
+				E9782FF224E7A1D3009AF5A6 /* Clue_022_Sub3_SBY.mp3 in Resources */,
+				E9782FE924E7A1D3009AF5A6 /* Self_013_Sub2_SBY.mp3 in Resources */,
+				E9782FCA24E7A1D3009AF5A6 /* Nasi_SBY.mp3 in Resources */,
+				E9782FC824E7A1D3009AF5A6 /* Cuman_SBY.mp3 in Resources */,
 				5A88368C24D908A90044F1EA /* Vocabulary.storyboard in Resources */,
+				E9782FE224E7A1D3009AF5A6 /* Self_002_Sub2_SBY.mp3 in Resources */,
+				5A4F4B3B24E431D000874C0F /* FillInTheBlank.xib in Resources */,
+				E9782FEB24E7A1D3009AF5A6 /* Self_015_Sub2_SBY.mp3 in Resources */,
+				E9782FBA24E7A1D3009AF5A6 /* Jualan_SBY.mp3 in Resources */,
 				856E7FAB24E2B91F0044CB36 /* Lesson.storyboard in Resources */,
+				E9782FC424E7A1D3009AF5A6 /* Beli_SBY.mp3 in Resources */,
+				E9782FDF24E7A1D3009AF5A6 /* Opponent_002_Sub2_SBY.mp3 in Resources */,
+				E9782FDD24E7A1D3009AF5A6 /* Self_006_Sub2_SBY.mp3 in Resources */,
 				5A9EDA0124E1044900BE1200 /* VocabularyChallenge.json in Resources */,
 				5A9EDA0324E1044900BE1200 /* Subtopic.json in Resources */,
+				E9782FC224E7A1D3009AF5A6 /* Di_SBY.mp3 in Resources */,
+				E9782FD424E7A1D3009AF5A6 /* Opponent_017_Sub2_SBY.mp3 in Resources */,
+				E9782FC624E7A1D3009AF5A6 /* Siapa_SBY.mp3 in Resources */,
 				856E7FB324E2B93B0044CB36 /* SubtopikCollectionViewCell.xib in Resources */,
 				0F9D7D1024E833C900EB6C43 /* RightMessage.xib in Resources */,
 				856E7FB724E2CC090044CB36 /* Mendengarkan.storyboard in Resources */,
 				0FECA58324E4E1C3006FE47C /* Obrolan.storyboard in Resources */,
+				E9782FC124E7A1D3009AF5A6 /* Mana_SBY.mp3 in Resources */,
+				E9782FCE24E7A1D3009AF5A6 /* Ngapain_SBY.mp3 in Resources */,
 				5A88367D24D905570044F1EA /* LaunchScreen.storyboard in Resources */,
+				E9782FE624E7A1D3009AF5A6 /* Self_004_Sub2_SBY.mp3 in Resources */,
+				E9782FE424E7A1D3009AF5A6 /* Opponent_006_Sub2_SBY.mp3 in Resources */,
 				5A9EDA0A24E1044900BE1200 /* Reward.json in Resources */,
 				856E7FB124E2B93B0044CB36 /* TopikCollectionViewCell.xib in Resources */,
+				E9782FD824E7A1D3009AF5A6 /* Self_020_Sub2_SBY.mp3 in Resources */,
+				E9782FF124E7A1D3009AF5A6 /* Clue_001_Sub3_SBY.mp3 in Resources */,
+				E9782FED24E7A1D3009AF5A6 /* Opponent_012_Sub2_SBY.mp3 in Resources */,
 				85C7CA4724E47E450025E1AA /* Kosakata.storyboard in Resources */,
+				E9782FD524E7A1D3009AF5A6 /* Opponent_021_Sub2_SBY.mp3 in Resources */,
+				E9782FC924E7A1D3009AF5A6 /* Kembalian_SBY.mp3 in Resources */,
 				5A9EDA0524E1044900BE1200 /* ListeningChallenge.json in Resources */,
+				E9782FCF24E7A1D3009AF5A6 /* Cari_SBY.mp3 in Resources */,
 				5A88367A24D905570044F1EA /* Assets.xcassets in Resources */,
+				E9782FD324E7A1D3009AF5A6 /* Opponent_020_Sub2_SBY.mp3 in Resources */,
+				E9782FCD24E7A1D3009AF5A6 /* Nama_SBY.mp3 in Resources */,
 				85C7CA4124E4228B0025E1AA /* CustomAlert.storyboard in Resources */,
-				E92092BF24E1A32E006D254A /* Reward.storyboard in Resources */,
+				E9782FF324E7A1D3009AF5A6 /* Clue_021_Sub3_SBY.mp3 in Resources */,
+				E9782FEA24E7A1D3009AF5A6 /* Self_012_Sub2_SBY.mp3 in Resources */,
+				E9782FCC24E7A1D3009AF5A6 /* Kamu_SBY.mp3 in Resources */,
 				5A34873C24E37BEE00FC55E2 /* RewardCategory.json in Resources */,
+				E9782FEE24E7A1D3009AF5A6 /* Opponent_013_Sub2_SBY.mp3 in Resources */,
+				E9782FDA24E7A1D3009AF5A6 /* Opponent_018_Sub2_SBY.mp3 in Resources */,
 				5A88367824D905550044F1EA /* Main.storyboard in Resources */,
+				E9782FE024E7A1D3009AF5A6 /* Opponent_005_Sub2_SBY.mp3 in Resources */,
+				E9782FD724E7A1D3009AF5A6 /* Self_017_Sub2_SBY.mp3 in Resources */,
 				5A9EDA0824E1044900BE1200 /* VocabularyCategory.json in Resources */,
 				5A9EDA0924E1044900BE1200 /* Vocabulary.json in Resources */,
+				E9782FBB24E7A1D3009AF5A6 /* Apa_SBY.mp3 in Resources */,
+				E9782FD624E7A1D3009AF5A6 /* Self_021_Sub2_SBY.mp3 in Resources */,
+				E9782FCB24E7A1D3009AF5A6 /* Belanja_SBY.mp3 in Resources */,
+				E9782FD124E7A1D3009AF5A6 /* Self_018_Sub2_SBY.mp3 in Resources */,
 				5A9EDA0424E1044900BE1200 /* ChatChallenge.json in Resources */,
+				E9782FD224E7A1D3009AF5A6 /* Self_019_Sub2_SBY.mp3 in Resources */,
+				E9782FF024E7A1D3009AF5A6 /* Self_016_Sub2_SBY.mp3 in Resources */,
+				E9782FBF24E7A1D3009AF5A6 /* Teman_SBY.mp3 in Resources */,
+				E9782FE524E7A1D3009AF5A6 /* Self_003_Sub2_SBY.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,11 +874,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92092C524E1D863006D254A /* DetailRewardViewController.swift in Sources */,
 				5A88369924D90D3F0044F1EA /* ProfileVC.swift in Sources */,
 				E92092C124E1BD62006D254A /* RewardListViewController.swift in Sources */,
 				0F9D7D1324E833E100EB6C43 /* LeftMessage.swift in Sources */,
 				0F11622724E5757B0033A37C /* ChallengeObrolanVC.swift in Sources */,
+				5A0D2BAC24E8205F00FAE3EF /* RewardCollectionViewCell.swift in Sources */,
 				85C7CA5124E483360025E1AA /* ListKosakataVC.swift in Sources */,
 				85C7CA3E24E421C50025E1AA /* AlertStarVC.swift in Sources */,
 				85C7CA4924E482900025E1AA /* IntroKosakataVC.swift in Sources */,
@@ -605,27 +897,28 @@
 				856E7FC624E3A9590044CB36 /* ListeningResultVC.swift in Sources */,
 				5A9ED9EA24E0FCF900BE1200 /* Reward.swift in Sources */,
 				85C7CA5524E49A2E0025E1AA /* ListKosakataTableViewCell.swift in Sources */,
+				850BF72224E4DDAB00B5DE88 /* FillTheBlank.swift in Sources */,
 				5A88369724D90D230044F1EA /* VocabularyVC.swift in Sources */,
 				0F3B31A724E2E5E900891C1B /* VocabularyCategoryCell.swift in Sources */,
-				E92092BD24E1A1C7006D254A /* RewardTableViewCell.swift in Sources */,
 				0F4B000724E425E70070CA25 /* SearchBarVC.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				0F3B31A224E2E5DA00891C1B /* VocabularyDetailVC.swift in Sources */,
-				E92092C324E1BE8A006D254A /* RewardListTableViewCell.swift in Sources */,
 				856E7FB424E2B93B0044CB36 /* TopikCollectionViewCell.swift in Sources */,
 				856E7FB224E2B93B0044CB36 /* SubtopikCollectionViewCell.swift in Sources */,
 				856E7FC024E317480044CB36 /* IntroListeningVC.swift in Sources */,
 				5AE13E0624E280A4003A077E /* LessonVC.swift in Sources */,
 				5A34873E24E3844200FC55E2 /* UIColor.swift in Sources */,
 				0F3B31A624E2E5E900891C1B /* VocabCategoryDetailsCell.swift in Sources */,
-				E92092BB24E191E7006D254A /* RewardViewController.swift in Sources */,
+				E92092BB24E191E7006D254A /* RewardCategoryVC.swift in Sources */,
 				5A9ED9F424E1016B00BE1200 /* VocabularyChallenge.swift in Sources */,
 				85C7CA4424E471330025E1AA /* AlertExitVC.swift in Sources */,
 				856E7FC424E3178E0044CB36 /* ChallengeListeningVC.swift in Sources */,
+				5AA5714B24E6DF4500F21D72 /* RewardCategoryCollectionViewCell.swift in Sources */,
 				5A34873A24E379AA00FC55E2 /* RewardCategory.swift in Sources */,
 				5A88367324D905550044F1EA /* SceneDelegate.swift in Sources */,
 				5A9ED9E824E0FBEB00BE1200 /* RandomTip.swift in Sources */,
 				856E7FC224E3176F0044CB36 /* DialogListeningVC.swift in Sources */,
+				5A0D2BAE24E8207F00FAE3EF /* RewardVC.swift in Sources */,
 				85C7CA4D24E482C90025E1AA /* KosakataResultVC.swift in Sources */,
 				856E7FA924E2B8FE0044CB36 /* SubtopikVC.swift in Sources */,
 				5A9ED9E224E0FA4F00BE1200 /* ChatChallenge.swift in Sources */,
