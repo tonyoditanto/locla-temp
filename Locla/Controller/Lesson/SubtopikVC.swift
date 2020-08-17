@@ -71,6 +71,40 @@ extension SubtopikVC: UICollectionViewDelegate, UICollectionViewDataSource {
             performSegue(withIdentifier: "SubtopicToChatChallenge", sender: indexPath)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SubtopicToVocabChallenge" {
+            guard let ListKosakataVC = segue.destination as? ListKosakataVC,
+                let index = sender as? Int
+                else {
+                    return
+            }
+            ListKosakataVC.subtopikId = subtopics[index].id
+            ListKosakataVC.subtopik = DataLoader.getSubtopic(subtopicID: subtopics[index].id)
+            
+        }
+        
+        if segue.identifier == "SubtopicToListeningChallenge" {
+            guard let IntroListeningVC = segue.destination as? IntroListeningVC,
+                let index = sender as? Int
+                else {
+                    return
+            }
+            IntroListeningVC.subtopik = subtopics[index]
+        }
+        
+        
+        
+//        if segue.identifier == "SubtopicToChatChallenge" {
+//            guard let ListKosakataVC = segue.destination as? ListKosakataVC,
+//                let index = sender as? Int
+//                else {
+//                    return
+//            }
+//            ListKosakataVC.subtopikId = subtopics[index].id
+//        }
+        
+    }
 
           
   // MARK: - Sent Data to other ViewController

@@ -98,7 +98,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="q87-qm-FbX" kind="show" id="HmY-Pi-7xz"/>
+                                    <segue destination="q87-qm-FbX" kind="show" identifier="IntroToChallengeVocab" id="HmY-Pi-7xz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Misi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPY-hZ-KQh">
@@ -336,6 +336,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="didTapPetunjukButton:" destination="q87-qm-FbX" eventType="touchUpInside" id="t2X-99-Red"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -471,10 +474,11 @@
                                 <rect key="frame" x="37" y="536" width="340" height="90"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="mtP-ID-eQZ" secondAttribute="height" multiplier="34:9" id="Oqc-sd-W5E"/>
                                     <constraint firstAttribute="width" constant="340" id="mUd-ZO-j3J"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JYM-af-2LD">
-                                    <size key="itemSize" width="70" height="40"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="JYM-af-2LD">
+                                    <size key="itemSize" width="140" height="80"/>
                                     <size key="estimatedItemSize" width="70" height="40"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -482,12 +486,13 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Uo9-OJ-JTs">
-                                        <rect key="frame" x="1" y="1" width="70" height="40"/>
+                                        <rect key="frame" x="1" y="1" width="140" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CSx-ff-IuR">
-                                            <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="140" height="80"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -587,6 +592,7 @@
                         <outlet property="keteranganLocalLabel" destination="Ytp-1R-gBl" id="CPU-pB-mpe"/>
                         <outlet property="percobaanPertamaLabel" destination="on5-jJ-jpS" id="wib-iW-BUF"/>
                         <outlet property="randomTipLabel" destination="mdI-IQ-LaE" id="rIG-9g-zfd"/>
+                        <outlet property="randomTipView" destination="LJ5-Jl-ssO" id="nz7-hq-7dz"/>
                         <outlet property="selesaiButton" destination="fR9-Pb-TYZ" id="60r-1Y-9Wg"/>
                         <outlet property="star1Imageview" destination="nD0-dZ-eHD" id="njx-uw-YaX"/>
                         <outlet property="star2Imageview" destination="KUZ-7J-RvX" id="35R-9N-zHB"/>
@@ -662,7 +668,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9ty-pc-DQo" kind="show" id="V0a-Qq-5mB"/>
+                                    <segue destination="9ty-pc-DQo" kind="show" identifier="ListToIntroChallengeVocab" id="V0a-Qq-5mB"/>
                                 </connections>
                             </button>
                         </subviews>

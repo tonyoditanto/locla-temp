@@ -15,6 +15,7 @@ class IntroListeningVC: UIViewController {
     @IBOutlet weak var deskripsiLabel: UILabel!
     @IBOutlet weak var misiLabel: UILabel!
     @IBOutlet weak var mulaiButton: UIButton!
+    var subtopik : Subtopic!
     
     override func viewDidLoad() {
         super.viewDidLoad()

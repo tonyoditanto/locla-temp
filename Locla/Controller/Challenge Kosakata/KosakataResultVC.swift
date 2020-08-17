@@ -10,6 +10,8 @@ import UIKit
 
 class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    var subtopik : Subtopic!
+    var vocabularies : [Vocabulary] = []
     @IBOutlet weak var subtopikImageview: UIImageView!
     @IBOutlet weak var keteranganIndoLabel: UILabel!
     @IBOutlet weak var keteranganLocalLabel: UILabel!
@@ -21,6 +23,7 @@ class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var randomTipLabel: UILabel!
     @IBOutlet weak var selesaiButton: UIButton!
+    @IBOutlet weak var randomTipView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,14 @@ class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollection
         configureLabel()
         configureButton()
         configureCollectionView()
+        fetchListKosakata()
         // Do any additional setup after loading the view.
+    }
+    
+    func fetchListKosakata(){
+        self.vocabularies = DataLoader.getVocabularies(subtopicID: subtopik?.id ?? 1)
+        //self.vocabularies = DataLoader.getVocabularies(subtopicID: subtopikId ?? 1)
+        //self.subtopik = DataLoader.getSubtopic(subtopicID: subtopikId)
     }
     
     func configureImage(){
@@ -36,13 +46,14 @@ class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollection
         self.star1Imageview.image = UIImage(named: "star")
         self.star2Imageview.image = UIImage(named: "star")
         self.star3Imageview.image = UIImage(named: "star")
-        self.jempolImageview.image = UIImage(named: "star")
+        self.jempolImageview.image = UIImage(named: "Image-1")
     }
     
     func configureLabel(){
         self.keteranganIndoLabel.text = "Kamu yang terbaik!!"
         self.keteranganLocalLabel.text = "Kon Sangar"
         self.percobaanPertamaLabel.text = "5/5"
+        self.randomTipView.layer.cornerRadius = 10.0
     }
     
     func configureButton(){
@@ -63,11 +74,12 @@ class KosakataResultVC: UIViewController, UICollectionViewDelegate, UICollection
     }
         
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return vocabularies.count
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewWordsCollectionViewCell.cellID, for: indexPath) as! NewWordsCollectionViewCell
+        cell.newWordLabel.text = vocabularies[indexPath.row].word
         return cell
     }
         

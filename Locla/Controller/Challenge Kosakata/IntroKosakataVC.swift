@@ -9,6 +9,8 @@
 import UIKit
 
 class IntroKosakataVC: UIViewController {
+    
+    var subtopik : Subtopic!
 
     @IBOutlet weak var judulSubtopikLabel: UILabel!
     @IBOutlet weak var subtopikImageview: UIImageView!
@@ -29,15 +31,24 @@ class IntroKosakataVC: UIViewController {
     }
 
     func configureLabel(){
-        self.judulSubtopikLabel.text = "Siapa Aku? Siapa Dia?"
-        self.deskripsiLabel.text = "Kamu baru saja sampai di kota rantaumu namun kamu bingung bagaimana menyapa orang-orang disekitarmu"
-        self.misiLabel.text = "Cobalah mengingat sapaan yang digunakan di daerah setempat dari halaman sebelum dan tantanglah dirimu dengan kuis"
+        self.judulSubtopikLabel.text = subtopik.name ?? ""
+        self.deskripsiLabel.text = subtopik.subtopicDescription ?? ""
+        self.misiLabel.text = subtopik.mission ?? ""
     }
     
     func configureImage(){
-        self.subtopikImageview.image = UIImage(named: "people2")
+        self.subtopikImageview.image = UIImage(named: "people1")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "IntroToChallengeVocab" {
+            guard let ChallengeKosakataVC = segue.destination as? ChallengeKosakataVC
+                else {
+                    return
+            }
+            ChallengeKosakataVC.subtopik = self.subtopik
+        }
+    }
     
     @IBAction func didTapCloseButton(_ sender: Any) {
         let alertVC = UIStoryboard(name: "CustomAlert", bundle: nil).instantiateViewController(withIdentifier: "AlertExitVC") as! AlertExitVC

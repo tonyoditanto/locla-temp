@@ -26,13 +26,12 @@ class ListeningResultVC: UIViewController,UICollectionViewDelegate, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureButton()
         configureLabel()
         configureImage()
         configureCollectionView()
     }
-    
+
     func configureButton(){
         self.selesaiButton.layer.cornerRadius = 10.0
 

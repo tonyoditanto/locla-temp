@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+protocol AlertStarVCDelegate {
+    func reload()
+}
+
 class AlertStarVC: UIViewController {
 
     @IBOutlet weak var star1Imageview: UIImageView!
@@ -18,6 +23,9 @@ class AlertStarVC: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var lanjutButton: UIButton!
     @IBOutlet weak var customAlertView: UIView!
+    
+    var delegate : AlertStarVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureBackground()
@@ -48,9 +56,10 @@ class AlertStarVC: UIViewController {
     }
     
     @IBAction func didTapLanjutButton(_ sender: Any) {
+        delegate?.reload()
         self.removeFromParent()
         self.view.removeFromSuperview()
-        self.parent?.view.reloadInputViews()
+        //self.parent?.view.reloadInputViews()
     }
     
     /*

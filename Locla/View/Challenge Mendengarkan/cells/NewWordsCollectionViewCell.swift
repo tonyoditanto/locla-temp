@@ -20,10 +20,10 @@ class NewWordsCollectionViewCell: UICollectionViewCell {
     }
     
     func configureBackground(){
-        self.layer.cornerRadius = 2.0
+        self.layer.cornerRadius = 5.0
     }
     
     func configureLabel(){
-        self.newWordLabel.text = "kon"
+        self.newWordLabel.text = "BABABA"
     }
 }
